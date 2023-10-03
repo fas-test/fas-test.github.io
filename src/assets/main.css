@@ -1,0 +1,87 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  margin-left: 4px;
+  text-decoration: none;
+  border: 2px solid var(--vt-c-white);
+  transition: 0.4s;
+}
+
+p {
+  padding-bottom: 30px;
+}
+
+p:last-of-type {
+  padding-bottom: 0;
+}
+
+.content {
+  padding-top: 40px;
+}
+
+.content li {
+  padding-top: 30px;
+}
+
+.title {
+  padding-top: 40px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.title span {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.title span:last-of-type {
+  text-align: end;
+  background-color: var(--fas-blue);
+  color: var(--vt-c-white);
+  padding: 0 15px;
+  float: right;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.highlighted {
+  color: var(--fas-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  background-color: var(--fas-red);
+  color: var(--vt-c-white);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.subpart {
+  padding: 30px 0 50px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    border: 2px solid var(--fas-blue);
+  }
+}
