@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import VueScrollTo from 'vue-scrollto'
 
-const scrollToEl = (elId) => {
+const scrollToEl = (elId: string) => {
   VueScrollTo.scrollTo(document.getElementById(elId), 500, {easing: 'ease-in'});
 };
 </script>
