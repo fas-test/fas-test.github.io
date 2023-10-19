@@ -1,3 +1,11 @@
+<script setup lang="ts">
+import VueScrollTo from 'vue-scrollto'
+
+const scrollToEl = (elId) => {
+  VueScrollTo.scrollTo(document.getElementById(elId), 500, {easing: 'ease-in'});
+};
+</script>
+
 <template>
   <div class="about">
     <div class="title">
@@ -7,11 +15,11 @@
     </div>
     <div class="content">
       <div class="subnavigation">
-        <span>Наша миссия</span>
-        <span>Наши ценности</span>
-        <span>Наша команда</span>
+        <span @click="scrollToEl('our-mission')">Наша миссия</span>
+        <span @click="scrollToEl('our-values')">Наши ценности</span>
+        <span @click="scrollToEl('our-team')">Наша команда</span>
       </div>
-      <span class="subtitle">Наша миссия</span>
+      <span id="our-mission" class="subtitle">Наша миссия</span>
       <div class="subpart">
         <p>
           <span class="bold">Future Assessment Service</span> соединяет последние разработки в области психометрики и
@@ -68,7 +76,7 @@
           решения для оценки и измерения в психологии и образовании.
         </p>
       </div>
-      <span class="subtitle">Наши ценности</span>
+      <span id="our-values" class="subtitle">Наши ценности</span>
       <div class="subpart">
         <span class="bold">
           Все, что мы делаем, строится на наших фундаментальных ценностях:
