@@ -1,9 +1,11 @@
 <template>
   <div class="contacts">
-    TBD
+    Здесь будут контакты
   </div>
 </template>
 
 <style>
-
+.contacts {
+  padding: 40px 120px;
+}
 </style>

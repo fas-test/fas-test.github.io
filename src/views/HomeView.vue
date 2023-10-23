@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div id="main-img">
+    <div id="home-main-img">
       <div class="text">
         <div class="title">
           Оцениваем<br>
@@ -13,7 +13,7 @@
           нового поколения<br>
         </div>
         <div class="action">
-          Связаться с нами
+          <RouterLink to="/contacts">Связаться с нами</RouterLink>
         </div>
       </div>
     </div>
@@ -43,14 +43,41 @@
         измерения
       </div>
       <div class="items">
-
+          <div class="triangle-container">
+            <div class="triangle">
+              <img alt="eye" src="@/assets/icons/eye.svg" />
+            </div>
+            <span>Мониторят прогресс каждого ученика, класса или параллели</span>
+          </div>
+          <div class="triangle-container">
+            <div class="triangle">
+              <img alt="document" src="@/assets/icons/document.svg" />
+            </div>
+            <span>Дают индивидуальную формирующую обратную связь — конкретные рекомендации учителю, ученику, родителям</span>
+          </div>
+          <div class="triangle-container">
+            <div class="triangle">
+              <img alt="pen" src="@/assets/icons/pen.svg" />
+            </div>
+            <span>Помогают персонализировать обучение в реальности, а не на бумаге</span>
+          </div>
+          <div class="triangle-container">
+            <div class="triangle">
+              <img alt="timer" src="@/assets/icons/timer.svg" />
+            </div>
+            <span>Экономят силы и время учителя и позволяют опереться на доказательный подход</span>
+          </div>
       </div>
     </div>
   </div>
 </template>
 
 <style>
-#main-img {
+.home {
+  min-width: 600px;
+}
+
+#home-main-img {
   background-image:
       linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
       url('@/assets/photos/1f8c3764aa31fc9294ff761a7afc97db.jpeg');
@@ -60,21 +87,23 @@
   color: white;
 }
 
-#main-img .text {
+#home-main-img .text {
   padding-left: 120px;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
 }
 
-#main-img .text .title {
+#home-main-img .text .title {
   color: var(--fas-blue);
   font-weight: 900;
   font-size: 60px;
   line-height: 1.1;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-#main-img .text .description {
+#home-main-img .text .description {
   padding: 40px 0;
   color: var(--vt-c-black-soft);
   font-weight: 400;
@@ -82,19 +111,25 @@
   line-height: 1.3;
 }
 
-#main-img .text .action {
+#home-main-img .text .action {
   padding: 15px 0;
   background-color: var(--vt-c-black-soft);
   width: 300px;
   text-align: center;
   border-radius: 7px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 20px;
+
   -webkit-box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
      -moz-box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
           box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
   cursor: pointer;
+}
+
+#home-main-img .text .action a {
+  color: var(--vt-c-white-mute);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  border-width: 0;
 }
 
 #intro {
@@ -106,6 +141,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 1.1;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #intro .description {
@@ -121,30 +157,57 @@
 }
 
 #home-tools {
+  min-width: 600px;
+  width: 100%;
   background-color: var(--fas-blue);
   color: white;
+  text-align: center;
 }
 
 #home-tools .title {
-  padding: 80px 0;
+  padding: 40px 0;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.1;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 #home-tools .items {
-  padding: 0 120px;
+  display: flex;
+  width: 600px;
+  min-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
-#home-tools .items .item {
-  width: 25%;
-  background-color: white;
-  float: left;
+#home-tools .items .triangle-container {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+#home-tools .items .triangle-container .triangle {
+  width: 150px;
+  height: 150px;
+  background-image: url('@/assets/triangle.png');
+  background-size: cover;
+}
+
+#home-tools .items .triangle-container .triangle img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  filter: invert(77%) sepia(28%) saturate(7203%) hue-rotate(172deg) brightness(100%) contrast(93%);
 }
 
 @media (min-width: 768px) {
-  #main-img {
+  #home-main-img {
     height: 700px;
   }
 
@@ -155,13 +218,40 @@
 }
 
 @media (min-width: 1024px) {
-  #main-img {
+  #home-main-img {
     height: 900px;
+  }
+
+  #home-tools .title {
+    padding: 80px 0;
+    font-size: 60px;
+  }
+
+  #home-tools .items {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+
+  #home-tools .items .triangle-container {
+    width: 240px;
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  #home-tools .items .triangle-container .triangle {
+    width: 200px;
+    height: 200px;
+  }
+
+  #home-tools .items .triangle-container .triangle img {
+    width: 80px;
+    height: 80px;
   }
 }
 
 @media (min-width: 1200px) {
-  #main-img {
+  #home-main-img {
     height: 1100px;
   }
 
