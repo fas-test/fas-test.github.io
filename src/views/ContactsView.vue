@@ -1,6 +1,6 @@
 <template>
   <div class="contacts">
-    Здесь будут контакты
+    Контакты
   </div>
 </template>
 

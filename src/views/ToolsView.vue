@@ -1,54 +1,304 @@
 <template>
   <div class="tools">
-    <div class="title">
-      <span>Точные измерения —</span>
-      <br>
-      <span>на протяжении всей школы</span>
+    <div id="tools-main-img">
+      <div class="text">
+        <div class="title">
+          Наши решения<br>
+          для измерения<br>
+          образовательных<br>
+          достижений
+        </div>
+        <div class="description">
+          Путь к оценке успеха:<br>
+          инновационные подходы к измерению<br>
+          образовательных достижений
+        </div>
+      </div>
     </div>
-    <div class="content">
-      <span class="bold">Наши решения для измерения образовательных достижений:</span>
-      <ul>
-        <li>
-          <div>
-            <span class="highlighted">Старт</span>
-            <span> / </span>
-            <span class="highlighted">Прогресс</span>
+    <div id="tools-details">
+      <div class="tools-container">
+        <div class="tool">
+          <img alt="tool-1" src="@/assets/tools/tool_1.png">
+          <div class="tool-texts">
+            <div class="tool-title">«Старт» / «Прогресс»</div>
+            <div class="tool-description">
+              От первых шагов к непрерывному прогрессу — тестирование по основным предметам
+            </div>
           </div>
-          <span>Навыки по основным предметам программы — с 1 по 11 классы.</span>
-        </li>
-        <li>
-          <div class="highlighted">Мягкие навыки</div>
-          <span>Критическое мышление, креативность, коммуникация, кооперация — с 4 по 8 классы.</span>
-        </li>
-        <li>
-          <div>
-            <span class="highlighted">Цифровые компетенции</span>
-            <span> — с 6 по 10 классы.</span>
+          <div class="action">
+            <RouterLink to="/tools/start-progress">Подробнее</RouterLink>
           </div>
-        </li>
-        <li>
-          <div>
-            <span class="highlighted">Социально-эмоциональные навыки</span>
-            <span> — с 1 по 9 классы.</span>
+        </div>
+        <div class="tool">
+          <img alt="tool-2" src="@/assets/tools/tool_2.png">
+          <div class="tool-texts">
+            <div class="tool-title">Мягкие навыки</div>
+            <div class="tool-description">
+              Критическое мышление, креативность, коммуникация, кооперация
+            </div>
           </div>
-        </li>
-        <li>
-          <div class="highlighted">Информационно — коммуникационная компетентность</div>
-          <span>Способность работать с информацией в цифровой среде — с 7 по 10 классы.</span>
-        </li>
-      </ul>
+          <div class="action">
+            <RouterLink to="/tools/soft-skills">Подробнее</RouterLink>
+          </div>
+        </div>
+        <div class="tool">
+          <img alt="tool-3" src="@/assets/tools/tool_3.png">
+          <div class="tool-texts">
+            <div class="tool-title">Цифровые компетенции</div>
+            <div class="tool-description">
+              Измерение навыков в цифровой области для успешной адаптации в современном мире технологий
+            </div>
+          </div>
+          <div class="action">
+            <RouterLink to="/tools/digital-skills">Подробнее</RouterLink>
+          </div>
+        </div>
+      </div>
+      <div class="tools-container">
+        <div class="tool">
+          <img alt="tool-4" src="@/assets/tools/tool_4.png">
+          <div class="tool-texts">
+            <div class="tool-title">Социально-эмоциональные навыки</div>
+            <div class="tool-description">
+              Оценка социальных и эмоциональных компетенций для поддержки учебного успеха и личностного развития
+            </div>
+          </div>
+          <div class="action">
+            <RouterLink to="/tools/social-skills">Подробнее</RouterLink>
+          </div>
+        </div>
+        <div class="tool">
+          <img alt="tool-5" src="@/assets/tools/tool_5.png">
+          <div class="tool-texts">
+            <div class="tool-title">Информационно-коммуникационная компетентность</div>
+            <div class="tool-description">
+              Способность работать с информацией в цифровой среде
+            </div>
+          </div>
+          <div class="action">
+            <RouterLink to="/tools/communication-skills">Подробнее</RouterLink>
+          </div>
+        </div>
+        <div class="tool-transparent">
+          ✓ Все тесты проводятся на компьютерах школы<br><br>
+          ✓ Легко настраиваются, понятны учителю-пользователю<br><br>
+          ✓ Для ученика это игра — интересные сценарии вместо скучных вопросов<br><br>
+          ✓ Обратная связь сразу после теста: разные типы отчётов адаптированы под учителя, ученика и органы управления образованием<br><br>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <style>
-.tools {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-}
+  .tools {
+    min-width: 600px;
+  }
 
-.tools .title {
-  width: 60%;
-}
+  #tools-main-img {
+    background-image:
+      linear-gradient(to bottom, rgba(63, 179, 245, 0.4), rgba(63, 179, 245, 1)),
+      url('@/assets/photos/tools_main.jpg');
+    width: 100%;
+    min-width: 600px;
+    height: 500px;
+    background-size: cover;
+  }
+
+  #tools-main-img .text {
+    padding-left: 120px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    color: var(--vt-c-white-soft);
+  }
+
+  #tools-main-img .text .title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.1;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  #tools-main-img .text .description {
+    padding: 40px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  #tools-details {
+    width: 100%;
+    background-color: var(--fas-blue);
+  }
+
+  .tools .tools-container {
+    display: flex;
+    width: 600px;
+    min-width: 600px;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+
+  .tools .tools-container:last-of-type {
+    padding-bottom: 40px;
+  }
+
+  .tools .tools-container .tool {
+    display: inline-block;
+    width: 200px;
+    margin: 0 5px;
+    font-size: 12px;
+    line-height: 1.3;
+    background-color: var(--vt-c-white-soft);
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
+            box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
+  }
+
+  .tools .tools-container .tool-transparent {
+    display: inline-block;
+    width: 200px;
+    margin: 0 5px;
+    padding: 25px 0 0 15px;
+    font-size: 12px;
+    line-height: 1.3;
+    background-color: var(--fas-blue);
+    color: var(--vt-c-white-soft);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .tools .tools-container .tool img {
+    width: 190px;
+  }
+
+  .tools .tools-container .tool .tool-texts {
+    height: 140px;
+  }
+
+  .tools .tools-container .tool .tool-texts .tool-title {
+    padding: 10px 15px;
+    font-weight: 600;
+    color: var(--fas-blue);
+  }
+
+  .tools .tools-container .tool .tool-texts .tool-description {
+    padding: 0 15px 15px 15px;
+  }
+
+  .tools .tools-container .tool .action {
+    margin: 0 0 15px 15px;
+    background-color: var(--vt-c-black-soft);
+    width: 160px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .tools .tools-container .tool .action a {
+    display: block;
+    color: var(--vt-c-white-mute);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-width: 0;
+  }
+
+  @media (min-width: 768px) {
+    #tools-main-img {
+      height: 600px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #tools-main-img {
+      height: 700px;
+    }
+
+    #tools-main-img .text .title {
+      font-size: 60px;
+    }
+
+    #tools-main-img .text .description {
+      font-size: 26px;
+    }
+
+    .tools .tools-container {
+      width: 900px;
+      padding: 10px 0;
+    }
+
+    .tools .tools-container .tool {
+      width: 300px;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+
+    .tools .tools-container .tool-transparent {
+      width: 300px;
+      margin: 0 10px;
+      padding: 25px 0 0 20px;
+      font-size: 16px;
+    }
+
+    .tools .tools-container .tool img {
+      width: 280px;
+    }
+
+    .tools .tools-container .tool .tool-texts {
+      height: 160px;
+    }
+
+    .tools .tools-container .tool .action {
+      width: 250px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #tools-main-img {
+      height: 1000px;
+    }
+
+    .tools .tools-container {
+      width: 1050px;
+      padding: 10px 0;
+    }
+
+    .tools .tools-container .tool {
+      width: 350px;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    .tools .tools-container .tool-transparent {
+      width: 350px;
+      margin: 0 10px;
+      padding: 40px 10px 0 30px;
+      font-size: 18px;
+    }
+
+    .tools .tools-container .tool img {
+      width: 330px;
+    }
+
+    .tools .tools-container .tool .tool-texts {
+      height: 190px;
+    }
+
+    .tools .tools-container .tool .action {
+      width: 300px;
+      height: 35px;
+      line-height: 35px;
+    }
+  }
 </style>
+<script setup lang="ts">
+</script>

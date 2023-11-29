@@ -16,9 +16,11 @@ window.addEventListener('scroll', () => {
 <template>
   <div class="container">
     <header>
-      <div class="logo">
-        <img alt="FAS logo" src="@/assets/logo.png" />
-      </div>
+      <RouterLink to="/">
+        <div class="logo">
+          <img alt="FAS logo" src="@/assets/fas_logo.svg" />
+        </div>
+      </RouterLink>
       <div class="navigation">
         <nav>
           <RouterLink to="/">Главная</RouterLink>
@@ -117,8 +119,8 @@ footer {
 }
 
 .logo {
-  width: 79px;
   float: left;
+  padding-top: 12px;
 }
 
 .navigation {

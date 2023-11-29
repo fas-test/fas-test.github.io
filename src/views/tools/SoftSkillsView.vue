@@ -1,11 +1,11 @@
 <template>
-  <div class="start-progress">
-    Старт / прогресс
+  <div class="soft-skills">
+    Мягкие навыки
   </div>
 </template>
 
 <style>
-.start-progress {
+.soft-skills {
   padding: 40px 120px;
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
-  <div class="soft-skills">
-    Мягкие навыки
+  <div class="digital-skills">
+    Цифровые компетенции
   </div>
 </template>
 
 <style>
-.soft-skills {
+.digital-skills {
   padding: 40px 120px;
 }
 </style>

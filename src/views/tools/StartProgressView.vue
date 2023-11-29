@@ -1,11 +1,11 @@
 <template>
-  <div class="start-tool">
+  <div class="start-progress">
     Старт / прогресс
   </div>
 </template>
 
 <style>
-.contacts {
+.start-progress {
   padding: 40px 120px;
 }
 </style>

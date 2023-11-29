@@ -1,11 +1,11 @@
 <template>
-  <div class="social-skills">
-    Социально-эмоциональные навыки
+  <div class="communication-skills">
+    Информационно-коммуникационная компетентность
   </div>
 </template>
 
 <style>
-.social-skills {
+.communication-skills {
   padding: 40px 120px;
 }
 </style>

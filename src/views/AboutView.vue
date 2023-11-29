@@ -13,10 +13,10 @@ const scrollToEl = (elId: string) => {
         <div class="title">
           Future<br>
           Assessment<br>
-          Service —
+          Service
         </div>
         <div class="description">
-          соединяет последние разработки в области психометрики<br>
+          Соединяем последние разработки в области психометрики<br>
           и искусственного интеллекта с современными научными<br>
           представлениями о психологии и образовании, чтобы помочь<br>
           каждому ученику раскрыть свой образовательный потенциал
@@ -35,71 +35,52 @@ const scrollToEl = (elId: string) => {
       </div>
       <div class="description">
         <p>
-          Мы считаем, что основа обучения — это персонализированная обратная связь, которая объясняет, какие шаги ученику
-          и всем людям вокруг него нужно предпринять, чтобы повысить образовательные достижения ученика наиболее быстро.
-          Однако для того, чтобы ее предоставить, необходимо иметь самые точные инструменты измерения, использующие
-          технологии искусственного интеллекта и психометрики. Более того, такая обратная связь должна быть
-          индивидуализированной и оперативной.
+          Миссия <span class="bold">Future Assessment Service</span> — помочь школам и ученикам добиться успеха, используя
+          наши решения для измерений в психологии и образовании. Мы делаем это с помощью <span class="bold">формирующей
+          обратной связи</span>, которая облегчает принятие решений об образовательном маршруте каждого ученика и помогает
+          при управлении образовательными организациями.
         </p>
         <p>
-          Миссия <span class="bold">Future Assessment Service</span> — это разрабатывать такие инструменты измерения,
-          которые могли бы давать <span class="bold">формирующую обратную связь</span> каждому ученику, учителю, родителю
-          и администратору для принятия решений об индивидуальном образовательном маршруте каждого ученика и управления
-          образовательными организациями.
+          Персонализированная и оперативная обратная связь — это основа обучения. Она объясняет, какие шаги ученику и всем
+          людям вокруг него нужно сделать, чтобы повысить его образовательные результаты. Чтобы ее предоставить, мы используем
+          технологии искусственного интеллекта и психометрики, примененяя их к <span class="bold">современным психологическим и
+          образовательным научным теориям</span>.
         </p>
         <p>
-          То, что отличает нас от многих образовательных компаний — это применение технологий психометрики и
-          искусственного интеллекта к <span class="bold">современным психологическим и образовательным теориям</span>. С
-          самого начала разработки наших инструментов измерения, мы закладываем в них наиболее доказанные и валидные
-          теории из социальных наук, чтобы сделать обратную связь наиболее легкой для интерпретации и понятной
-          пользователям.
+          Наши сотрудники — это академические специалисты с международной квалификацией в психологии, науках об образовании,
+          психометрике, науках о данных и статистике. Мы сотрудничаем с учителями, учащимися и профессионалами в образовании
+          по всему миру. Мы открыты к обратной связи от всех пользователей.
         </p>
       </div>
     </div>
-    <div id="about-gap"></div>
     <div id="our-mission-2">
       <div class="description">
         <p>
-          Одно из главных преимуществ наших инструментов — это возможность <span class="bold">измерения образовательного
-          прогресса</span> и изменений во времени. В физкультуре измерить образовательный прогресс (например, высоту
-          прыжка) очень просто, потому что шкала достижений не изменяется со временем. Но измерение прогресса, например, в
-          математике требует специальных психометрических приемов и статистического моделирования. Нельзя просто
-          сравнивать баллы по двум разным тестам по одному предмету — задания в них имеют разную трудность, поэтому одно и
-          то же число баллов не означает один и тот же уровень способности.
+          <span class="bold">Формирующая обратная связь</span><br>
+          Мы оперативно предоставляем подробную индивидуальную обратную связь по каждому ученику — ему самому и родителям.
+          Далее, мы собираем эту обратную связь также в простом виде на уровне класса — для учителя. Затем, мы формируем
+          отчет для администратора образовательной организации, облегчая принятие управленческих решений.
         </p>
         <p>
-          При разработке наших инструментов, мы руководствуемся <span class="bold">стандартами образовательного и
-          психологического тестирования</span>, разработанными ведущими психометрическими организациями в мире:
-          Американской Ассоциацией Исследований в Образовании, Национальным Советом по Образовательным Измерениям, и
-          Американской Психологической Ассоциацией; Международной Тестовой Комиссией; Европейской Федерацией
-          Психологических Ассоциаций; Ассоциацией Образовательного Оценивания в Европе. Согласно этим стандартам, все наши
-          тесты проходят процедуры валидизации, включающие изучение надежности, доказательства целесообразности и
-          достоверности обратной связи, а также гендерного и национального равенства и справедливости.
+          <span class="bold">Измерение образовательного прогресса</span><br>
+          Для наших линеек инструментов мы выстраиваем единую шкалу, позволяя отслеживать прогресс каждого ученика сквозь
+          время. Только единицы инструментов измерения в мире позволяют отслеживать рост компетенций учеников, потому что
+          это требует специальных психометрических техник и математического моделирования.
+        </p>
+        <p>
+          <span class="bold">Стандарты качества наших продуктов</span><br>
+          Мы руководствуемся стандартами образовательного и психологического тестирования от ведущих психометрических
+          организаций в мире: <a target="_blank" href="https://www.apa.org/science/programs/testing/standards">Американской
+          Ассоциации Исследований в Образовании, Национального Совета по Образовательным Измерениям, и Американской
+          Психологической Ассоциации</a>; <a target="_blank" href="https://www.intestcom.org/page/28">Международной Тестовой
+          Комиссии</a>; <a target="_blank" href="https://www.efpa.eu/sites/default/files/2023-06/110c_EFPA_BOA_TEST_REVIEW_MODEL_version426.pdf">
+          Европейской Федерации Психологических Ассоциаций</a>; <a target="_blank" href="https://aea-europe.net/standards-for-assessment/">
+          Ассоциации Образовательного Оценивания в Европе</a>. Наши инструменты проходят валидизацию, включая изучение
+          надежности, качества обратной связи, и гендерной и национальной справедливости.
         </p>
       </div>
     </div>
-    <div id="about-gap"></div>
-    <div id="our-mission-3">
-      <div class="name">
-        Наша<br>
-        миссия
-      </div>
-      <div class="description">
-        <p>
-          Наши сотрудники являются академическими специалистами с международной квалификацией в психологии, науках об
-          образовании, психометрике, науках о данных и статистике.
-        </p>
-        <p>
-          Мы сотрудничаем с учителями, учащимися и профессионалами в образовании по всему миру. Мы открыты к обратной
-          связи от всех групп пользователей наших инструментов.
-        </p>
-        <p>
-          <span class="bold">Наша миссия</span> — помочь школам и ученикам добиться успеха, используя наши передовые
-          решения для оценки и измерения в психологии и образовании.
-        </p>
-      </div>
-    </div>
-    <div id="about-gap"></div>
+
     <div id="our-values">
       <div class="title">
         Наши ценности
@@ -113,28 +94,28 @@ const scrollToEl = (elId: string) => {
             <img alt="eye" src="@/assets/icons/lightbulb.svg" />
           </div>
           <div class="triangle-title">ИННОВАЦИИ</div>
-          <span>Мы исследуем новые идеи и методы оценки, чтобы лучше заботиться об интересах наших клиентах</span>
+          <span>Мы исследуем новые методы оценки, чтобы лучше заботиться об интересах наших клиентов</span>
         </div>
         <div class="triangle-container">
           <div class="triangle">
             <img alt="document" src="@/assets/icons/award.svg" />
           </div>
           <div class="triangle-title">КАЧЕСТВО</div>
-          <span>Мы стремимся делать качественные измерения</span>
+          <span>Мы используем лучшие стандарты качества измерительных инструментов в мире</span>
         </div>
         <div class="triangle-container">
           <div class="triangle">
             <img alt="pen" src="@/assets/icons/handshake.svg" />
           </div>
           <div class="triangle-title">СОТРУДНИЧЕСТВО</div>
-          <span>Мы верим, что совместные усилия и взаимодействие с партнерами — ключевой фактор успеха</span>
+          <span>Совместные усилия и взаимодействие с партнерами — главный фактор нашего успеха</span>
         </div>
         <div class="triangle-container">
           <div class="triangle">
             <img alt="timer" src="@/assets/icons/scales.svg" />
           </div>
           <div class="triangle-title">РАВЕНСТВО И СПРАВЕДЛИВОСТЬ</div>
-          <span>Мы предпринимаем усилия, чтобы убедиться, что наши инструменты не дискриминируют ни одну из групп учеников</span>
+          <span>Наши инструменты справедливы и не дискриминируют ни одну из групп учеников</span>
         </div>
       </div>
       <div class="items">
@@ -151,15 +132,14 @@ const scrollToEl = (elId: string) => {
             <img alt="document" src="@/assets/icons/run.svg" />
           </div>
           <div class="triangle-title">СКОРОСТЬ</div>
-          <span>Обратная связь важна только когда она предоставляется непосредственно по результатам измерения</span>
+          <span>Обратная связь полезна только если она предоставляется сразу после тестирования</span>
         </div>
         <div class="triangle-container">
           <div class="triangle">
             <img alt="pen" src="@/assets/icons/attention.svg" />
           </div>
           <div class="triangle-title">ОТВЕТСТВЕННОСТЬ</div>
-          <span>Мы предпринимаем усилия для того, чтобы по результатам наших измерений не принимались неправомерные
-          решения</span>
+          <span>Наша обратная связь создана так, чтобы по ней было сложно принять необоснованные решения</span>
         </div>
       </div>
     </div>
@@ -177,42 +157,12 @@ const scrollToEl = (elId: string) => {
       </div>
     </div>
   </div>
-  <div id="about-gap"></div>
-  <div class="person">
-    <div class="avatar">
-      <div class="photo denis"></div>
-      <div class="name">Денис Федерякин</div>
-    </div>
-    <div class="bio">
-      Денис Федерякин закончил психолого-педагогический факультет Смоленского Государственного Университета в 2015 году,
-      психометрическую магистратуру НИУ «Высшая школа экономики» в 2017 году, и с тех пор ведет академическую карьеру в
-      области анализа данных психологического и образовательного тестирования. На счету Дениса более 30 выступлений на
-      международных конференциях (включая конференции ассоциаций-разработчиков стандартов тестирования), а также более
-      20 публикаций (включая публикации в наиболее известных и престижных международных академических журналах). Денис
-      специализируется в способах обработки данных тестирования с помощью статистических и психометрических моделей и
-      моделей машинного обучения.
-    </div>
-  </div>
-  <div id="about-gap"></div>
-  <div class="person">
-    <div class="avatar">
-      <div class="photo alina"></div>
-      <div class="name">Алина Иванова</div>
-    </div>
-    <div class="bio">
-      Алина Иванова закончила магистратуру НИУ «Высшая школа экономики» в 2013 году, в 2019 году аспирантуру и 2021 года защитила
-      здесь же кандидатскую диссертацию на тему «Разработка и валидизация русскоязычной версии инструмента международного
-      сравнительного исследования навыков учащихся на входе в школу и их прогресса за первый учебный год: проблемы адаптации
-      и локализации». Алина ведет научную и преподавательскую деятельность в области анализа данных психологического и
-      образовательного тестирования. Исследовательские интересы Алины связаны с анализом широкомасштабных мониторингов,
-      кросс-культурных исследований, а также вопросов отслеживания динамики образовательных достижений.
-    </div>
-  </div>
-  <div id="about-gap"></div>
+  <div class="about-gap"></div>
   <div class="person">
     <div class="avatar">
       <div class="photo elena"></div>
-      <div class="name">Елена Карданова</div>
+      <div class="name">Елена Карданова, Ph.D.</div>
+      <div class="position">Chief Executive Officer</div>
     </div>
     <div class="bio">
       <a href="https://scholar.google.com/citations?user=pivOY3sAAAAJ&&hl=ru&&oi=ao">Елена Карданова</a>, кандидат
@@ -226,11 +176,28 @@ const scrollToEl = (elId: string) => {
       измерения индивидуального прогресса в обучении, межкультурной сопоставимости результатов тестирования.
     </div>
   </div>
-  <div id="about-gap"></div>
+  <div class="about-gap"></div>
+  <div class="person">
+    <div class="avatar">
+      <div class="photo alina"></div>
+      <div class="name">Алина Иванова, Ph.D.</div>
+      <div class="position">Chief Research Officer</div>
+    </div>
+    <div class="bio">
+      Алина Иванова закончила магистратуру НИУ «Высшая школа экономики» в 2013 году, в 2019 году аспирантуру и 2021 года защитила
+      здесь же кандидатскую диссертацию на тему «Разработка и валидизация русскоязычной версии инструмента международного
+      сравнительного исследования навыков учащихся на входе в школу и их прогресса за первый учебный год: проблемы адаптации
+      и локализации». Алина ведет научную и преподавательскую деятельность в области анализа данных психологического и
+      образовательного тестирования. Исследовательские интересы Алины связаны с анализом широкомасштабных мониторингов,
+      кросс-культурных исследований, а также вопросов отслеживания динамики образовательных достижений.
+    </div>
+  </div>
+  <div class="about-gap"></div>
   <div class="person">
     <div class="avatar">
       <div class="photo svetlana"></div>
-      <div class="name">Светлана Авдеева</div>
+      <div class="name">Светлана Авдеева, Ph.D.</div>
+      <div class="position">Chief Development Officer</div>
     </div>
     <div class="bio">
       Светлана Авдеева, кандидат технических наук, более 20 лет занимается вопросами цифровой трансформацией образования,
@@ -246,7 +213,24 @@ const scrollToEl = (elId: string) => {
       образовательных достижений.
     </div>
   </div>
-  <div id="about-gap"></div>
+  <div class="about-gap"></div>
+  <div class="person">
+    <div class="avatar">
+      <div class="photo denis"></div>
+      <div class="name">Денис Федерякин, M.Sc.</div>
+      <div class="position">Chief Technology Officer</div>
+    </div>
+    <div class="bio">
+      Денис Федерякин закончил психолого-педагогический факультет Смоленского Государственного Университета в 2015 году,
+      психометрическую магистратуру НИУ «Высшая школа экономики» в 2017 году, и с тех пор ведет академическую карьеру в
+      области анализа данных психологического и образовательного тестирования. На счету Дениса более 30 выступлений на
+      международных конференциях (включая конференции ассоциаций-разработчиков стандартов тестирования), а также более
+      20 публикаций (включая публикации в наиболее известных и престижных международных академических журналах). Денис
+      специализируется в способах обработки данных тестирования с помощью статистических и психометрических моделей и
+      моделей машинного обучения.
+    </div>
+  </div>
+  <div class="about-gap"></div>
 </template>
 
 <style>
@@ -258,8 +242,8 @@ const scrollToEl = (elId: string) => {
   width: 20%;
 }
 .person .avatar .photo {
-  width: 200px;
-  height: 200px;
+  width: 215px;
+  height: 215px;
   background-size: cover;
   border-radius: 50%;
 }
@@ -277,12 +261,18 @@ const scrollToEl = (elId: string) => {
 }
 .person .avatar .name {
   padding-top: 10px;
-  width: 200px;
+  width: 215px;
   text-align: center;
   color: var(--fas-blue);
   font-weight: 600;
   font-size: 18px;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.person .avatar .position {
+  width: 215px;
+  text-align: center;
+  color: var(--vt-c-black-mute);
+  font-weight: 400;
+  font-size: 18px;
 }
 .person .bio {
   float: left;
@@ -302,13 +292,12 @@ const scrollToEl = (elId: string) => {
 
 #about-main-img {
   background-image:
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 1)),
-      url('@/assets/photos/d573a09e3cd541be7b2177dcc294e340.jpeg');
+      linear-gradient(to bottom, rgba(63, 179, 245, 0.4), rgba(63, 179, 245, 1)),
+      url('@/assets/photos/about_main.jpeg');
   width: 100%;
   min-width: 600px;
   height: 500px;
   background-size: cover;
-  color: white;
 }
 
 #about-main-img .text {
@@ -317,26 +306,27 @@ const scrollToEl = (elId: string) => {
   top: 50%;
   -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+  color: var(--vt-c-white-soft);
 }
 
 #about-main-img .text .title {
-  color: var(--fas-blue);
   font-weight: 900;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.1;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #about-main-img .text .description {
   padding: 40px 0;
-  color: var(--vt-c-black-soft);
+  min-width: 600px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.3;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #about-main-img .text .subnavigation {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 #about-main-img .text .subnavigation span {
@@ -355,16 +345,18 @@ const scrollToEl = (elId: string) => {
 }
 
 #about-main-img .text .subnavigation span:hover {
-  color: var(--fas-blue);
+  color: var(--vt-c-white-soft);
   cursor: pointer;
 }
 
 #our-mission {
-  padding: 40px 120px;
+  padding: 40px 120px 80px;
+  background-color: var(--fas-blue);
+  color: var(--vt-c-white-soft);
 }
 
 #our-mission .name {
-  color: var(--fas-blue);
+  background-color: var(--fas-blue);
   font-weight: 700;
   font-size: 40px;
   line-height: 1.1;
@@ -372,12 +364,14 @@ const scrollToEl = (elId: string) => {
 }
 
 #our-mission .description {
-  padding-top: 40px;
+  background-color: var(--fas-blue);
+  padding-top: 60px;
   font-size: 18px;
   line-height: 1.3;
+  min-width: 600px;
 }
 
-#about-gap {
+.about-gap {
   clear: left;
   height: 80px;
   background-color: white;
@@ -386,28 +380,22 @@ const scrollToEl = (elId: string) => {
 #our-mission-2 {
   min-width: 600px;
   width: 100%;
-  background-color: var(--fas-blue);
-  color: white;
+  background-color: var(--vt-c-white-soft);
+  color: var(--vt-c-black-soft);
   padding: 80px 120px;
   font-size: 18px;
   line-height: 1.3;
 }
 
-#our-mission-3 {
-  padding: 0 120px;
+#our-mission-2 .description p a {
+  border: 0;
+  border-bottom: 1px dotted var(--vt-c-black-soft);
+  color: var(--vt-c-black-soft);
 }
 
-#our-mission-3 .name {
-  color: white;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.1;
-  user-select: none;
-}
-
-#our-mission-3 .description {
-  font-size: 18px;
-  line-height: 1.3;
+#our-mission-2 .description p a:hover {
+  color: var(--fas-blue);
+  border-bottom: 1px dotted var(--fas-blue);
 }
 
 #our-values {
@@ -499,14 +487,6 @@ const scrollToEl = (elId: string) => {
     height: 600px;
   }
 
-  #about-main-img .text .description {
-    font-size: 20px;
-  }
-
-  #about-main-img .text .subnavigation {
-    font-size: 18px;
-  }
-
   #our-mission .name {
     font-weight: 900;
     font-size: 60px;
@@ -521,6 +501,18 @@ const scrollToEl = (elId: string) => {
 @media (min-width: 1024px) {
   #about-main-img {
     height: 700px;
+  }
+
+  #about-main-img .text .title {
+    font-size: 60px;
+  }
+
+  #about-main-img .text .description {
+    font-size: 26px;
+  }
+
+  #about-main-img .text .subnavigation {
+    font-size: 22px;
   }
 
   #our-values .title {
@@ -562,36 +554,14 @@ const scrollToEl = (elId: string) => {
 
 @media (min-width: 1200px) {
   #about-main-img {
-    height: 900px;
-  }
-
-  #our-mission .name {
-    float: left;
-    width: 20%;
+    height: 1000px;
   }
 
   #our-mission .description {
-    padding-top: 0;
-    padding-left: 100px;
-    float: left;
-    width: 80%;
     font-size: 22px;
   }
 
   #our-mission-2 .description {
-    font-size: 22px;
-  }
-
-  #our-mission-3 .name {
-    float: left;
-    width: 20%;
-  }
-
-  #our-mission-3 .description {
-    padding-top: 0;
-    padding-left: 100px;
-    float: left;
-    width: 80%;
     font-size: 22px;
   }
 

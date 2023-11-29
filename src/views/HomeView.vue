@@ -8,9 +8,9 @@
           Строим будущее.
         </div>
         <div class="description">
-          Инструменты валидного измерения<br>
+          Новое поколение<br>
+          инструментов оценивания<br>
           сложных компетенций и навыков<br>
-          нового поколения<br>
         </div>
         <div class="action">
           <RouterLink to="/contacts">Связаться с нами</RouterLink>
@@ -21,19 +21,19 @@
       <div class="name">
         Future<br>
         Assessment<br>
-        Service —
+        Service
       </div>
       <div class="description">
-        это компания, предоставляющая иновационные решения на рынке образовательных и психологических измерений.
-        Мы разрабатываем инструменты измерения сложных компетенций и композитных навыков, которые позволяют
-        учителям, ученикам, администраторам образовательных организаций и родителям принимать решения об
-        образовательном маршруте на основе валидной и надежной формирующей информации.
+        Мы предоставляем инновационные решения на рынке образовательных и психологических измерений для учителей,
+        учеников, родителей и администраторов образовательных организаций.
         <br><br>
-        Наши линейки инструментов, направленные на измерение образовательного прогресса, позволяют отслеживать, как
-        изменяются способности учеников во времени.
+        Наша обратная связь дает валидную и надежную информацию для доказательных решений об образовательном маршруте.
         <br><br>
-        Наши инструменты измерения разработаны на основе самых современных разработок в области психометрики и
-        искусственного интеллекта, а также последних открытий в психологии и науках об образовании.
+        Наши линейки инструментов оценивают образовательный прогресс и позволяют отслеживать, как изменяются способности
+        учеников во времени.
+        <br><br>
+        Наши инструменты измерения основаны на самых современных разработках в области психометрики и искусственного
+        интеллекта, а также последних открытий в психологии и науках об образовании.
       </div>
     </div>
     <div id="home-gap"></div>
@@ -53,7 +53,7 @@
             <div class="triangle">
               <img alt="document" src="@/assets/icons/document.svg" />
             </div>
-            <span>Дают индивидуальную формирующую обратную связь — конкретные рекомендации учителю, ученику, родителям</span>
+            <span>Дают индивидуальные и конкретные рекомендации учителю, ученику и родителям</span>
           </div>
           <div class="triangle-container">
             <div class="triangle">
@@ -65,7 +65,8 @@
             <div class="triangle">
               <img alt="timer" src="@/assets/icons/timer.svg" />
             </div>
-            <span>Экономят силы и время учителя и позволяют опереться на доказательный подход</span>
+            <span>Экономят силы и время учителя за счет автоматизации компьютерного оценивания. Опираются на доказательный
+            подход к образовательному и психологическому оцениванию.</span>
           </div>
       </div>
     </div>
@@ -80,11 +81,11 @@
 #home-main-img {
   background-image:
       linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
-      url('@/assets/photos/1f8c3764aa31fc9294ff761a7afc97db.jpeg');
+      url('@/assets/photos/home_main.jpeg');
   width: 100%;
-  height: 600px;
+  min-width: 600px;
+  height: 500px;
   background-size: cover;
-  color: white;
 }
 
 #home-main-img .text {
@@ -98,26 +99,27 @@
 #home-main-img .text .title {
   color: var(--fas-blue);
   font-weight: 900;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.1;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #home-main-img .text .description {
-  padding: 40px 0;
   color: var(--vt-c-black-soft);
+  padding: 40px 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.3;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #home-main-img .text .action {
-  padding: 15px 0;
   background-color: var(--vt-c-black-soft);
-  width: 300px;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   border-radius: 7px;
-
   -webkit-box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
      -moz-box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
           box-shadow: 0 0 20px 2px rgba(0,0,0,0.3);
@@ -125,10 +127,11 @@
 }
 
 #home-main-img .text .action a {
+  display: block;
   color: var(--vt-c-white-mute);
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   border-width: 0;
 }
 
@@ -208,7 +211,7 @@
 
 @media (min-width: 768px) {
   #home-main-img {
-    height: 700px;
+    height: 600px;
   }
 
   #intro .name {
@@ -219,7 +222,26 @@
 
 @media (min-width: 1024px) {
   #home-main-img {
-    height: 900px;
+    height: 700px;
+  }
+
+  #home-main-img .text .title {
+    font-size: 60px;
+  }
+
+  #home-main-img .text .description {
+    font-size: 26px;
+  }
+
+  #home-main-img .text .action {
+    background-color: var(--vt-c-black-soft);
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  #home-main-img .text .action a {
+    font-size: 20px;
   }
 
   #home-tools .title {
@@ -252,7 +274,7 @@
 
 @media (min-width: 1200px) {
   #home-main-img {
-    height: 1100px;
+    height: 1000px;
   }
 
   #intro .name {
@@ -270,3 +292,5 @@
 }
 
 </style>
+<script setup lang="ts">
+</script>
