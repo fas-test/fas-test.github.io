@@ -1,0 +1,1 @@
+import{_ as e,o as n,c as t}from"./index-e00dff9a.js";const s={},_={class:"consulting"};function c(o,i){return n(),t("div",_," Направления нашей экспертизы и консалтинга ")}const a=e(s,[["render",c]]);export{a as default};

@@ -1,1 +1,0 @@
-import{_ as e,o as s,c}from"./index-880c9349.js";const _={},o={class:"social-skills"};function l(t,i){return s(),c("div",o," Социально-эмоциональные навыки ")}const a=e(_,[["render",l]]);export{a as default};
