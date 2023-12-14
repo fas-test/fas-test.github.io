@@ -26,6 +26,7 @@ window.addEventListener('scroll', () => {
           <RouterLink to="/">Главная</RouterLink>
           <RouterLink to="/about">О нас</RouterLink>
           <RouterLink to="/tools">Наши инструменты</RouterLink>
+          <RouterLink to="/consulting">Консалтинг</RouterLink>
           <RouterLink to="/contacts">Контакты</RouterLink>
         </nav>
       </div>
@@ -49,6 +50,7 @@ window.addEventListener('scroll', () => {
             <RouterLink to="/">Главная</RouterLink>
             <RouterLink to="/about">О нас</RouterLink>
             <RouterLink to="/tools">Наши инструменты</RouterLink>
+            <RouterLink to="/consulting">Консалтинг</RouterLink>
             <RouterLink to="/contacts">Контакты</RouterLink>
           </div>
         </div>

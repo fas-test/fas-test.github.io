@@ -19,14 +19,19 @@ const router = createRouter({
       component: () => import('../views/ToolsView.vue')
     },
     {
+      path: '/consulting',
+      name: 'consulting',
+      component: () => import('../views/ConsultingView.vue')
+    },
+    {
       path: '/contacts',
       name: 'contacts',
       component: () => import('../views/ContactsView.vue')
     },
     {
-      path: '/tools/start-progress',
-      name: 'start-progress',
-      component: () => import('../views/tools/StartProgressView.vue')
+      path: '/tools/start',
+      name: 'start',
+      component: () => import('../views/tools/StartView.vue')
     },
     {
       path: '/tools/soft-skills',
@@ -39,9 +44,9 @@ const router = createRouter({
       component: () => import('../views/tools/DigitalSkillsView.vue')
     },
     {
-      path: '/tools/social-skills',
-      name: 'social-skills',
-      component: () => import('../views/tools/SocialSkillsView.vue')
+      path: '/tools/progress',
+      name: 'progress',
+      component: () => import('../views/tools/ProgressView.vue')
     },
     {
       path: '/tools/communication-skills',

@@ -15,21 +15,24 @@
         </div>
       </div>
     </div>
+    <div class="tools-gap"></div>
     <div id="tools-details">
       <div class="tools-container">
         <div class="tool">
+          <div class="tool-grade">1 класс</div>
           <img alt="tool-1" src="@/assets/tools/tool_1.png">
           <div class="tool-texts">
-            <div class="tool-title">«Старт» / «Прогресс»</div>
+            <div class="tool-title">«Старт»</div>
             <div class="tool-description">
-              От первых шагов к непрерывному прогрессу — тестирование по основным предметам
+              С первых шагов в школе — тестирование базовых навыков
             </div>
           </div>
           <div class="action">
-            <RouterLink to="/tools/start-progress">Подробнее</RouterLink>
+            <RouterLink to="/tools/start">Подробнее</RouterLink>
           </div>
         </div>
         <div class="tool">
+          <div class="tool-grade">4—8 классы</div>
           <img alt="tool-2" src="@/assets/tools/tool_2.png">
           <div class="tool-texts">
             <div class="tool-title">Мягкие навыки</div>
@@ -42,6 +45,7 @@
           </div>
         </div>
         <div class="tool">
+          <div class="tool-grade">6—10 классы</div>
           <img alt="tool-3" src="@/assets/tools/tool_3.png">
           <div class="tool-texts">
             <div class="tool-title">Цифровые компетенции</div>
@@ -56,18 +60,20 @@
       </div>
       <div class="tools-container">
         <div class="tool">
+          <div class="tool-grade">4 класс</div>
           <img alt="tool-4" src="@/assets/tools/tool_4.png">
           <div class="tool-texts">
-            <div class="tool-title">Социально-эмоциональные навыки</div>
+            <div class="tool-title">«Прогресс»</div>
             <div class="tool-description">
-              Оценка социальных и эмоциональных компетенций для поддержки учебного успеха и личностного развития
+              Измеряем продвижение в обучении — тестирование базовых грамотностей
             </div>
           </div>
           <div class="action">
-            <RouterLink to="/tools/social-skills">Подробнее</RouterLink>
+            <RouterLink to="/tools/progress">Подробнее</RouterLink>
           </div>
         </div>
         <div class="tool">
+          <div class="tool-grade">7—10 классы</div>
           <img alt="tool-5" src="@/assets/tools/tool_5.png">
           <div class="tool-texts">
             <div class="tool-title">Информационно-коммуникационная компетентность</div>
@@ -97,7 +103,7 @@
 
   #tools-main-img {
     background-image:
-      linear-gradient(to bottom, rgba(63, 179, 245, 0.4), rgba(63, 179, 245, 1)),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)),
       url('@/assets/photos/tools_main.jpg');
     width: 100%;
     min-width: 600px;
@@ -111,13 +117,14 @@
     top: 50%;
     -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-    color: var(--vt-c-white-soft);
+
   }
 
   #tools-main-img .text .title {
     font-weight: 900;
     font-size: 40px;
     line-height: 1.1;
+    color: var(--fas-blue);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   }
 
@@ -126,7 +133,14 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.3;
+    color: var(--vt-c-black-soft);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .tools-gap {
+    clear: left;
+    height: 60px;
+    background-color: white;
   }
 
   #tools-details {
@@ -142,11 +156,16 @@
     padding: 5px 0;
   }
 
+  .tools .tools-container:first-of-type {
+    padding-top: 80px;
+  }
+
   .tools .tools-container:last-of-type {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
 
   .tools .tools-container .tool {
+    position: relative;
     display: inline-block;
     width: 200px;
     margin: 0 5px;
@@ -175,6 +194,20 @@
 
   .tools .tools-container .tool img {
     width: 190px;
+  }
+
+  .tools .tools-container .tool .tool-grade {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    height: 20px;
+    line-height: 20px;
+    width: 70px;
+    background-color: var(--vt-c-white-soft);
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    font-weight: 600;
   }
 
   .tools .tools-container .tool .tool-texts {
@@ -251,6 +284,15 @@
       width: 280px;
     }
 
+    .tools .tools-container .tool .tool-grade {
+      top: 125px;
+      left: 15px;
+      height: 25px;
+      line-height: 25px;
+      width: 90px;
+      font-size: 12px;
+    }
+
     .tools .tools-container .tool .tool-texts {
       height: 160px;
     }
@@ -283,6 +325,14 @@
       margin: 0 10px;
       padding: 40px 10px 0 30px;
       font-size: 18px;
+    }
+
+    .tools .tools-container .tool .tool-grade {
+      top: 145px;
+      height: 30px;
+      line-height: 30px;
+      width: 100px;
+      font-size: 14px;
     }
 
     .tools .tools-container .tool img {

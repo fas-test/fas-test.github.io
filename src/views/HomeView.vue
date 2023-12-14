@@ -65,9 +65,14 @@
             <div class="triangle">
               <img alt="timer" src="@/assets/icons/timer.svg" />
             </div>
-            <span>Экономят силы и время учителя за счет автоматизации компьютерного оценивания. Опираются на доказательный
-            подход к образовательному и психологическому оцениванию.</span>
+            <span>Экономят силы и время учителя за счет автоматизации компьютерного оценивания</span>
           </div>
+          <div class="triangle-container">
+            <div class="triangle">
+              <img alt="timer" src="@/assets/icons/magnifier.svg" />
+            </div>
+            <span>Опираются на доказательный подход к образовательному и психологическому оцениванию</span>
+        </div>
       </div>
     </div>
   </div>
@@ -97,19 +102,19 @@
 }
 
 #home-main-img .text .title {
-  color: var(--fas-blue);
   font-weight: 900;
   font-size: 40px;
   line-height: 1.1;
+  color: var(--fas-blue);
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #home-main-img .text .description {
-  color: var(--vt-c-black-soft);
   padding: 40px 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.3;
+  color: var(--vt-c-black-soft);
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -187,21 +192,21 @@
 #home-tools .items .triangle-container {
   display: inline-block;
   text-align: center;
-  width: 150px;
+  width: 120px;
   font-size: 12px;
   line-height: 1.3;
 }
 
 #home-tools .items .triangle-container .triangle {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   background-image: url('@/assets/triangle.png');
   background-size: cover;
 }
 
 #home-tools .items .triangle-container .triangle img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: relative;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -250,25 +255,25 @@
   }
 
   #home-tools .items {
-    width: 960px;
+    width: 1000px;
     margin: 0 auto;
     padding-bottom: 80px;
   }
 
   #home-tools .items .triangle-container {
-    width: 240px;
+    width: 200px;
     font-size: 16px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   #home-tools .items .triangle-container .triangle {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   #home-tools .items .triangle-container .triangle img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 }
 
