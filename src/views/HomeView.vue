@@ -295,7 +295,4 @@
     font-size: 22px;
   }
 }
-
 </style>
-<script setup lang="ts">
-</script>

@@ -1,6 +1,11 @@
+<script setup lang="ts">
+  import StartViewGraph from "@/views/tools/StartViewGraph.vue";
+  import {RouterLink} from "vue-router";
+</script>
+
 <template>
-  <div class="start">
-    <div id="start-img-1">
+  <div class="page-container">
+    <div id="start-img" class="page-main-img">
       <div class="text">
         <div class="title">
           Инструмент
@@ -10,269 +15,104 @@
         </div>
       </div>
     </div>
-    <div id="start-details">
-      Первоклассники приходят в школу с разными знаниями и уровнем развития. <span class="bold">СТАРТ</span> оценивает
-      базовые навыки чтения и математики, когда ребенок только начинает знакомиться с ними, и когда он или она уже многое
-      умеет. Помимо этого, <span class="bold">СТАРТ</span> позволяет оценить пассивный словарный запас ребенка, а также
-      фонологическую грамотность и некоторые социально-эмоциональные навыки.
+    <div class="basic-container white-container">
+      Первоклассники приходят в школу с разными знаниями и уровнем развития. СТАРТ оценивает <span class="bold-text">базовые
+      навыки чтения и математики</span>, когда ребенок только начинает знакомиться с ними, и когда он или она уже многое умеет.
+      Помимо этого, СТАРТ позволяет оценить <span class="bold-text">пассивный словарный запас</span> ребенка, а также
+      <span class="bold-text">фонологическую грамотность</span> и некоторые <span class="bold-text">социально-эмоциональные навыки</span>.
     </div>
-    <div id="start-graph">
-      <div class="label">
-        Математика
+    <StartViewGraph/>
+    <div class="basic-container blue-container">
+      Учитель увидит зоны отставания и перспективы развития каждого ребенка, всего класса или параллели.<br>
+      С помощью СТАРТ возможно отслеживать динамику результатов и персонализировать обучение.<br>
+      Связь результатов нашего теста и успехов детей через несколько лет устойчива и значима — измерена в России для
+      нескольких тысяч младших школьников из разных городов.
+    </div>
+    <div class="split-container">
+      <div class="title">
+        Процедура<br>
+        оценивания
       </div>
-      <div class="item">
-        <div class="dot dot1"></div>
-      </div>
-      <div class="label">
-        Словарный запас
-      </div>
-      <div class="item">
-        <div class="dot dot2"></div>
-      </div>
-      <div class="label">
-        Фонематика
-      </div>
-      <div class="item">
-        <div class="dot dot3"></div>
-      </div>
-      <div class="label">
-        Чтение
-      </div>
-      <div class="item">
-        <div class="dot dot4"></div>
-      </div>
-      <div class="gap"></div>
-      <div class="label">
-        Следование правилам
-      </div>
-      <div class="item">
-        <div class="dot dot5"></div>
-      </div>
-      <div class="label">
-        Общение с учителем
-      </div>
-      <div class="item">
-        <div class="dot dot6"></div>
-      </div>
-      <div class="label">
-        Контроль эмоций
-      </div>
-      <div class="item">
-        <div class="dot dot7"></div>
-      </div>
-      <div class="label">
-        Концентрация внимание
-      </div>
-      <div class="item">
-        <div class="dot dot8"></div>
+      <div class="description">
+        Инструмент спроектирован как игра, чтобы избежать психологического напряжения. В каждом блоке задания идут от
+        простых к более сложным. Если ребенок ошибается, алгоритм переходит к оценке другого вида заданий. В середине теста —
+        несколько минут игровых физических упражнений. Это помогает отвлечься и снять усталость.<br><br>
+        Алгоритм внутри инструмента меняет задания, регулирует их сложность и озвучивает вопросы через голосового помощника
+        Анфису. Роль взрослого — вводить ответы ребенка на компьютере и похвалить ребенка в конце. Если учеба дистанционная,
+        вместо учителя тест могут провести родители. Если ребенок не хочет делать задания, устал или заплакал — на каждый
+        случай предусмотрены сценарии, как действовать взрослому.
       </div>
     </div>
-    <div id="start-legend">
-      <div>
-        БАЗОВАЯ ГРАМОТНОСТЬ
+    <div class="white-gap"></div>
+    <div class="basic-container blue-container">
+      <div class="title">
+        Обратная связь
       </div>
-      <div>
-        СОЦИАЛЬНО-<br>
-        ЭМОЦИОНАЛЬНЫЕ НАВЫКИ
+      По результатам оценки дается подробная обратная связь: для родителей и ребенка, для учителя (индивидуально для каждого
+      ребенка и для всего класса).
+      <div id="report-img-container">
+        <img alt="report-example" src="@/assets/tools/report_example.png">
+        <div>Пример отчета из личного кабинета</div>
+      </div>
+      СТАРТ-тестирование проводят в начале и завершении первого класса. Отследить динамику на большем отрезке времени помогают
+      его модификации: инструменты <span id="start-link"><RouterLink to="/tools/progress">ПРОГРЕСС</RouterLink></span> для середины и конца начальной школы.
+    </div>
+    <div class="white-gap"></div>
+    <div class="video-container">
+      <div class="video">
+        <iframe width="100%" height="100%"
+                src="https://www.youtube.com/embed/hrYvjiXtI88?si=jcDSmbm0nCj8aL07"
+                title="СТАРТ: проведение"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
       </div>
     </div>
   </div>
 </template>
 
 <style>
-  .start {
-    min-width: 600px;
-  }
-
-  #start-img-1 {
+  #start-img {
     background-image:
-        linear-gradient(to bottom, rgba(63, 179, 245, 0.4), rgba(63, 179, 245, 1)),
-        url('@/assets/photos/tools_main.jpg');
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 1)),
+        url('@/assets/photos/start_main.png');
+  }
+
+  #report-img-container {
     width: 100%;
-    min-width: 600px;
-    height: 500px;
-    background-size: cover;
+    text-align: center;
+    padding: 40px 0;
   }
 
-  #start-img-1 .text {
-    padding-left: 40px;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    color: var(--vt-c-white-soft);
+  #report-img-container img {
+    width: 500px;
   }
 
-  #start-img-1 .text .title {
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 1.1;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  #report-img-container div {
+    color: var(--vt-c-white);
+    font-weight: 400;
+    font-size: 18px;
   }
 
-  #start-img-1 .text .subtitle {
-    padding: 10px 0 40px;
-    font-weight: 900;
-    font-size: 60px;
-    line-height: 1.1;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  #start-link a {
+    border: 0;
+    border-bottom: 1px dotted var(--vt-c-white);
+    color: var(--vt-c-white);
   }
 
-  #start-details {
-    padding: 0 40px 40px;
-    background-color: var(--fas-blue);
-    color: var(--vt-c-white-soft);
-    font-size: 20px;
-    line-height: 1.3;
+  #start-link a:hover {
+    color: var(--vt-c-black-soft);
+    border-bottom: 1px dotted var(--vt-c-black-soft);
   }
 
-  #start-graph {
-    display: flex;
-    width: 600px;
-    min-width: 600px;
-    margin: 0 auto;
-    padding-top: 80px;
-    background-color: var(--vt-c-white);
-  }
-
-  #start-graph .label {
-    writing-mode: tb-rl;
-    transform: rotate(-180deg);
-    padding-left: 10px;
-    font-size: 20px;
-    font-weight: 600;
-    user-select: none;
-  }
-
-  #start-graph .label:not(:first-child) {
-    padding-right: 20px;
-  }
-
-  #start-graph .item {
-    height: 300px;
-    width: 10px;
-    background-color: var(--vt-c-divider-light-1);
-    border-radius: 10px;
-  }
-
-  #start-graph .item .dot {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: -10px;
-    position: absolute;
-  }
-
-  #start-graph .item .dot1 {
-    background-color: #87ab69;
-    margin-top: 140px;
-  }
-
-  #start-graph .item .dot2 {
-    background-color: #e19b9f;
-    margin-top: 40px;
-  }
-
-  #start-graph .item .dot3 {
-    background-color: #3f829d;
-    margin-top: 120px;
-  }
-
-  #start-graph .item .dot4 {
-    background-color: #ff9800;
-    margin-top: 160px;
-  }
-
-  #start-graph .item .dot5 {
-    background-color: #c83030;
-    margin-top: 180px;
-  }
-
-  #start-graph .item .dot6 {
-    background-color: #0f3f4c;
-    margin-top: 140px;
-  }
-
-  #start-graph .item .dot7 {
-    background-color: #dcae96;
-    margin-top: 170px;
-  }
-
-  #start-graph .item .dot8 {
-    background-color: #ffeb3b;
-    margin-top: 80px;
-  }
-
-  #start-graph .gap {
-    height: 300px;
-    width: 35px;
-  }
-
-  #start-legend {
-    display: flex;
-    width: 600px;
-    min-width: 600px;
-    margin: 0 auto;
-    padding: 30px 0 80px;
-    background-color: var(--vt-c-white);
-  }
-
-  #start-legend div {
-    width: 300px;
-    color: #87ab69;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 1;
-    padding-left: 8px;
-  }
-
-  #start-legend div:not(:first-child) {
-    padding-left: 30px;
+  @media (min-width: 768px) {
+    #report-img-container img {
+      width: 600px;
+    }
   }
 
   @media (min-width: 1024px) {
-    #start-img-1 {
-      height: 600px;
-    }
-
-    #start-img-1 .text {
-      padding-left: 60px;
-    }
-
-    #start-img-1 .text .title {
-      font-size: 60px;
-    }
-
-    #start-img-1 .text .subtitle {
-      font-size: 80px;
-    }
-
-    #start-details {
-      padding: 0 60px 40px;
-      font-size: 24px;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    #start-img-1 {
-      height: 800px;
-    }
-
-    #start-img-1 .text {
-      padding-left: 120px;
-    }
-
-    #start-img-1 .text .title {
-      font-size: 80px;
-    }
-
-    #start-img-1 .text .subtitle {
-      font-size: 100px;
-    }
-
-    #start-details {
-      padding: 0 120px 80px;
-      font-size: 30px;
+    #report-img-container img {
+      width: 800px;
     }
   }
 </style>
