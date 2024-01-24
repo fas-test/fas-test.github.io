@@ -28,8 +28,8 @@ const scrollToEl = (elId: string) => {
         </div>
       </div>
     </div>
-    <div id="our-mission">
-      <div class="name">
+    <div id="our-mission" class="split-container">
+      <div class="title">
         Наша<br>
         миссия
       </div>
@@ -53,33 +53,31 @@ const scrollToEl = (elId: string) => {
         </p>
       </div>
     </div>
-    <div class="about-gap"></div>
-    <div id="our-mission-2">
-      <div class="description">
-        <p>
-          <span class="bold">Формирующая обратная связь</span><br>
-          Мы оперативно предоставляем подробную индивидуальную обратную связь по каждому ученику — ему самому и родителям.
-          Далее, мы собираем эту обратную связь также в простом виде на уровне класса — для учителя. Затем, мы формируем
-          отчет для администратора образовательной организации, облегчая принятие управленческих решений.
-        </p>
-        <p>
-          <span class="bold">Измерение образовательного прогресса</span><br>
-          Для наших линеек инструментов мы выстраиваем единую шкалу, позволяя отслеживать прогресс каждого ученика сквозь
-          время. Только единицы инструментов измерения в мире позволяют отслеживать рост компетенций учеников, потому что
-          это требует специальных психометрических техник и математического моделирования.
-        </p>
-        <p>
-          <span class="bold">Стандарты качества наших продуктов</span><br>
-          Мы руководствуемся стандартами образовательного и психологического тестирования от ведущих психометрических
-          организаций в мире: <a target="_blank" href="https://www.apa.org/science/programs/testing/standards">Американской
-          Ассоциации Исследований в Образовании, Национального Совета по Образовательным Измерениям, и Американской
-          Психологической Ассоциации</a>; <a target="_blank" href="https://www.intestcom.org/page/28">Международной Тестовой
-          Комиссии</a>; <a target="_blank" href="https://www.efpa.eu/sites/default/files/2023-06/110c_EFPA_BOA_TEST_REVIEW_MODEL_version426.pdf">
-          Европейской Федерации Психологических Ассоциаций</a>; <a target="_blank" href="https://aea-europe.net/standards-for-assessment/">
-          Ассоциации Образовательного Оценивания в Европе</a>. Наши инструменты проходят валидизацию, включая изучение
-          надежности, качества обратной связи, и гендерной и национальной справедливости.
-        </p>
-      </div>
+    <div class="white-gap"></div>
+    <div class="basic-container soft-white-container">
+      <div class="title">Формирующая обратная связь</div>
+      <p>
+        Мы оперативно предоставляем подробную индивидуальную обратную связь по каждому ученику — ему самому и родителям.
+        Далее, мы собираем эту обратную связь также в простом виде на уровне класса — для учителя. Затем, мы формируем
+        отчет для администратора образовательной организации, облегчая принятие управленческих решений.
+      </p>
+      <div class="title">Измерение образовательного прогресса</div>
+      <p>
+        Для наших линеек инструментов мы выстраиваем единую шкалу, позволяя отслеживать прогресс каждого ученика сквозь
+        время. Только единицы инструментов измерения в мире позволяют отслеживать рост компетенций учеников, потому что
+        это требует специальных психометрических техник и математического моделирования.
+      </p>
+      <div class="title">Стандарты качества наших продуктов</div>
+      <p>
+        Мы руководствуемся стандартами образовательного и психологического тестирования от ведущих психометрических
+        организаций в мире: <a class="inline-link" target="_blank" href="https://www.apa.org/science/programs/testing/standards">
+        Американской Ассоциации Исследований в Образовании, Национального Совета по Образовательным Измерениям, и Американской
+        Психологической Ассоциации</a>; <a class="inline-link" target="_blank" href="https://www.intestcom.org/page/28">
+        Международной Тестовой Комиссии</a>; <a class="inline-link" target="_blank" href="https://www.efpa.eu/sites/default/files/2023-06/110c_EFPA_BOA_TEST_REVIEW_MODEL_version426.pdf">
+        Европейской Федерации Психологических Ассоциаций</a>; <a class="inline-link" target="_blank" href="https://aea-europe.net/standards-for-assessment/">
+        Ассоциации Образовательного Оценивания в Европе</a>. Наши инструменты проходят валидизацию, включая изучение
+        надежности, качества обратной связи, и гендерной и национальной справедливости.
+      </p>
     </div>
 
     <div id="our-values">
@@ -150,7 +148,7 @@ const scrollToEl = (elId: string) => {
       </div>
     </div>
   </div>
-  <div class="about-gap"></div>
+  <div class="white-gap"></div>
   <div class="person">
     <div class="avatar">
       <div class="photo elena"></div>
@@ -169,7 +167,7 @@ const scrollToEl = (elId: string) => {
       индивидуального прогресса в обучении, межкультурной сопоставимости результатов тестирования.
     </div>
   </div>
-  <div class="about-gap"></div>
+  <div class="white-gap"></div>
   <div class="person">
     <div class="avatar">
       <div class="photo alina"></div>
@@ -186,7 +184,7 @@ const scrollToEl = (elId: string) => {
       а также вопросов отслеживания динамики образовательных достижений.
     </div>
   </div>
-  <div class="about-gap"></div>
+  <div class="white-gap"></div>
   <div class="person">
     <div class="avatar">
       <div class="photo svetlana"></div>
@@ -206,7 +204,7 @@ const scrollToEl = (elId: string) => {
       конструкты.
     </div>
   </div>
-  <div class="about-gap"></div>
+  <div class="white-gap"></div>
   <div class="person">
     <div class="avatar">
       <div class="photo denis"></div>
@@ -223,7 +221,7 @@ const scrollToEl = (elId: string) => {
       и психометрических моделей и моделей машинного обучения.
     </div>
   </div>
-  <div class="about-gap"></div>
+  <div class="white-gap"></div>
 </template>
 
 <style>
@@ -350,52 +348,6 @@ const scrollToEl = (elId: string) => {
   cursor: pointer;
 }
 
-#our-mission {
-  padding: 40px 120px 0;
-}
-
-#our-mission .name {
-  color: var(--fas-blue);
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.1;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-}
-
-#our-mission .description {
-  color: var(--vt-c-black-soft);
-  padding-top: 40px;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-.about-gap {
-  clear: left;
-  height: 80px;
-  background-color: white;
-}
-
-#our-mission-2 {
-  min-width: 600px;
-  width: 100%;
-  background-color: var(--vt-c-white-soft);
-  color: var(--vt-c-black-soft);
-  padding: 80px 120px;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-#our-mission-2 .description p a {
-  border: 0;
-  border-bottom: 1px dotted var(--vt-c-black-soft);
-  color: var(--vt-c-black-soft);
-}
-
-#our-mission-2 .description p a:hover {
-  color: var(--fas-blue);
-  border-bottom: 1px dotted var(--fas-blue);
-}
-
 #our-values {
   min-width: 600px;
   width: 100%;
@@ -479,11 +431,6 @@ const scrollToEl = (elId: string) => {
     height: 600px;
   }
 
-  #our-mission .name {
-    font-weight: 900;
-    font-size: 60px;
-  }
-
   #our-team .name {
     font-weight: 900;
     font-size: 60px;
@@ -546,23 +493,6 @@ const scrollToEl = (elId: string) => {
 @media (min-width: 1200px) {
   #about-main-img {
     height: 1000px;
-  }
-
-  #our-mission .name {
-    float: left;
-    width: 20%;
-  }
-
-  #our-mission .description {
-    padding-top: 0;
-    padding-left: 100px;
-    float: left;
-    width: 80%;
-    font-size: 22px;
-  }
-
-  #our-mission-2 .description {
-    font-size: 22px;
   }
 
   #our-team .name {
