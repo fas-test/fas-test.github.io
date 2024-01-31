@@ -50,7 +50,7 @@
       </div>
       По результатам оценки дается подробная обратная связь: для родителей и ребенка, для учителя (индивидуально для каждого
       ребенка и для всего класса).
-      <div id="report-img-container">
+      <div class="img-container">
         <img alt="report-example" src="@/assets/tools/report_example.png">
         <div>Пример отчета из личного кабинета</div>
       </div>
@@ -77,22 +77,6 @@
         url('@/assets/photos/start_main.png');
   }
 
-  #report-img-container {
-    width: 100%;
-    text-align: center;
-    padding: 40px 0;
-  }
-
-  #report-img-container img {
-    width: 500px;
-  }
-
-  #report-img-container div {
-    color: var(--vt-c-white);
-    font-weight: 400;
-    font-size: 18px;
-  }
-
   #start-link a {
     border: 0;
     border-bottom: 1px dotted var(--vt-c-white);
@@ -102,17 +86,5 @@
   #start-link a:hover {
     color: var(--vt-c-black-soft);
     border-bottom: 1px dotted var(--vt-c-black-soft);
-  }
-
-  @media (min-width: 768px) {
-    #report-img-container img {
-      width: 600px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    #report-img-container img {
-      width: 800px;
-    }
   }
 </style>
