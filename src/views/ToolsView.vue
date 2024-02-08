@@ -183,7 +183,7 @@
     display: inline-block;
     width: 200px;
     margin: 0 5px;
-    padding: 25px 0 0 15px;
+    padding: 40px 0 0 15px;
     font-size: 12px;
     line-height: 1.3;
     background-color: var(--fas-blue);
@@ -198,7 +198,7 @@
 
   .tools .tools-container .tool .tool-grade {
     position: absolute;
-    top: 80px;
+    top: 120px;
     left: 10px;
     height: 20px;
     line-height: 20px;
@@ -276,7 +276,7 @@
     .tools .tools-container .tool-transparent {
       width: 300px;
       margin: 0 10px;
-      padding: 25px 0 0 20px;
+      padding: 50px 0 0 20px;
       font-size: 16px;
     }
 
@@ -285,7 +285,7 @@
     }
 
     .tools .tools-container .tool .tool-grade {
-      top: 125px;
+      top: 170px;
       left: 15px;
       height: 25px;
       line-height: 25px;
@@ -323,12 +323,12 @@
     .tools .tools-container .tool-transparent {
       width: 350px;
       margin: 0 10px;
-      padding: 40px 10px 0 30px;
+      padding: 60px 10px 0 30px;
       font-size: 18px;
     }
 
     .tools .tools-container .tool .tool-grade {
-      top: 145px;
+      top: 200px;
       height: 30px;
       line-height: 30px;
       width: 100px;
