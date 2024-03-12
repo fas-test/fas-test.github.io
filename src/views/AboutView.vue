@@ -222,6 +222,20 @@ const scrollToEl = (elId: string) => {
     </div>
   </div>
   <div class="white-gap"></div>
+  <div class="person">
+    <div class="avatar">
+      <div class="photo irina"></div>
+      <div class="name">Ирина Брун, M.Sc.</div>
+      <div class="position">Coordinator, test developer</div>
+    </div>
+    <div class="bio">
+      Ирина Брун, магистр психометрики, бакалавр социологии. Больше 10 лет в психометрике, из них 4 года в оценке персонала.
+      7 лет преподавала курс по разработке тестов в магистратуре. Вывела на рынок 10+ тестов на измерение различных конструктов,
+      включая Soft Skills и 21st Century Skills. Основная специализация - проектирование дизайна теста под запрос заказчика
+      и разработка тестовых материалов.
+    </div>
+  </div>
+  <div class="white-gap"></div>
 </template>
 
 <style>
@@ -249,6 +263,9 @@ const scrollToEl = (elId: string) => {
 }
 .person .avatar .svetlana {
   background-image: url('@/assets/people/svetlana.jpg');
+}
+.person .avatar .irina {
+  background-image: url('@/assets/people/irina.jpg');
 }
 .person .avatar .name {
   padding-top: 10px;

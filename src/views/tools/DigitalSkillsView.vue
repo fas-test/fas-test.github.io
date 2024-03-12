@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import {reactive} from "vue";
+import { reactive } from "vue";
 
 const textBlocks = reactive({
   developingLevel: false,
@@ -18,6 +18,9 @@ const textBlocks = reactive({
         </div>
         <div class="subtitle">
           DIGLIT
+        </div>
+        <div class="description">
+          Цифровые компетенции
         </div>
       </div>
     </div>
@@ -102,7 +105,7 @@ const textBlocks = reactive({
       <p>
         В результате тестирования определяется общий уровень цифровой грамотности обучающихся, исходя из трех возможных:
       </p>
-      <div id="shifted-div">
+      <div class="shifted-div">
         •	<span @click="textBlocks.developingLevel = !textBlocks.developingLevel" class="shifted-div-title">Развивающийся уровень</span>
           <span v-if="textBlocks.developingLevel"> ↖</span>
           <span v-else> ↘</span>
@@ -174,29 +177,5 @@ const textBlocks = reactive({
     background-image:
         linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 1)),
         url('@/assets/photos/digital_skills_main.jpeg');
-  }
-
-  #shifted-div {
-    padding: 20px 0 0 40px;
-  }
-
-  .shifted-div-title {
-    border: 0;
-    border-bottom: 1px dotted var(--vt-c-white);
-    color: var(--vt-c-white);
-  }
-
-  .shifted-div-title:hover {
-    cursor: pointer;
-    color: var(--vt-c-black-soft);
-    border-bottom: 1px dotted var(--vt-c-black-soft);
-  }
-
-  .shifted-div-details {
-    border-style: dotted;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px 0;
-    font-size: 18px;
   }
 </style>

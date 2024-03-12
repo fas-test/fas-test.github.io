@@ -7,6 +7,10 @@
           экспертизы<br>
           и консалтинга
         </div>
+        <div class="empty"></div>
+        <div class="action">
+          <RouterLink to="/contacts">Связаться с нами</RouterLink>
+        </div>
       </div>
     </div>
     <div class="white-gap"></div>

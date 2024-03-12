@@ -23,10 +23,10 @@ window.addEventListener('scroll', () => {
       </RouterLink>
       <div class="navigation">
         <nav>
-          <RouterLink to="/">Главная</RouterLink>
           <RouterLink to="/about">О нас</RouterLink>
           <RouterLink to="/tools">Наши инструменты</RouterLink>
           <RouterLink to="/consulting">Консалтинг</RouterLink>
+          <RouterLink to="/events">Мероприятия</RouterLink>
           <RouterLink to="/contacts">Контакты</RouterLink>
         </nav>
       </div>
@@ -51,10 +51,12 @@ window.addEventListener('scroll', () => {
             <RouterLink to="/about">О нас</RouterLink>
             <RouterLink to="/tools">Наши инструменты</RouterLink>
             <RouterLink to="/consulting">Консалтинг</RouterLink>
+            <RouterLink to="/events">Мероприятия</RouterLink>
             <RouterLink to="/contacts">Контакты</RouterLink>
           </div>
         </div>
       </div>
+      <div class="footer-privacy"><RouterLink to="/privacy">Политика конфиденциальности</RouterLink></div>
       <div class="footer-copyright">© Future Assessment Service 2023. Все права защищены</div>
     </footer>
 
@@ -67,14 +69,14 @@ window.addEventListener('scroll', () => {
 <style scoped>
 header {
   width: 100%;
-  padding: 20px 40px 20px 120px;
+  padding: 20px 40px 20px 60px;
   height: 119px;
   overflow: hidden;
 }
 
 footer {
   width: 100%;
-  padding: 40px 120px 20px;
+  padding: 40px 60px 20px;
   background-color: var(--vt-c-black-soft);
   color: var(--vt-c-white-mute);
 }
@@ -92,7 +94,7 @@ footer {
 .menu-items a {
   border-width: 0;
   font-size: 16px;
-  color: #c0c0c0;
+  color: var(--vt-c-text-dark-2);
 }
 
 .menu-items a.router-link-exact-active {
@@ -100,10 +102,27 @@ footer {
   cursor: default;
 }
 
-.footer-copyright {
+.footer-privacy {
   padding-top: 60px;
   clear: left;
-  color: #c0c0c0;
+}
+
+.footer-privacy a {
+  color: var(--vt-c-text-dark-2);
+  cursor: pointer;
+  border-top: none;
+  border-right: none;
+  border-bottom: 2px dotted;
+  border-left: none;
+}
+
+.footer-privacy a:hover {
+  color: var(--fas-blue);
+}
+
+.footer-copyright {
+  padding-top: 5px;
+  color: var(--vt-c-text-dark-2);
 }
 
 .footer-subheader {
@@ -181,5 +200,15 @@ nav a {
   width: 50px;
   height: 50px;
   filter: invert(99%) sepia(3%) saturate(47%) hue-rotate(157deg) brightness(114%) contrast(95%);
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding-left: 120px;
+  }
+
+  footer {
+    padding: 40px 120px 20px;
+  }
 }
 </style>
