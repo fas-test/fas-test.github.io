@@ -15,6 +15,9 @@
     </div>
     <div class="white-gap"></div>
     <div class="basic-container blue-container">
+      <div class="mid-title">
+        Мы поможем вам определить, какой тест будет наиболее полезен для решения ваших задач, и разработаем его по международным стандартам
+      </div>
       <div class="container-with-blocks">
         <div class="consulting-block block">
           <div class="consulting-block-dot"></div>
@@ -60,6 +63,20 @@
           </div>
         </div>
       </div>
+      <div class="container-with-blocks">
+        <div class="consulting-block block">
+          <div class="consulting-block-dot"></div>
+          <div class="consulting-block-title">
+            РАЗРАБОТКА ТЕСТА ПОД ЗАПРОСЫ ЗАКАЗЧИКА
+          </div>
+          <div class="consulting-block-description">
+            Спроектируем дизайн измерительного инструмента, который позволит ответить на вопросы заказчика; разработаем
+            тест и всю сопроводительную документацию в соответствии с международными стандартами по разработке тестов;
+            спланируем валидизацию теста; проведем валидизационные исследования в соответствии со стандартами
+          </div>
+        </div>
+        <div class="consulting-block transparent-block"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -81,6 +98,9 @@
     height: 20px;
     background-color: var(--fas-blue);
     border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+            box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
   }
 
   .consulting-block .consulting-block-title {
@@ -89,6 +109,7 @@
     font-size: 16px;
     font-weight: 500;
     height: 90px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   }
 
   .consulting-block .consulting-block-description {

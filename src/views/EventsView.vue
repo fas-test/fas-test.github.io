@@ -1,11 +1,134 @@
+<script setup lang="ts">
+
+import { reactive } from "vue";
+
+const faqs = reactive({
+  faq1: false,
+  faq2: false,
+  faq3: false,
+  faq4: false,
+  faq5: false,
+  faq6: false,
+  faq7: false,
+  faq8: false
+});
+</script>
+
 <template>
-  <div class="events">
-    Мероприятия
+  <div class="page-container">
+    <div id="events-img" class="page-main-img">
+      <div class="text">
+        <div class="title">
+          Олимпиада<br>
+          школьников по<br>
+          цифровой грамотности
+        </div>
+        <div class="empty"></div>
+        <div class="action">
+          <RouterLink to="/contacts">Связаться с нами</RouterLink>
+        </div>
+      </div>
+    </div>
+    <div class="split-container">
+      <div class="title">
+        Об<br>
+        Олимпиаде
+      </div>
+      <div class="description">
+        •	Компьютерное оценивание<br>
+        •	4 игровых тестовых задания на цифровую грамотность<br>
+        •	5 коротких заданий на оценку устройчивости и концентрации внимания<br>
+        •	Реалистичные и интересные задания: симуляторы интернета, мессенджеров, текстовых редакторов и др.<br>
+        •	Время тестирования — 70-90 минут<br><br>
+        Пример задания:<br><br>
+        <img id="task-example" alt="task-example" src="@/assets/photos/task_example.png">
+      </div>
+    </div>
+    <div class="white-gap"></div>
+    <div class="split-container">
+      <div class="title">
+        Результаты<br>
+        Олимпиады
+      </div>
+      <div class="description">
+        •	Индивидуальный отчет ученика по уровню цифровой грамотности<br>
+        •	Групповой отчет по школе<br>
+        •	Информация для родителей о цифровых навыках своих детей<br>
+        •	Основа для построения стратегии школы по развитию цифровых навыков учеников<br>
+        •	Опыт учеников решения тестовых заданий сценарного типа, похожих на задания международных исследований (PISA, TIMSS и др.)<br>
+      </div>
+    </div>
+    <div class="white-gap"></div>
+    <div class="basic-container blue-container">
+      <div class="title">
+        Часто задаваемые вопросы
+      </div>
+      <div class="description">
+
+        •	<span @click="faqs.faq1 = !faqs.faq1" class="shifted-div-title">Сколько стоит участие в Олимпиаде?</span>
+        <span v-if="faqs.faq1"> ↖</span>
+        <span v-else> ↘</span>
+        <br>
+        <div v-if="faqs.faq1" class="shifted-div-details">В 2024 году участие для всех беслатное</div>
+
+        •	<span @click="faqs.faq2 = !faqs.faq2" class="shifted-div-title">Кто может принять участие в Олимпиаде?</span>
+        <span v-if="faqs.faq2"> ↖</span>
+        <span v-else> ↘</span>
+        <br>
+        <div v-if="faqs.faq2" class="shifted-div-details">Русскоязычные ученики 7-8 класса, которые учатся в школах за пределами РФ</div>
+
+        •	<span @click="faqs.faq3 = !faqs.faq3" class="shifted-div-title">Когда проходит Олимпиада?</span>
+        <span v-if="faqs.faq3"> ↖</span>
+        <span v-else> ↘</span>
+        <br>
+        <div v-if="faqs.faq3" class="shifted-div-details">23-25 апреля 2024 года</div>
+
+        •	<span @click="faqs.faq4 = !faqs.faq4" class="shifted-div-title">Как проходит Олимпиада?</span>
+        <span v-if="faqs.faq4"> ↖</span>
+        <span v-else> ↘</span>
+        <br>
+        <div v-if="faqs.faq4" class="shifted-div-details">Олимпиада проходит онлайн, для прохождения необходим компьютер
+        со стабильным доступом в интернет</div>
+
+        •	<span @click="faqs.faq5 = !faqs.faq5" class="shifted-div-title">Как принять участие в Олимпиаде?</span>
+        <span v-if="faqs.faq5"> ↖</span>
+        <span v-else> ↘</span>
+        <br>
+        <div v-if="faqs.faq5" class="shifted-div-details">Зарегистрируйтесь на участие и ждите информации от администаторов</div>
+
+        •	<span @click="faqs.faq6 = !faqs.faq6" class="shifted-div-title">Что необходимо для прохождения Олимпиады?</span>
+        <span v-if="faqs.faq6"> ↖</span>
+        <span v-else> ↘</span>
+        <br>
+        <div v-if="faqs.faq6" class="shifted-div-details">Для прохождения Олимпиады необходим компьютер с доступом в интернет и мышью</div>
+
+        •	<span @click="faqs.faq7 = !faqs.faq7" class="shifted-div-title">Какие знания должен иметь ученик для прохождения Олимпиады?</span>
+        <span v-if="faqs.faq7"> ↖</span>
+        <span v-else> ↘</span>
+        <br>
+        <div v-if="faqs.faq7" class="shifted-div-details">Никакие специальные предментные знания для прохождения Олимпиады не нужны.
+        Задания составлены на основании жизненных ситуаций, а не предметных знаний учеников</div>
+
+        •	<span @click="faqs.faq8 = !faqs.faq8" class="shifted-div-title">Какие документы получит школа и ученики?</span>
+        <span v-if="faqs.faq8"> ↖</span>
+        <span v-else> ↘</span>
+        <br>
+        <div v-if="faqs.faq8" class="shifted-div-details">Ученики получат индивидуальные отчеты об уровне цифровой грамотности.
+        Школы получат групповые отчеты с указанием уровня цифровой грамотности учеников, в том числе в сравнении с другими школами</div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style>
-.events {
-  padding: 40px 120px;
-}
+  #events-img {
+    background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)),
+        url('@/assets/photos/events_main.jpeg');
+  }
+
+  #task-example {
+    width: 100%;
+    max-width: 1000px;
+  }
 </style>

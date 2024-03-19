@@ -95,7 +95,6 @@
   @media (min-width: 1024px) {
     #home-items {
       width: 1000px;
-      margin: 0 auto;
       padding-bottom: 80px;
     }
   }

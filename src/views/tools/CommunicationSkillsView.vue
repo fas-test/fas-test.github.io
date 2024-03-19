@@ -7,7 +7,7 @@ const textBlocks = reactive({
   lowLevel: false,
   baseLevel: false,
   highLevel: false,
-  advancedLevel: false,
+  advancedLevel: false
 });
 </script>
 
