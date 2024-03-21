@@ -64,9 +64,8 @@
   .contacts .inner-container .contacts-container .contacts-inner-container {
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
   }
 
   .contacts .inner-container .contacts-container .contacts-inner-container .icon {
