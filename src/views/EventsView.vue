@@ -29,6 +29,11 @@ const faqs = reactive({
         </div>
       </div>
     </div>
+    <div class="basic-container">
+      <div class="mid-title">
+        Проверь готовность к жизни в XXI веке!
+      </div>
+    </div>
     <div class="split-container">
       <div class="title">
         Об<br>
@@ -45,6 +50,22 @@ const faqs = reactive({
       </div>
     </div>
     <div class="white-gap"></div>
+    <div class="basic-container blue-container">
+      <div class="title">
+        Почему олимпиада по цифровой грамотности?
+      </div>
+      <div class="description">
+        <p>
+          Цифровая грамотность — ключ к образованию и развитию в современном мире. Благодаря цифровой грамотности мы можем
+          учиться на протяжении всей жизни, не ограничиваясь лишь школьной или университетской программой. В современном
+          обществе цифровая грамотность становится неотъемлемой частью нашей жизни и позволяет нам адаптироваться к новым
+          условиям и успешно справляться с вызовами цифрового мира.
+        </p>
+        <p>
+          Узнать подробную информацию про тест Цифровой Грамотности вы можете <RouterLink class="inline-link-contrast" to="/tools/digital-skills">здесь</RouterLink>.
+        </p>
+      </div>
+    </div>
     <div class="split-container">
       <div class="title">
         Результаты<br>
