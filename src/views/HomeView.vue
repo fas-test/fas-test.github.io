@@ -81,7 +81,7 @@
         измерения
       </div>
     </div>
-    <div id="home-items-container">
+    <div class="very-basic-blue-container">
       <div id="home-items">
         <HomeItemView
             icon="eye"
@@ -115,18 +115,11 @@
       url('@/assets/photos/home_main.jpeg');
   }
 
-  #home-items-container {
-    width: 100%;
-    background-color: var(--fas-blue);
-    color: var(--vt-c-white);
-  }
-
   #home-items {
     display: flex;
     width: 600px;
     min-width: 600px;
     margin: 0 auto;
-    padding-bottom: 40px;
   }
 
   #home-overlay {
@@ -251,7 +244,6 @@
   @media (min-width: 1024px) {
     #home-items {
       width: 1000px;
-      padding-bottom: 80px;
     }
   }
 </style>

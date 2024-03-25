@@ -127,14 +127,12 @@ a {
   line-height: 1.3;
 }
 
-.basic-container .mid-title {
+.very-basic-blue-container {
+  min-width: 600px;
   width: 100%;
-  text-align: center;
-  color: var(--fas-blue);
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.1;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  background-color: var(--fas-blue);
+  color: var(--vt-c-white);
+  padding-bottom: 40px;
 }
 
 .basic-container p:not(:first-of-type) {
@@ -179,6 +177,17 @@ a {
   padding-bottom: 40px;
 }
 
+.blue-container .title-no-padding {
+  width: 100%;
+  text-align: center;
+  color: var(--vt-c-white);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0;
+}
+
 .blue-container .mid-title {
   width: 100%;
   text-align: center;
@@ -187,7 +196,6 @@ a {
   font-size: 25px;
   line-height: 1.1;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-  padding-bottom: 40px;
 }
 
 .blue-container .subtitle {
@@ -374,12 +382,12 @@ a {
     font-size: 50px;
   }
 
-  .basic-container .mid-title {
+  .blue-container .title {
     font-weight: 900;
     font-size: 50px;
   }
 
-  .blue-container .title {
+  .blue-container .title-no-padding {
     font-weight: 900;
     font-size: 50px;
   }
@@ -476,6 +484,10 @@ a {
     font-size: 26px;
   }
 
+  .very-basic-blue-container {
+    padding-bottom: 80px;
+  }
+
   .basic-container p:not(:first-of-type) {
     padding-top: 15px;
   }
@@ -487,7 +499,6 @@ a {
   .blue-container .mid-title {
     font-weight: 700;
     font-size: 35px;
-    padding-bottom: 80px;
   }
 
   .split-container {

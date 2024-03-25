@@ -18,6 +18,8 @@
       <div class="mid-title">
         Мы поможем вам определить, какой тест будет наиболее полезен для решения ваших задач, и разработаем его по международным стандартам
       </div>
+    </div>
+    <div class="very-basic-blue-container">
       <div class="container-with-blocks">
         <div class="consulting-block block">
           <div class="consulting-block-dot"></div>

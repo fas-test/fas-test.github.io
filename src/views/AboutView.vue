@@ -250,6 +250,10 @@ const scrollToEl = (elId: string) => {
     padding-bottom: 40px;
   }
 
+  .about-items:last-of-type {
+    padding-bottom: 0;
+  }
+
   .person .avatar .denis {
     background-image: url('@/assets/people/denis.png');
   }
@@ -269,10 +273,6 @@ const scrollToEl = (elId: string) => {
   @media (min-width: 1024px) {
     .about-items {
       width: 720px;
-    }
-
-    .about-items:last-of-type {
-      padding-bottom: 80px;
     }
   }
 </style>

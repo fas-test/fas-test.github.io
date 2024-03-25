@@ -25,12 +25,12 @@ const faqs = reactive({
         </div>
         <div class="empty"></div>
         <div class="action">
-          <RouterLink to="/contacts">Связаться с нами</RouterLink>
+          <a target="_blank" href="https://forms.gle/WNXSNypUb954xo3NA">Зарегистрироваться</a>
         </div>
       </div>
     </div>
-    <div class="basic-container">
-      <div class="mid-title">
+    <div class="basic-container blue-container">
+      <div class="title-no-padding">
         Проверь готовность к жизни в XXI веке!
       </div>
     </div>
