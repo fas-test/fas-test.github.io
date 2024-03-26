@@ -15,8 +15,9 @@
       <div id="home-overlay-banner">
         <div id="home-overlay-close" @click="hideOverlay">✖</div>
         <div class="overlay-title">
-          Олимпиада школьников<br>
-          по Цифровой Грамотности
+          Олимпиада по<br>
+          цифровой грамотности<br>
+          школьников 13-15 лет
         </div>
         <div class="overlay-description">
           •	Бесплатное участие<br>

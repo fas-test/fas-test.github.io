@@ -19,11 +19,13 @@ const faqs = reactive({
     <div id="events-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Олимпиада<br>
-          школьников по<br>
-          цифровой грамотности
+          Олимпиада по<br>
+          цифровой грамотности<br>
+          школьников 13-15 лет
         </div>
-        <div class="empty"></div>
+        <div class="description">
+          23-25 апреля 2024 г.
+        </div>
         <div class="action">
           <a target="_blank" href="https://forms.gle/WNXSNypUb954xo3NA">Зарегистрироваться</a>
         </div>
