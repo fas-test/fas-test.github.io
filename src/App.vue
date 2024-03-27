@@ -52,14 +52,14 @@ window.addEventListener('resize', () => {
 
     <footer>
       <div class="footer-container">
-        <div class="footer-subcontainer">
+        <!--div class="footer-subcontainer">
           <div class="footer-subheader">Наши соцсети</div>
           <div class="footer-social">
             <img alt="instagram" src="@/assets/icons/instagram.svg" />
             <img alt="facebook" src="@/assets/icons/facebook.svg" />
             <img alt="twitter" src="@/assets/icons/twitter.svg" />
           </div>
-        </div>
+        </div-->
         <div class="footer-subcontainer">
           <div class="footer-subheader">Меню</div>
           <div class="menu-items">
@@ -73,7 +73,7 @@ window.addEventListener('resize', () => {
         </div>
       </div>
       <div class="footer-privacy"><RouterLink to="/privacy">Политика конфиденциальности</RouterLink></div>
-      <div class="footer-copyright">© Future Assessment Service 2023. Все права защищены</div>
+      <div class="footer-copyright">© Future Assessment Service 2023-2024. Все права защищены</div>
     </footer>
 
     <div v-show="!isTopOfPage" class="to-the-top" @click="scrollToTop">
