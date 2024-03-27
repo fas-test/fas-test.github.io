@@ -88,7 +88,9 @@ const textBlocks = reactive({
           <span class="bold-text">Контекст заданий</span>: реальный и фантастический.
         </p>
         <p>
-          Демо-тестирование можно посмотреть <a class="soft-skills-link" href="http://4kdev.hse.ru:1300/demo/69150db2295de887b03fc7e3a0e9eebb" target="_blank">здесь</a>.
+          Демо-тестирование можно посмотреть <a class="inline-link" href="https://youtu.be/DC7GwnPH6Vs" target="_blank">здесь</a>,
+          <a class="inline-link" href="https://youtu.be/hKRdn9fvYHs" target="_blank">здесь</a> и
+          <a class="inline-link" href="https://youtu.be/6IFdkusM0I0" target="_blank">здесь</a>.
         </p>
         <p>
           <span class="bold-text">Автоматическая обработка результатов</span> с «обратной связью» респонденту сразу после окончания тестирования.
@@ -181,17 +183,5 @@ const textBlocks = reactive({
     background-image:
       linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 1)),
       url('@/assets/photos/soft_skills_main.jpeg');
-  }
-
-  .soft-skills-link {
-    margin: 0;
-    border: 0;
-    border-bottom: 1px dotted var(--vt-c-black-soft);
-    color: var(--vt-c-black-soft);
-  }
-
-  .soft-skills-link:hover {
-    color: var(--fas-blue);
-    border-bottom: 1px dotted var(--fas-blue);
   }
 </style>

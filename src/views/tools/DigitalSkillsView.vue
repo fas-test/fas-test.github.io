@@ -85,7 +85,7 @@ const textBlocks = reactive({
           <span class="bold-text">Контекст заданий:</span> учебный (из школьной среды) и личный (задача из повседневной жизни вне школы).
         </p>
         <p>
-          Примеры заданий можно посмотреть <a class="inline-link" target="_blank" href="https://dl.hse.ru/demos">здесь</a>.
+          Пример задания можно посмотреть <a class="inline-link" target="_blank" href="https://youtu.be/Hb2kNUn7X6k">здесь</a>.
         </p>
         <p>
           <span class="bold-text">Автоматическая обработка результатов</span> с «обратной связью» респонденту сразу после окончания
