@@ -11,7 +11,7 @@
 
 <template>
   <div class="page-container">
-    <div id="home-overlay">
+    <!--div id="home-overlay">
       <div id="home-overlay-banner">
         <div id="home-overlay-close" @click="hideOverlay">✖</div>
         <div class="overlay-title">
@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
     <div id="home-img" class="page-main-img">
       <div class="text">
         <div class="title">

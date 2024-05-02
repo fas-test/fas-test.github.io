@@ -23,12 +23,12 @@ const faqs = reactive({
           цифровой грамотности<br>
           школьников 13-15 лет
         </div>
-        <div class="description">
+        <!--div class="description">
           23-25 апреля 2024 г.
         </div>
         <div class="action">
           <a target="_blank" href="https://forms.gle/WNXSNypUb954xo3NA">Зарегистрироваться</a>
-        </div>
+        </div-->
       </div>
     </div>
     <div class="basic-container blue-container">
@@ -44,9 +44,8 @@ const faqs = reactive({
       <div class="description">
         •	Компьютерное оценивание<br>
         •	4 игровых тестовых задания на цифровую грамотность<br>
-        •	5 коротких заданий на оценку концентрации внимания<br>
         •	Реалистичные и интересные задания: симуляторы интернета, мессенджеров, текстовых редакторов и др.<br>
-        •	Время тестирования — 70-90 минут<br><br>
+        •	Время тестирования — 60 минут<br><br>
         Пример задания:<br><br>
         <img id="task-example" alt="task-example" src="@/assets/photos/task_example.gif">
       </div>
@@ -87,13 +86,13 @@ const faqs = reactive({
         Часто задаваемые вопросы
       </div>
       <div class="description">
-
+        <!--
         •	<span @click="faqs.faq1 = !faqs.faq1" class="shifted-div-title">Сколько стоит участие в Олимпиаде?</span>
         <span v-if="faqs.faq1"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="faqs.faq1" class="shifted-div-details">В 2024 году участие для всех беслатное</div>
-
+        -->
         •	<span @click="faqs.faq2 = !faqs.faq2" class="shifted-div-title">Кто может принять участие в Олимпиаде?</span>
         <span v-if="faqs.faq2"> ↖</span>
         <span v-else> ↘</span>
