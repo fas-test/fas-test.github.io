@@ -16,8 +16,8 @@
       <img v-else-if="'run' === icon" src="@/assets/icons/run.svg" :alt="icon" />
       <img v-else-if="'attention' === icon" src="@/assets/icons/attention.svg" :alt="icon" />
     </div>
-    <div class="triangle-title">{{ title }}</div>
-    <span>{{ label }}</span>
+    <div class="triangle-title">{{ $t(title) }}</div>
+    <span>{{ $t(label) }}</span>
   </div>
 </template>
 

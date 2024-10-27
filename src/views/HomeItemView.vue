@@ -14,7 +14,7 @@
       <img v-else-if="'timer' === icon" src="@/assets/icons/timer.svg" :alt="icon" />
       <img v-else-if="'magnifier' === icon" src="@/assets/icons/magnifier.svg" :alt="icon" />
     </div>
-    <span>{{ label }}</span>
+    <span>{{ $t(label) }}</span>
   </div>
 </template>
 

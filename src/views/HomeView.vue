@@ -37,17 +37,17 @@
     <div id="home-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Оцениваем<br>
-          настоящее.<br>
-          Строим будущее.
+          {{ $t('home.main.title1') }}<br>
+          {{ $t('home.main.title2') }}<br>
+          {{ $t('home.main.title3') }}
         </div>
         <div class="description">
-          Новое поколение<br>
-          инструментов оценивания<br>
-          сложных компетенций и навыков<br>
+          {{ $t('home.main.subTitle1') }}<br>
+          {{ $t('home.main.subTitle2') }}<br>
+          {{ $t('home.main.subTitle3') }}<br>
         </div>
         <div class="action">
-          <RouterLink to="/contacts">Связаться с нами</RouterLink>
+          <RouterLink to="/contacts">{{ $t('home.main.actionButton') }}</RouterLink>
         </div>
       </div>
     </div>
@@ -58,52 +58,26 @@
         Service
       </div>
       <div class="description">
-        <p>
-          Мы предоставляем инновационные решения на рынке образовательных и психологических измерений для учителей,
-          учеников, родителей и администраторов образовательных организаций.
-        </p>
-        <p>
-          Наша обратная связь дает валидную и надежную информацию для доказательных решений об образовательном маршруте.
-        </p>
-        <p>
-          Наши линейки инструментов оценивают образовательный прогресс и позволяют отслеживать, как изменяются способности
-          учеников во времени.
-        </p>
-        <p>
-          Наши инструменты измерения основаны на самых современных разработках в области психометрики и искусственного
-          интеллекта, а также последних открытий в психологии и науках об образовании.
-        </p>
+        <p>{{ $t('home.block1.part1') }}</p>
+        <p>{{ $t('home.block1.part2') }}</p>
+        <p>{{ $t('home.block1.part3') }}</p>
+        <p>{{ $t('home.block1.part4') }}</p>
       </div>
     </div>
     <div class="white-gap"></div>
     <div class="basic-container blue-container">
       <div class="title">
-        Наши инструменты<br>
-        измерения
+        {{ $t('home.block2.title1') }}<br>
+        {{ $t('home.block2.title2') }}
       </div>
     </div>
     <div class="very-basic-blue-container">
       <div id="home-items">
-        <HomeItemView
-            icon="eye"
-            label="Мониторят прогресс каждого ученика, класса или параллели"
-        />
-        <HomeItemView
-            icon="document"
-            label="Дают индивидуальные и конкретные рекомендации учителю, ученику и родителям"
-        />
-        <HomeItemView
-            icon="pen"
-            label="Помогают персонализировать обучение в реальности, а не на бумаге"
-        />
-        <HomeItemView
-            icon="timer"
-            label="Экономят силы и время учителя за счет автоматизации компьютерного оценивания"
-        />
-        <HomeItemView
-            icon="magnifier"
-            label="Опираются на доказательный подход к образовательному и психологическому оцениванию"
-        />
+        <HomeItemView icon="eye" label="home.block2.item1" />
+        <HomeItemView icon="document" label="home.block2.item2" />
+        <HomeItemView icon="pen" label="home.block2.item3" />
+        <HomeItemView icon="timer" label="home.block2.item4" />
+        <HomeItemView icon="magnifier" label="home.block2.item5" />
       </div>
     </div>
   </div>

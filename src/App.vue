@@ -28,23 +28,36 @@ window.addEventListener('resize', () => {
       </RouterLink>
       <div class="navigation">
         <nav>
-          <RouterLink to="/about">О нас</RouterLink>
-          <RouterLink to="/tools">Наши инструменты</RouterLink>
-          <RouterLink to="/consulting">Консалтинг</RouterLink>
-          <RouterLink to="/events">Мероприятия</RouterLink>
-          <RouterLink to="/contacts">Контакты</RouterLink>
+          <RouterLink to="/about">{{ $t('menu.aboutUs') }}</RouterLink>
+          <RouterLink to="/tools">{{ $t('menu.tools') }}</RouterLink>
+          <RouterLink to="/consulting">{{ $t('menu.consulting') }}</RouterLink>
+          <!--RouterLink to="/events">Мероприятия</RouterLink-->
+          <RouterLink to="/contacts">{{ $t('menu.contacts') }}</RouterLink>
+          <a v-if="$i18n.locale == 'ru'" @click="$i18n.locale = 'en'">
+            → EN
+          </a>
+          <a v-if="$i18n.locale == 'en'" @click="$i18n.locale = 'ru'">
+            → РУ
+          </a>
         </nav>
         <div id="mobile-nav-icon">
           <img @click="menu.isOpen=!menu.isOpen" alt="hamburger-menu" src="@/assets/icons/hamburger.svg" />
           <div class="mobile-nav" v-if="menu.isOpen">
-            <RouterLink @click="menu.isOpen=false" to="/">Главная</RouterLink><br>
-            <RouterLink @click="menu.isOpen=false" to="/about">О нас</RouterLink><br>
-            <RouterLink @click="menu.isOpen=false" to="/tools">Наши инструменты</RouterLink><br>
-            <RouterLink @click="menu.isOpen=false" to="/consulting">Консалтинг</RouterLink><br>
-            <RouterLink @click="menu.isOpen=false" to="/events">Мероприятия</RouterLink><br>
-            <RouterLink @click="menu.isOpen=false" to="/contacts">Контакты</RouterLink>
+            <RouterLink @click="menu.isOpen=false" to="/">{{ $t('menu.home') }}</RouterLink><br>
+            <RouterLink @click="menu.isOpen=false" to="/about">{{ $t('menu.aboutUs') }}</RouterLink><br>
+            <RouterLink @click="menu.isOpen=false" to="/tools">{{ $t('menu.tools') }}</RouterLink><br>
+            <RouterLink @click="menu.isOpen=false" to="/consulting">{{ $t('menu.consulting') }}</RouterLink><br>
+            <!--RouterLink @click="menu.isOpen=false" to="/events">Мероприятия</RouterLink><br-->
+            <RouterLink @click="menu.isOpen=false" to="/contacts">{{ $t('menu.contacts') }}</RouterLink><br>
+            <a v-if="$i18n.locale == 'ru'" @click="$i18n.locale = 'en'">
+              → EN
+            </a>
+            <a v-if="$i18n.locale == 'en'" @click="$i18n.locale = 'ru'">
+              → РУ
+            </a>
           </div>
         </div>
+
       </div>
     </header>
 
@@ -61,19 +74,19 @@ window.addEventListener('resize', () => {
           </div>
         </div-->
         <div class="footer-subcontainer">
-          <div class="footer-subheader">Меню</div>
+          <div class="footer-subheader">{{ $t('menu.menu') }}</div>
           <div class="menu-items">
-            <RouterLink to="/">Главная</RouterLink>
-            <RouterLink to="/about">О нас</RouterLink>
-            <RouterLink to="/tools">Наши инструменты</RouterLink>
-            <RouterLink to="/consulting">Консалтинг</RouterLink>
-            <RouterLink to="/events">Мероприятия</RouterLink>
-            <RouterLink to="/contacts">Контакты</RouterLink>
+            <RouterLink to="/">{{ $t('menu.home') }}</RouterLink>
+            <RouterLink to="/about">{{ $t('menu.aboutUs') }}</RouterLink>
+            <RouterLink to="/tools">{{ $t('menu.tools') }}</RouterLink>
+            <RouterLink to="/consulting">{{ $t('menu.consulting') }}</RouterLink>
+            <!--RouterLink to="/events">Мероприятия</RouterLink-->
+            <RouterLink to="/contacts">{{ $t('menu.contacts') }}</RouterLink>
           </div>
         </div>
       </div>
-      <div class="footer-privacy"><RouterLink to="/privacy">Политика конфиденциальности</RouterLink></div>
-      <div class="footer-copyright">© Future Assessment Service 2023-2024. Все права защищены</div>
+      <div class="footer-privacy"><RouterLink to="/privacy">{{ $t('footer.privacyPolicy') }}</RouterLink></div>
+      <div class="footer-copyright">© Future Assessment Service 2023-2024. {{ $t('footer.allRightsReserved') }}</div>
     </footer>
 
     <div v-show="!isTopOfPage" class="to-the-top" @click="scrollToTop">

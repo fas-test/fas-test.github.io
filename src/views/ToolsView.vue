@@ -7,18 +7,18 @@
     <div id="tools-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Наши решения<br>
-          для измерения<br>
-          образовательных<br>
-          достижений
+          {{ $t('tools.main.title1') }}<br>
+          {{ $t('tools.main.title2') }}<br>
+          {{ $t('tools.main.title3') }}<br>
+          {{ $t('tools.main.title4') }}
         </div>
         <div class="description">
-          Путь к оценке успеха:<br>
-          инновационные подходы к измерению<br>
-          образовательных достижений
+          {{ $t('tools.main.subTitle1') }}<br>
+          {{ $t('tools.main.subTitle2') }}<br>
+          {{ $t('tools.main.subTitle3') }}
         </div>
         <div class="action">
-          <RouterLink to="/contacts">Связаться с нами</RouterLink>
+          <RouterLink to="/contacts">{{ $t('tools.main.actionButton') }}</RouterLink>
         </div>
       </div>
     </div>
@@ -26,32 +26,32 @@
     <div id="tools-details">
       <div class="tools-container">
         <ToolsItemView
-            grade="1 класс" title="«Старт»" label="start"
-            description="С первых шагов в школе — тестирование базовых навыков"
+            grade="tools.block1.grade" title="tools.block1.title" label="start"
+            description="tools.block1.description"
         />
         <ToolsItemView
-            grade="4—8 классы" title="Мягкие навыки" label="soft-skills"
-            description="Критическое мышление, креативность, коммуникация, кооперация"
+            grade="tools.block2.grade" title="tools.block2.title" label="soft-skills"
+            description="tools.block2.description"
         />
         <ToolsItemView
-            grade="6—10 классы" title="Цифровые компетенции" label="digital-skills"
-            description="Измерение навыков в цифровой области для успешной адаптации в современном мире технологий"
+            grade="tools.block3.grade" title="tools.block3.title" label="digital-skills"
+            description="tools.block3.description"
         />
       </div>
       <div class="tools-container">
         <ToolsItemView
-            grade="4 класс" title="«Прогресс»" label="progress"
-            description="Измеряем продвижение в обучении — тестирование базовых грамотностей"
+            grade="tools.block4.grade" title="tools.block4.title" label="progress"
+            description="tools.block4.description"
         />
         <ToolsItemView
-            grade="7—10 классы" title="Информационно-коммуникационная компетентность" label="communication-skills"
-            description="Способность работать с информацией в цифровой среде"
+            grade="tools.block5.grade" title="tools.block5.title" label="communication-skills"
+            description="tools.block5.description"
         />
         <div class="tool-transparent">
-          ✓ Все тесты проводятся на компьютерах школы<br><br>
-          ✓ Легко настраиваются, понятны учителю-пользователю<br><br>
-          ✓ Для ученика это игра — интересные сценарии вместо скучных вопросов<br><br>
-          ✓ Обратная связь сразу после теста: разные типы отчётов адаптированы под учителя, ученика и органы управления образованием<br><br>
+          ✓ {{ $t('tools.block6.part1') }}<br><br>
+          ✓ {{ $t('tools.block6.part2') }}<br><br>
+          ✓ {{ $t('tools.block6.part3') }}<br><br>
+          ✓ {{ $t('tools.block6.part4') }}<br><br>
         </div>
       </div>
     </div>

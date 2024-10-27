@@ -9,18 +9,18 @@
 
 <template>
   <div class="tool">
-    <div class="tool-grade">{{ grade }}</div>
+    <div class="tool-grade">{{ $t(grade) }}</div>
     <img v-if="'start' === label" src="@/assets/tools/tool_1.png" :alt="label" />
     <img v-else-if="'soft-skills' === label" src="@/assets/tools/tool_2.png" :alt="label" />
     <img v-else-if="'digital-skills' === label" src="@/assets/tools/tool_3.png" :alt="label" />
     <img v-else-if="'progress' === label" src="@/assets/tools/tool_4.png" :alt="label" />
     <img v-else-if="'communication-skills' === label" src="@/assets/tools/tool_5.png" :alt="label" />
     <div class="tool-texts">
-      <div class="tool-title">{{ title }}</div>
-      <div class="tool-description">{{ description }}</div>
+      <div class="tool-title">{{ $t(title) }}</div>
+      <div class="tool-description">{{ $t(description) }}</div>
     </div>
-    <div class="action">
-      <RouterLink :to="'/tools/' + label">Подробнее</RouterLink>
+    <div v-if="$i18n.locale == 'ru'" class="action">
+      <RouterLink :to="'/tools/' + label">{{ $t('tools.moreInfo') }}</RouterLink>
     </div>
   </div>
 </template>

@@ -3,20 +3,20 @@
     <div id="consulting-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Направления<br>
-          экспертизы<br>
-          и консалтинга
+          {{ $t('consulting.main.title1') }}<br>
+          {{ $t('consulting.main.title2') }}<br>
+          {{ $t('consulting.main.title3') }}
         </div>
         <div class="empty"></div>
         <div class="action">
-          <RouterLink to="/contacts">Связаться с нами</RouterLink>
+          <RouterLink to="/contacts">{{ $t('consulting.main.actionButton') }}</RouterLink>
         </div>
       </div>
     </div>
     <div class="white-gap"></div>
     <div class="basic-container blue-container">
       <div class="mid-title">
-        Мы поможем вам определить, какой тест будет наиболее полезен для решения ваших задач, и разработаем его по международным стандартам
+        {{ $t('consulting.block1.title') }}
       </div>
     </div>
     <div class="very-basic-blue-container">
@@ -24,22 +24,19 @@
         <div class="consulting-block block">
           <div class="consulting-block-dot"></div>
           <div class="consulting-block-title">
-            ЭКСПЕРТИЗА ИНСТРУМЕНТОВ ОЦЕНИВАНИЯ
+            {{ $t('consulting.block1.part1_1') }}
           </div>
           <div class="consulting-block-description">
-            Для образовательных и коммерческих организаций проводим психометрический анализ инструментов оценивания в образовании,
-            проверяем их на соответствие международным стандартам, даем экспертное заключение о качестве инструментов и рекомендации
-            по улучшению качества
+            {{ $t('consulting.block1.part1_2') }}
           </div>
         </div>
         <div class="consulting-block block">
           <div class="consulting-block-dot"></div>
           <div class="consulting-block-title">
-            ЭКСПЕРТНАЯ ПОМОЩЬ В РАЗРАБОТКЕ ИНСТРУМЕНТОВ ОЦЕНИВАНИЯ В ОБРАЗОВАНИИ
+            {{ $t('consulting.block1.part2_1') }}
           </div>
           <div class="consulting-block-description">
-            Обеспечиваем методическое и психометрическое сопровождение разработки инструментов оценивания в образовании: можем
-            сами разработать любой инструмент для вас, а можем помочь это сделать вам
+            {{ $t('consulting.block1.part2_2') }}
           </div>
         </div>
       </div>
@@ -47,21 +44,19 @@
         <div class="consulting-block block">
           <div class="consulting-block-dot"></div>
           <div class="consulting-block-title">
-            ИНДИВИДУАЛЬНЫЙ ОБРАЗОВАТЕЛЬНЫЙ ПРОГРЕСС УЧАЩИХСЯ
+            {{ $t('consulting.block1.part3_1') }}
           </div>
           <div class="consulting-block-description">
-            Оказываем консалтинговые услуги по измерению индивидуального прогресса в обучении по предметным и метапредметным
-            образовательным результатам, а также по другим психометрическим аспектам измерений в образовании
+            {{ $t('consulting.block1.part3_2') }}
           </div>
         </div>
         <div class="consulting-block block">
           <div class="consulting-block-dot"></div>
           <div class="consulting-block-title">
-            ОБУЧЕНИЕ МЕТОДИСТОВ И АНАЛИТИКОВ
+            {{ $t('consulting.block1.part4_1') }}
           </div>
           <div class="consulting-block-description">
-            По различным аспектам измерений в образовании проводим обучение на основе авторских методик дополнительного
-            профессионального образования (язык: русский / английский, формат: онлайн / офлайн)
+            {{ $t('consulting.block1.part4_2') }}
           </div>
         </div>
       </div>
@@ -69,12 +64,10 @@
         <div class="consulting-block block">
           <div class="consulting-block-dot"></div>
           <div class="consulting-block-title">
-            РАЗРАБОТКА ТЕСТА ПОД ЗАПРОСЫ ЗАКАЗЧИКА
+            {{ $t('consulting.block1.part5_1') }}
           </div>
           <div class="consulting-block-description">
-            Спроектируем дизайн измерительного инструмента, который позволит ответить на вопросы заказчика; разработаем
-            тест и всю сопроводительную документацию в соответствии с международными стандартами по разработке тестов;
-            спланируем валидизацию теста; проведем валидизационные исследования в соответствии со стандартами
+            {{ $t('consulting.block1.part5_2') }}
           </div>
         </div>
         <div class="consulting-block transparent-block"></div>

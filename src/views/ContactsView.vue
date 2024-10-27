@@ -1,14 +1,11 @@
 <template>
   <div class="contacts">
-    <h2>Контакты</h2>
-    <p>
-      Чтобы задать вопрос или обсудить детали вашего проекта, напишите нам
-    </p>
+    <h2>{{ $t('contacts.title') }}</h2>
+    <p>{{ $t('contacts.subTitle') }}</p>
     <div class="inner-container">
       <div class="avatar-container">
         <div class="avatar"></div>
-        <div class="label">Ирина Брун,</div>
-        <div>координатор</div>
+        <div class="label">{{ $t('contacts.name') }}</div>
       </div>
       <div class="contacts-container">
         <div class="contacts-inner-container">
@@ -17,9 +14,13 @@
             <a href="mailto:сontact@testfas.com">сontact@testfas.com</a>
           </div>
           <div>
+            <img class="icon" alt="email" src="@/assets/icons/email.svg" />
+            <a href="mailto:board@testfas.com">board@testfas.com</a>
+          </div>
+          <!--div>
             <img class="icon" alt="telegram" src="@/assets/icons/telegram.svg" />
             <a href="https://t.me/irinapsychometrics">@irinapsychometrics</a>
-          </div>
+          </div-->
         </div>
       </div>
     </div>
@@ -50,7 +51,7 @@
     height: 215px;
     background-size: cover;
     border-radius: 50%;
-    background-image: url('@/assets/people/irina.jpg');
+    background-image: url('@/assets/people/elena.jpg');
   }
 
   .contacts .inner-container .avatar-container .label {
@@ -95,3 +96,5 @@
     }
 }
 </style>
+<script setup lang="ts">
+</script>
