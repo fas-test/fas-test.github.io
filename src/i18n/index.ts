@@ -162,6 +162,7 @@ const i18n = createI18n({
           actionButton: 'Contact us',
         },
         moreInfo: 'More info',
+        tool: 'Instrument',
         block1: {
           grade: 'Grade 1',
           title: '“START”',
@@ -192,6 +193,146 @@ const i18n = createI18n({
           part2: 'Easy to set up, clear for teachers',
           part3: 'Engaging for students — interesting scenarios instead of boring tasks',
           part4: 'Immediate feedback after the test: various types of reports tailored for teachers, students, and educational authorities',
+        },
+        start: {
+          title: 'START',
+          block1: {
+            part1: 'First graders come to school differently prepared for it. START evaluates ',
+            part2: 'basic reading and math skills',
+            part3: ' when the child is just starting to learn them, as well as after they made some progress. In addition, START allows one to evaluate ',
+            part4: 'the child\'s passive vocabulary',
+            part5: ', ',
+            part6: 'phonological literacy',
+            part7: ' and ',
+            part8: 'socio-emotional skills'
+          },
+          block2: {
+            part1: 'The teacher will see underdeveloped areas and development prospects for each child and the entire class.',
+            part2: 'With START, it is possible to track the learning dynamics and personalize training.',
+            part3: 'The relationship between the results of our test and the children’s success in a few years is robust and significant — measured in Russia for several thousand primary school students from different regions.',
+          },
+          block3: {
+            title1: 'The assessment',
+            title2: 'procedure',
+            part1: 'The tool is designed as a game to avoid inducing stress. In each block, the tasks go from simple to more complex. If the child makes mistakes, the algorithm proceeds to administer another task type. In the '
+                 + 'middle of the test, there are several minutes of gamified physical exercises. It helps to distract and relieve fatigue.',
+            part2: 'The algorithm inside the tool changes tasks, adjusts their complexity and voices questions through the voice assistant. The adult\'s role is to enter the child\'s answers on the computer and support the child. '
+                 + 'In case of remote learning, parents can conduct the test instead of the teacher. If the child does not want to do tasks, is tired or crying – there are scenarios provided to adults for each case.',
+          },
+          block4: {
+            title: 'The feedback',
+            part1: 'According to the evaluation results, detailed feedback is given: for the parents and the child, for the teacher (individually about each child and about the entire class).',
+            part2: 'START-testing is carried out at the beginning and the end of the first grade. Its extensions help to track the dynamics over a longer period of time: ',
+            part3: 'PROGRESS',
+            part4: ' instruments for the middle and the end of elementary school.'
+          },
+        },
+        softSkills: {
+          title: '4C test',
+          subTitle: 'Soft skills',
+          block1: {
+            part1: 'Creativity, Critical thinking, Communication and Cooperation (4C) belong to the skills of the 21st century. These skills are necessary so that students can successfully '
+                 + 'adapt to the modern world and be successful: learn new things, critically evaluate information, work in a team and think outside the box. The ',
+            part2: '4C test',
+            part3: ' checks how these are formed, identifies deficits and helps set up a 4C skills development program.',
+            part4: 'The ',
+            part5: '4C test',
+            part6: ' instrument is implemented in the form of a computer testing system with an automated process for collecting, processing and evaluating results and is aimed at measuring '
+                 + 'communication skills, cooperation, critical thinking and creativity in schoolchildren from the fourth to the eighth grade.',
+          },
+          block2: {
+            part1: 'The ',
+            part2: '4C test',
+            part3: ' is developed using the Evidence-Centered Design, which is based on the development of observable evidence allowing to make a claim about the 4C skills level.',
+            part4: 'The tasks are formulated as story scenarios because they have higher authenticity than classical item formats as well as motivating students and ensuring high '
+                 + 'reliability of results. Some scenarios participants encounter in real life: planning a schedule for the next day, preparing for a school holiday; other scenarios '
+                 + 'are set up in a fantastic context, where participants enter the world of wizards and monsters, or become members of a space expedition.',
+          },
+          block3: {
+            title1: 'The assessment',
+            title2: 'procedure',
+            part1: 'The procedure for ',
+            part2: 'administering the remote testing is detailed',
+            part3: ' in the 4C guidelines.',
+            part4: '',
+            part5: '',
+            part6: 'Testing takes ',
+            part7: '40-90 minutes',
+            part8: ' to complete, depending on the selected set of tasks and the skills being evaluated.',
+            part9: 'The scenarios are not related to a domain-specific knowledge',
+            part10: ' and are designed to motivate and interest schoolchildren.',
+            part11: 'The scenarios simulate a wide range of digital technologies, including browsers, messengers, email interfaces, social networks, and text editors.',
+            part12: 'The 4C test automatically processes the results',
+            part13: ' and returns feedback to the respondent immediately after the testing has completed.',
+          },
+          block4: {
+            title: 'The feedback',
+            part1: 'As a result of testing, the overall level of each 4C skill is determined which can be:',
+            part2: 'Based on the test results, individual feedback is provided to the student and the parents, the teacher and the class, as well as a generalized report about the school.',
+            part3: 'The method of Evidence-Centred Design allows to identify the gaps in the 4C skillset prompting further improvement.',
+            levels: {
+              subTitle1: 'Critical Thinking',
+              subTitle2: 'Creativity',
+              subTitle3: 'Communication and Cooperation',
+              lev1: {
+                title: 'Developing level',
+                part1: 'A student at the developing level shows weak analytical skills: they do not always select relevant and reliable sources of information, struggle to '
+                     + 'identify which information from the text will help them to solve the given task, and as a result, the solutions they propose often do not align with the task requirements.',
+                part2: 'A student at the developing level of creativity tends to offer typical, expected, and non-original ideas. The ideas are generally vague, lacking in detail, and may not be fully thought through.',
+                part3: 'A student at the developing level does not demonstrate the ability to recognize others\' emotions or adapt their communication to the listener, their state, '
+                     + 'and the interaction context. This student might find it challenging to participate in teamwork, where achieving the best result requires listening to others\' opinions, '
+                     + 'sharing information and resources, and making decisions and acting collaboratively.',
+              },
+              lev2: {
+                title: 'Basic level',
+                part1: 'A student at the basic level of critical thinking is capable of analyzing information, identifying useful and important details, and avoiding unreliable sources. '
+                     + 'Also, the student formulates a correct solution to the problem that is viable and meets the task’s requirements.',
+                part2: 'At the basic level, the student’s ideas may be well-thought-out and detailed, but the ideas themselves are not new or unique. Conversely, if the idea is original '
+                     + 'and distinctive, it may lack detail and thorough development.',
+                part3: 'A student at the basic level of Communication and Cooperation may not always recognize the emotions of other team members or act with those emotions in mind. '
+                     + 'In teamwork, this student can share information but does not always make decisions or take actions that consider the opinions of teammates.',
+              },
+              lev3: {
+                title: 'Advanced level',
+                part1: 'A student at the advanced level of critical thinking is able to analyze materials and formulate an appropriate solution to the given problem. Such student can ask '
+                     + 'relevant questions and select sources that contain reliable information. When working with information sources, the student effectively identifies the information '
+                     + 'needed to solve the problem and uses it to draw accurate conclusions.',
+                part2: 'At the advanced level, a student has demonstrated the ability to generate new, interesting, and original ideas while completing the 4C test. They bring their ideas '
+                     + 'to fruition, providing all necessary details to create a fully realized concept.',
+                part3: 'A student at the advanced level demonstrates an understanding of others\' emotions and the ability to support and assist teammates during group work. In collaborative '
+                     + 'tasks, this student listens to team members\' opinions and adjusts their work and decisions based on those perspectives.',
+              },
+            },
+          },
+        },
+        progress: {
+          title: 'PROGRESS',
+          subTitle: 'Moving forward: see the dynamics of each child',
+          block1: {
+            part1: 'Testing using the ',
+            part2: 'START',
+            part3: ' instrument is conducted at the beginning and at the end of the child\'s first year of school. Its extensions – PROGRESS instruments for the middle and the end of '
+                 + 'elementary school – can track the dynamics in students’ abilities over a longer period of time.',
+            part4: 'The first years of school are very important for a child. Children’s achievements and dynamics in elementary school can predict their academic success in the end of '
+                 + 'secondary school. Therefore, it is important for teachers and parents to have reliable means of diagnosing and measuring students’ abilities in elementary school.',
+            part5: 'The PROGRESS instrument can measure a child\'s progress from basic letter recognition skills to their ',
+            part6: 'reading literacy',
+            part7: ', as well as from basic maths skills to ',
+            part8: 'mathematical literacy',
+          },
+          block2: {
+            title: 'The assessment procedure',
+            part1: 'Testing is divided into blocks; tasks progress from simple to complex. If the child makes several mistakes, then the adaptive algorithm inside the instrument changes '
+                 + 'the tasks, adjusting the content of the test.',
+            part2: 'Each child sits separately at their computer. A teacher in the classroom monitors safety and order in the classroom, as well as helps students cope with technical '
+                 + 'difficulties, if there are any.',
+            part3: 'The assessment of reading and literacy is carried out on different days. The duration of one test is about 40 minutes.',
+          },
+          block3: {
+            title1: 'The ',
+            title2: 'feedback',
+            part1: 'A detailed and personalized feedback is provided to the parents and the child, to the teacher (individually about each child and about the entire class).',
+          },
         },
       },
     },
@@ -350,6 +491,7 @@ const i18n = createI18n({
           actionButton: 'Связаться с нами',
         },
         moreInfo: 'Подробнее',
+        tool: 'Инструмент',
         block1: {
           grade: '1 класс',
           title: '«Старт»',
@@ -380,6 +522,159 @@ const i18n = createI18n({
           part2: 'Легко настраиваются, понятны учителю-пользователю',
           part3: 'Для ученика это игра — интересные сценарии вместо скучных вопросов',
           part4: 'Обратная связь сразу после теста: разные типы отчётов адаптированы под учителя, ученика и органы управления образованием',
+        },
+        start: {
+          title: 'СТАРТ',
+          block1: {
+            part1: 'Первоклассники приходят в школу с разными знаниями и уровнем развития. СТАРТ оценивает ',
+            part2: 'базовые навыки чтения и математики',
+            part3: ', когда ребенок только начинает знакомиться с ними, и когда он или она уже многое умеет. Помимо этого, СТАРТ позволяет оценить ',
+            part4: 'пассивный словарный запас',
+            part5: ' ребенка, а также ',
+            part6: 'фонологическую грамотность',
+            part7: ' и некоторые ',
+            part8: 'социально-эмоциональные навыки'
+          },
+          block2: {
+            part1: 'Учитель увидит зоны отставания и перспективы развития каждого ребенка, всего класса или параллели.',
+            part2: 'С помощью СТАРТ возможно отслеживать динамику результатов и персонализировать обучение.',
+            part3: 'Связь результатов нашего теста и успехов детей через несколько лет устойчива и значима — измерена в России для нескольких тысяч младших школьников из разных городов.',
+          },
+          block3: {
+            title1: 'Процедура',
+            title2: 'оценивания',
+            part1: 'Инструмент спроектирован как игра, чтобы избежать психологического напряжения. В каждом блоке задания идут от простых к более сложным. Если ребенок ошибается, '
+                 + 'алгоритм переходит к оценке другого вида заданий. В середине теста — несколько минут игровых физических упражнений. Это помогает отвлечься и снять усталость.',
+            part2: 'Алгоритм внутри инструмента меняет задания, регулирует их сложность и озвучивает вопросы через голосового помощника Анфису. Роль взрослого — вводить ответы ребенка '
+                 + 'на компьютере и похвалить ребенка в конце. Если учеба дистанционная, вместо учителя тест могут провести родители. Если ребенок не хочет делать задания, устал или '
+                 + 'заплакал — на каждый случай предусмотрены сценарии, как действовать взрослому.',
+          },
+          block4: {
+            title: 'Обратная связь',
+            part1: 'По результатам оценки дается подробная обратная связь: для родителей и ребенка, для учителя (индивидуально для каждого ребенка и для всего класса).',
+            part2: 'СТАРТ-тестирование проводят в начале и завершении первого класса. Отследить динамику на большем отрезке времени помогают его модификации: инструменты ',
+            part3: 'ПРОГРЕСС',
+            part4: ' для середины и конца начальной школы.'
+          },
+        },
+        softSkills: {
+          title: '4К-тест',
+          subTitle: 'Мягкие навыки',
+          block1: {
+            part1: 'Креативность, критическое мышление, коммуникация и кооперация (4К) относятся к навыкам 21 века. Их измерением занимаются авторитетные международные организации. '
+                 + 'Образовательные стандарты многих стран требует формировать образовательные результаты, связанные с нестандартным решением задач, умением работать в команде, '
+                 + 'видеть причины и следствия. ',
+            part2: '4К-тест',
+            part3: ' проверяет, как сформированы эти результаты, выявляет дефициты и помогает настроить программу развития навыков 4К у детей. Эти навыки необходимы, чтобы ученики '
+                 + 'могли успешно адаптироваться в современном мире и быть успешными: учиться новому, критически оценивать информацию, работать в команде и нестандартно решать задачи.',
+            part4: 'Инструмент ',
+            part5: '4К-тест',
+            part6: ' реализован в форме компьютерной системы тестирования с автоматизированным процессом сбора, обработки и оценки результатов и направлен на измерение навыков коммуникации, '
+                 + 'кооперации, критического мышления и креативности у школьников с четвертого по восьмой класс.',
+          },
+          block2: {
+            part1: 'Инструмент измерения ',
+            part2: '4К-тест',
+            part3: ' разработан на основе метода доказательной аргументации (Evidence-Centered Design), в основе которого заложена разработка наблюдаемых доказательств, позволяющих сделать '
+                 + 'вывод о сформированности измеряемых навыков 4К.',
+            part4: 'В качестве формы задания выбран сценарный тип, так как он в отличие от классических форм позволяет добиться максимальной аутентичности при прохождении тестирования. '
+                 + 'Часть заданий моделируют ситуации, с которыми участники тестирования могут столкнуться в реальной жизни, например, планирование расписания мероприятий на следующей день, '
+                 + 'подготовка к школьному празднику, другие же задания выполнены в фантастическом контексте, где участники попадают в мир волшебников и чудовищ, или становятся членами космической '
+                 + 'экспедиции. Разнообразие заданий позволяет зафиксировать поведение, соответствующее измеряемым навыкам 4К, и в целом помогает решить задачу мотивации ребенка к выполнению теста, '
+                 + 'а, следовательно, повышает степень достоверности полученных результатов.',
+          },
+          block3: {
+            title1: 'Процедура',
+            title2: 'оценивания',
+            part1: 'Разработана очень ',
+            part2: 'подробная процедура администрирования',
+            part3: ' дистанционного процесса тестирования.',
+            part4: 'Тестирование включает серию ',
+            part5: 'заданий сценарного типа',
+            part6: '. На выполнение непосредственно тестовых заданий отводится ',
+            part7: '40-90 минут',
+            part8: ' в зависимости от выбранного набора заданий и оцениваемых навыков.',
+            part9: 'Задания не связаны с предметными знаниями.',
+            part10: ' Сценарии разработаны таким образом, что их решение способно заинтересовать школьников, тем самым повышая внутреннюю мотивацию к решению задачи.',
+            part11: 'Тестовые задания предполагают использование симуляторов широкого спектра цифровых технологий, в том числе браузера,'
+                + ' мессенджеров, электронной почты, соцсетей, текстовых редакторов, идентичных подобным в реальной жизни.',
+            part12: 'Автоматическая обработка результатов',
+            part13: ' с «обратной связью» респонденту сразу после окончания тестирования.',
+          },
+          block4: {
+            title: 'Обратная связь',
+            part1: 'В результате тестирования определяется общий уровень каждого навыка 4К, исходя из трех возможных:',
+            part2: 'По результатам тестирования предоставляется индивидуальная обратная связь школьнику и родителям, учителю и классу, а также обобщённый отчет по школе.',
+            part3: 'Используемый метод доказательного оценивания позволяет выявить и описать пробелы в развитии навыков коммуникации, кооперации, критического мышления и '
+                 + 'креативности, над которыми следует работать в рамках учебного процесса.',
+            levels: {
+              subTitle1: 'Критическое мышление',
+              subTitle2: 'Креативность',
+              subTitle3: 'Коммуникация и кооперация',
+              lev1: {
+                title: 'Развивающийся уровень',
+                part1: 'Тестируемый, находящийся на данном уровне показывает слабые навыки анализа: не всегда выбирает релевантный и надежный, заслуживающий доверия, источник '
+                     + 'информации, не может понять, какая информация из текста поможет ему в решении поставленной задачи, и, как следствие, решение проблемы, которое предлагает '
+                     + 'такой ученик часто не соответствует условиям задачи.',
+                part2: 'Тестируемый, находящийся на развивающемся уровне креативности по результатам теста 4К, предлагает в основном типичные, ожидаемые, не оригинальные идеи. '
+                     + 'Идеи, которые предлагает ученик, общи, не содержат большого количества деталей и могут быть не продуманы до конца.',
+                part3: 'Тестируемый, находящийся на развивающем уровне, в процессе тестирования не проявлял умения распознавать эмоции других и адаптировать своё общение под '
+                     + 'собеседника, его состояние и особенности ситуации взаимодействия. Этому ученику сложно участвовать в командной работе, где для достижения наилучшего '
+                     + 'результата нужно прислушиваться к мнению других участников, обмениваться информацией и ресурсами, вместе с ними принимать решения и действовать совместно.',
+              },
+              lev2: {
+                title: 'Базовый уровень',
+                part1: 'Тестируемый, находящийся на базовом уровне развития критического мышления по результатам теста 4К, умеет анализировать информацию: видеть полезную и нужную '
+                     + 'информацию, а также не опирается на информацию из ненадежных источников. Либо, при развивающемся уровне анализа, такой ученик формулирует верное решение '
+                     + 'проблемы, которое жизнеспособно и соответствует условиям задачи.',
+                part2: 'Идеи тестируемого, находящегося на этом уровне, могут быть детально проработаны и продуманы, но сама по себе идея будет не новой, типичной. Или же наоборот, '
+                     + 'оригинальная, непохожая на другие идея будет слабо проработана, у такой идеи не будет много деталей.',
+                part3: 'Тестируемый, находящийся на базовом уровне развития Коммуникации и Кооперации не всегда может распознать эмоции других членов команды и действовать, учитывая '
+                     + 'эти эмоции. В командной работе такой ученик может обмениваться информацией, но не всегда действует и принимает решения с учетом мнения напарников.',
+              },
+              lev3: {
+                title: 'Продвинутый уровень',
+                part1: 'Тестируемый, которому присвоен продвинутый уровень критического мышления по результатам прохождения теста, умеет как анализировать материалы, так и '
+                     + 'формулировать адекватное решение поставленной перед ним проблемы. Такой ученик может сформулировать релевантный вопрос и отобрать те источники информации, в '
+                     + 'которых будет содержаться надёжная информация. При работе с источниками информации такой ученик чётко выделяет необходимую для решения проблемы информацию и '
+                     + 'использует её для того, чтобы сделать правильный вывод.',
+                part2: 'Тестируемый, находящийся на этом уровне, в процессе выполнения теста 4К продемонстрировал умение придумывать новые, интересные, оригинальные идеи и при этом '
+                     + 'доводить их до конца, снабжать всеми необходимыми деталями, для того, чтобы задуманный им образ был завершенным.',
+                part3: 'Тестируемый, находящийся по результатам тестирования на продвинутом уровне развития компетенций Коммуникации и Кооперации, продемонстрировал как понимание '
+                     + 'эмоций других, так и умение поддержать напарника и помочь во время командной работы. Во время совместной работы такой ученик слышит мнения участников команды '
+                     + 'и корректирует работу и принимаемые решения с учетом этих мнений.',
+              },
+            },
+          },
+        },
+        progress: {
+          title: 'ПРОГРЕСС',
+          subTitle: 'Продвижение вперёд: увидеть динамику каждого ребёнка',
+          block1: {
+            part1: 'Тестирование с помощью инструмента ',
+            part2: 'СТАРТ',
+            part3: ' проводят в начале и в конце первого года обучения ребенка в школе. Отследить динамику каждого ребенка на большем отрезке времени помогают его модификации: '
+                 + 'инструменты ПРОГРЕСС для середины и конца начальной школы.',
+            part4: 'Первые годы обучения в школе очень важны для ребёнка. Ученые доказали, что результаты детей в начале обучения предсказывают их успешность вплоть до конца '
+                 + 'обучения в школе. Поэтому для учителей и родителей крайне важно иметь надежные средства диагностики и измерения прогресса учеников в начальной школе.',
+            part5: 'Инструмент ПРОГРЕСС позволяет измерить продвижение ребенка от базовых навыков в чтении к его или ее ',
+            part6: 'читательской грамотности',
+            part7: ', а также от базовых навыков математики — к ',
+            part8: 'математической грамотности',
+          },
+          block2: {
+            title: 'Процедура оценивания',
+            part1: 'Тестирование разделено на блоки, задания идут от простых к сложным. Если ребёнок несколько раз ошибается при оценке одного навыка, то адаптивный алгоритм '
+                 + 'внутри инструмента меняет задания, регулируя прохождение ребенком теста.',
+            part2: 'Каждый ребёнок сидит отдельно за своим компьютером. В классе присутствует учитель, который следит за безопасностью и порядком в классе, а также помогает '
+                 + 'ученикам справиться с техническими трудностями, в случае их возникновения.',
+            part3: 'Оценивание по двум областям проводится в разные дни. Длительность одного тестирования около 40 минут.',
+          },
+          block3: {
+            title1: 'Обратная',
+            title2: 'связь',
+            part1: 'По результатам оценки дается подробная обратная связь: для родителей и ребенка, для учителя (индивидуально для каждого ребенка и для всего класса).',
+          },
         },
       },
     },

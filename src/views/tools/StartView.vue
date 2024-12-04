@@ -8,57 +8,49 @@
     <div id="start-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Инструмент
+          {{ $t('tools.tool') }}
         </div>
         <div class="subtitle">
-          СТАРТ
+          {{ $t('tools.start.title') }}
         </div>
       </div>
     </div>
     <div class="basic-container white-container">
-      Первоклассники приходят в школу с разными знаниями и уровнем развития. СТАРТ оценивает <span class="bold-text">базовые
-      навыки чтения и математики</span>, когда ребенок только начинает знакомиться с ними, и когда он или она уже многое умеет.
-      Помимо этого, СТАРТ позволяет оценить <span class="bold-text">пассивный словарный запас</span> ребенка, а также
-      <span class="bold-text">фонологическую грамотность</span> и некоторые <span class="bold-text">социально-эмоциональные навыки</span>.
+      {{ $t('tools.start.block1.part1') }}<span class="bold-text">{{ $t('tools.start.block1.part2') }}</span>
+      {{ $t('tools.start.block1.part3') }}<span class="bold-text">{{ $t('tools.start.block1.part4') }}</span>{{ $t('tools.start.block1.part5') }}
+      <span class="bold-text">{{ $t('tools.start.block1.part6') }}</span>
+      {{ $t('tools.start.block1.part7') }}<span class="bold-text">{{ $t('tools.start.block1.part8') }}</span>.
     </div>
-    <StartViewGraph/>
+    <StartViewGraph v-if="$i18n.locale == 'ru'"/>
     <div class="basic-container blue-container">
-      Учитель увидит зоны отставания и перспективы развития каждого ребенка, всего класса или параллели.<br>
-      С помощью СТАРТ возможно отслеживать динамику результатов и персонализировать обучение.<br>
-      Связь результатов нашего теста и успехов детей через несколько лет устойчива и значима — измерена в России для
-      нескольких тысяч младших школьников из разных городов.
+      {{ $t('tools.start.block2.part1') }}<br>
+      {{ $t('tools.start.block2.part2') }}<br>
+      {{ $t('tools.start.block2.part3') }}
     </div>
     <div class="split-container">
       <div class="title">
-        Процедура<br>
-        оценивания
+        {{ $t('tools.start.block3.title1') }}<br>
+        {{ $t('tools.start.block3.title2') }}
       </div>
       <div class="description">
-        Инструмент спроектирован как игра, чтобы избежать психологического напряжения. В каждом блоке задания идут от
-        простых к более сложным. Если ребенок ошибается, алгоритм переходит к оценке другого вида заданий. В середине теста —
-        несколько минут игровых физических упражнений. Это помогает отвлечься и снять усталость.<br><br>
-        Алгоритм внутри инструмента меняет задания, регулирует их сложность и озвучивает вопросы через голосового помощника
-        Анфису. Роль взрослого — вводить ответы ребенка на компьютере и похвалить ребенка в конце. Если учеба дистанционная,
-        вместо учителя тест могут провести родители. Если ребенок не хочет делать задания, устал или заплакал — на каждый
-        случай предусмотрены сценарии, как действовать взрослому.
+        {{ $t('tools.start.block3.part1') }}<br><br>
+        {{ $t('tools.start.block3.part2') }}
       </div>
     </div>
     <div class="white-gap"></div>
     <div class="basic-container blue-container">
       <div class="title">
-        Обратная связь
+        {{ $t('tools.start.block4.title') }}
       </div>
-      По результатам оценки дается подробная обратная связь: для родителей и ребенка, для учителя (индивидуально для каждого
-      ребенка и для всего класса).
-      <div class="img-container">
+      {{ $t('tools.start.block4.part1') }}
+      <div class="img-container" v-if="$i18n.locale == 'ru'">
         <img alt="report-example" src="@/assets/tools/report_example.png">
         <div>Пример отчета из личного кабинета</div>
       </div>
-      СТАРТ-тестирование проводят в начале и завершении первого класса. Отследить динамику на большем отрезке времени помогают
-      его модификации: инструменты <span id="start-link"><RouterLink to="/tools/progress">ПРОГРЕСС</RouterLink></span> для середины и конца начальной школы.
+      {{ $t('tools.start.block4.part2') }}<span id="start-link"><RouterLink to="/tools/progress">{{ $t('tools.start.block4.part3') }}</RouterLink></span>{{ $t('tools.start.block4.part4') }}
     </div>
-    <div class="white-gap"></div>
-    <div class="video-container">
+    <div class="white-gap" v-if="$i18n.locale == 'ru'"></div>
+    <div class="video-container" v-if="$i18n.locale == 'ru'">
       <div class="video">
         <iframe width="100%" height="100%"
                 src="https://www.youtube.com/embed/hrYvjiXtI88?si=jcDSmbm0nCj8aL07"

@@ -19,7 +19,7 @@
       <div class="tool-title">{{ $t(title) }}</div>
       <div class="tool-description">{{ $t(description) }}</div>
     </div>
-    <div v-if="$i18n.locale == 'ru'" class="action">
+    <div class="action">
       <RouterLink :to="'/tools/' + label">{{ $t('tools.moreInfo') }}</RouterLink>
     </div>
   </div>

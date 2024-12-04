@@ -7,48 +7,42 @@
     <div id="progress-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Инструмент
+          {{ $t('tools.tool') }}
         </div>
         <div class="subtitle">
-          ПРОГРЕСС
+          {{ $t('tools.progress.title') }}
         </div>
         <div class="description">
-          Продвижение вперёд: увидеть динамику каждого ребёнка
+          {{ $t('tools.progress.subTitle') }}
         </div>
       </div>
     </div>
     <div class="basic-container white-container">
-      Тестирование с помощью инструмента <span id="progress-link"><RouterLink to="/tools/start">СТАРТ</RouterLink></span> проводят
-      в начале и в конце первого года обучения ребенка в школе. Отследить динамику каждого ребенка на большем отрезке времени помогают
-      его модификации: инструменты ПРОГРЕСС для середины и конца начальной школы.<br><br>
-      Первые годы обучения в школе очень важны для ребёнка. Ученые доказали, что результаты детей в начале обучения предсказывают их
-      успешность вплоть до конца обучения в школе. Поэтому для учителей и родителей крайне важно иметь надежные средства диагностики
-      и измерения прогресса учеников в начальной школе.<br><br>
-      Инструмент ПРОГРЕСС позволяет измерить продвижение ребенка от базовых навыков в чтении к его или ее <span class="bold-text">читательской
-      грамотности</span>, а также от базовых навыков математики — к <span class="bold-text">математической грамотности</span>.
+      {{ $t('tools.progress.block1.part1') }}<span id="progress-link"><RouterLink to="/tools/start">{{ $t('tools.progress.block1.part2') }}</RouterLink></span>
+      {{ $t('tools.progress.block1.part3') }}<br><br>
+      {{ $t('tools.progress.block1.part4') }}<br><br>
+      {{ $t('tools.progress.block1.part5') }}<span class="bold-text">{{ $t('tools.progress.block1.part6') }}</span>{{ $t('tools.progress.block1.part7') }}
+      <span class="bold-text">{{ $t('tools.progress.block1.part8') }}</span>.
     </div>
     <div class="basic-container blue-container">
       <div class="title">
-        Процедура оценивания
+        {{ $t('tools.progress.block2.title') }}
       </div>
-      Тестирование разделено на блоки, задания идут от простых к сложным. Если ребёнок несколько раз ошибается при оценке одного навыка,
-      то адаптивный алгоритм внутри инструмента меняет задания, регулируя прохождение ребенком теста.<br><br>
-      Каждый ребёнок сидит отдельно за своим компьютером. В классе присутствует учитель, который следит за безопасностью и порядком в классе,
-      а также помогает ученикам справиться с техническими трудностями, в случае их возникновения.<br><br>
-      Оценивание по двум областям проводится в разные дни. Длительность одного тестирования около 40 минут.
+      {{ $t('tools.progress.block2.part1') }}<br><br>
+      {{ $t('tools.progress.block2.part2') }}<br><br>
+      {{ $t('tools.progress.block2.part3') }}
     </div>
     <div class="split-container">
       <div class="title">
-        Обратная<br>
-        связь
+        {{ $t('tools.progress.block3.title1') }}<br>
+        {{ $t('tools.progress.block3.title2') }}
       </div>
       <div class="description">
-        По результатам оценки дается подробная обратная связь: для родителей и ребенка, для учителя (индивидуально для каждого ребенка
-        и для всего класса).
+        {{ $t('tools.progress.block3.part1') }}
       </div>
     </div>
     <div class="white-gap"></div>
-    <div class="video-container">
+    <div class="video-container" v-if="$i18n.locale == 'ru'">
       <div class="video">
         <iframe width="100%" height="100%"
                 src="https://www.youtube.com/embed/ZLlhZ2rp9AU?si=al2tLuV2hlJ3wv3y"

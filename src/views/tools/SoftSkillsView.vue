@@ -14,166 +14,117 @@ const textBlocks = reactive({
     <div id="soft-skills-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Инструмент
+          {{ $t('tools.tool') }}
         </div>
         <div class="subtitle">
-          4K-тест
+          {{ $t('tools.softSkills.title') }}
         </div>
         <div class="description">
-          Мягкие навыки
+          {{ $t('tools.softSkills.subTitle') }}
         </div>
       </div>
     </div>
     <div class="basic-container white-container">
       <p>
-        Креативность, критическое мышление, коммуникация и кооперация (4К) относятся к навыкам 21 века. Их измерением
-        занимаются авторитетные международные организации. Образовательные стандарты многих стран требует формировать
-        образовательные результаты, связанные с нестандартным решением задач, умением работать в команде, видеть причины
-        и следствия. <span class="bold-text">4К-тест</span> проверяет, как сформированы эти результаты, выявляет дефициты
-        и помогает настроить программу развития навыков 4К у детей. Эти навыки необходимы, чтобы ученики могли успешно
-        адаптироваться в современном мире и быть успешными: учиться новому, критически оценивать информацию, работать в
-        команде и нестандартно решать задачи.
+        {{ $t('tools.softSkills.block1.part1') }}<span class="bold-text">{{ $t('tools.softSkills.block1.part2') }}</span>{{ $t('tools.softSkills.block1.part3') }}
       </p>
       <p>
-        Инструмент <span class="bold-text">4К-тест</span> реализован в форме компьютерной системы тестирования с
-        автоматизированным процессом сбора, обработки и оценки результатов и направлен на измерение навыков коммуникации,
-        кооперации, критического мышления и креативности у школьников с четвертого по восьмой класс.
+        {{ $t('tools.softSkills.block1.part4') }}<span class="bold-text">{{ $t('tools.softSkills.block1.part5') }}</span>{{ $t('tools.softSkills.block1.part6') }}
       </p>
     </div>
     <div class="basic-container blue-container">
-      <div class="title">
+      <div class="title" v-if="$i18n.locale == 'ru'">
         Основные навыки,<br>
         которые измеряет 4K-тест:
       </div>
-      <div class="img-container">
+      <div class="img-container" v-if="$i18n.locale == 'ru'">
         <img alt="soft-skills-components" src="@/assets/tools/soft_skills_components.png">
       </div>
       <p>
-        Инструмент измерения <span class="bold-text">4К-тест</span> разработан на основе метода доказательной аргументации
-        (Evidence-Centered Design), в основе которого заложена разработка наблюдаемых доказательств, позволяющих сделать вывод
-        о сформированности измеряемых навыков 4К.
+        {{ $t('tools.softSkills.block2.part1') }}<span class="bold-text">{{ $t('tools.softSkills.block2.part2') }}</span>{{ $t('tools.softSkills.block2.part3') }}
       </p>
       <p>
-        В качестве формы задания выбран сценарный тип, так как он в отличие от классических форм позволяет добиться максимальной
-        аутентичности при прохождении тестирования. Часть заданий моделируют ситуации, с которыми участники тестирования могут
-        столкнуться в реальной жизни, например, планирование расписания мероприятий на следующей день, подготовка к школьному
-        празднику, другие же задания выполнены в фантастическом контексте, где участники попадают в мир волшебников и чудовищ,
-        или становятся членами космической экспедиции. Разнообразие заданий позволяет зафиксировать поведение, соответствующее
-        измеряемым навыкам 4К, и в целом помогает решить задачу мотивации ребенка к выполнению теста, а, следовательно, повышает
-        степень достоверности полученных результатов.
+        {{ $t('tools.softSkills.block2.part4') }}
       </p>
     </div>
     <div class="split-container">
       <div class="title">
-        Процедура<br>
-        оценивания
+        {{ $t('tools.softSkills.block3.title1') }}<br>
+        {{ $t('tools.softSkills.block3.title2') }}
       </div>
       <div class="description">
         <p>
-          Разработана очень <span class="bold-text">подробная процедура администрирования</span> дистанционного процесса тестирования.
+          {{ $t('tools.softSkills.block3.part1') }}<span class="bold-text">{{ $t('tools.softSkills.block3.part2') }}</span>{{ $t('tools.softSkills.block3.part3') }}
         </p>
         <p>
-          Тестирование включает серию <span class="bold-text">заданий сценарного типа</span>. На выполнение непосредственно тестовых
-          заданий отводится <span class="bold-text">40-90 минут</span> в зависимости от выбранного набора заданий и оцениваемых навыков.
+          {{ $t('tools.softSkills.block3.part4') }}<span class="bold-text">{{ $t('tools.softSkills.block3.part5') }}</span>{{ $t('tools.softSkills.block3.part6') }}
+          <span class="bold-text">{{ $t('tools.softSkills.block3.part7') }}</span>{{ $t('tools.softSkills.block3.part8') }}
         </p>
         <p>
-          <span class="bold-text">Задания не связаны с предметными знаниями.</span> Сценарии разработаны таким образом, что их
-          решение способно заинтересовать школьников, тем самым повышая внутреннюю мотивацию к решению задачи.
+          <span class="bold-text">{{ $t('tools.softSkills.block3.part9') }}</span>{{ $t('tools.softSkills.block3.part10') }}
         </p>
         <p>
-          Тестовые задания предполагают использование симуляторов широкого спектра цифровых технологий, в том числе браузера,
-          мессенджеров, электронной почты, соцсетей, текстовых редакторов, идентичных подобным в реальной жизни.
+          {{ $t('tools.softSkills.block3.part11') }}
         </p>
-        <p>
+        <p v-if="$i18n.locale == 'ru'">
           <span class="bold-text">Контекст заданий</span>: реальный и фантастический.
         </p>
-        <p>
+        <p v-if="$i18n.locale == 'ru'">
           Демо-тестирование можно посмотреть <a class="inline-link" href="https://youtu.be/DC7GwnPH6Vs" target="_blank">здесь</a>,
           <a class="inline-link" href="https://youtu.be/hKRdn9fvYHs" target="_blank">здесь</a> и
           <a class="inline-link" href="https://youtu.be/6IFdkusM0I0" target="_blank">здесь</a>.
         </p>
         <p>
-          <span class="bold-text">Автоматическая обработка результатов</span> с «обратной связью» респонденту сразу после окончания тестирования.
+          <span class="bold-text">{{ $t('tools.softSkills.block3.part12') }}</span>{{ $t('tools.softSkills.block3.part13') }}
         </p>
       </div>
     </div>
     <div class="white-gap"></div>
     <div class="basic-container blue-container">
       <div class="title">
-        Обратная связь
+        {{ $t('tools.softSkills.block4.title') }}
       </div>
-      <p>
-        В результате тестирования определяется общий уровень каждого навыка 4К, исходя из трех возможных:
-      </p>
+      <p>{{ $t('tools.softSkills.block4.part1') }}</p>
       <div class="shifted-div">
-        •	<span @click="textBlocks.developingLevel = !textBlocks.developingLevel" class="shifted-div-title">Развивающийся уровень</span>
+        •	<span @click="textBlocks.developingLevel = !textBlocks.developingLevel" class="shifted-div-title">{{ $t('tools.softSkills.block4.levels.lev1.title') }}</span>
         <span v-if="textBlocks.developingLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.developingLevel" class="shifted-div-details">
-          <span class="bold-text">Критическое мышление</span><br>
-          Тестируемый, находящийся на данном уровне показывает слабые навыки анализа: не всегда выбирает релевантный и надежный,
-          заслуживающий доверия, источник информации, не может понять, какая информация из текста поможет ему в решении поставленной
-          задачи, и, как следствие, решение проблемы, которое предлагает такой ученик часто не соответствует условиям задачи.<br><br>
-          <span class="bold-text">Креативность</span><br>
-          Тестируемый, находящийся на развивающемся уровне креативности по результатам теста 4К, предлагает в основном типичные,
-          ожидаемые, не оригинальные идеи. Идеи, которые предлагает ученик, общи, не содержат большого количества деталей и
-          могут быть не продуманы до конца.<br><br>
-          <span class="bold-text">Коммуникация и кооперация</span><br>
-          Тестируемый, находящийся на развивающем уровне, в процессе тестирования не проявлял умения распознавать эмоции
-          других и адаптировать своё общение под собеседника, его состояние и особенности ситуации взаимодействия. Этому
-          ученику сложно участвовать в командной работе, где для достижения наилучшего результата нужно прислушиваться к
-          мнению других участников, обмениваться информацией и ресурсами, вместе с ними принимать решения и действовать совместно.
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle1') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev1.part1') }}<br><br>
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle2') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev1.part2') }}<br><br>
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle3') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev1.part3') }}
         </div>
-        •	<span @click="textBlocks.baseLevel = !textBlocks.baseLevel" class="shifted-div-title">Базовый уровень</span>
+        •	<span @click="textBlocks.baseLevel = !textBlocks.baseLevel" class="shifted-div-title">{{ $t('tools.softSkills.block4.levels.lev2.title') }}</span>
         <span v-if="textBlocks.baseLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.baseLevel" class="shifted-div-details">
-          <span class="bold-text">Критическое мышление</span><br>
-          Тестируемый, находящийся на базовом уровне развития критического мышления по результатам теста 4К, умеет анализировать
-          информацию: видеть полезную и нужную информацию, а также не опирается на информацию из ненадежных источников. Либо,
-          при развивающемся уровне анализа, такой ученик формулирует верное решение проблемы, которое жизнеспособно и соответствует
-          условиям задачи.<br><br>
-          <span class="bold-text">Креативность</span><br>
-          Идеи тестируемого, находящегося на этом уровне, могут быть детально проработаны и продуманы, но сама по себе идея
-          будет не новой, типичной. Или же наоборот, оригинальная, непохожая на другие идея будет слабо проработана, у такой
-          идеи не будет много деталей.<br><br>
-          <span class="bold-text">Коммуникация и кооперация</span><br>
-          Тестируемый, находящийся на базовом уровне развития Коммуникации и Кооперации не всегда может распознать эмоции других
-          членов команды и действовать, учитывая эти эмоции. В командной работе такой ученик может обмениваться информацией,
-          но не всегда действует и принимает решения с учетом мнения напарников.
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle1') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev2.part1') }}<br><br>
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle2') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev2.part2') }}<br><br>
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle3') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev2.part3') }}
         </div>
-        •	<span @click="textBlocks.advancedLevel = !textBlocks.advancedLevel" class="shifted-div-title">Продвинутый уровень</span>
+        •	<span @click="textBlocks.advancedLevel = !textBlocks.advancedLevel" class="shifted-div-title">{{ $t('tools.softSkills.block4.levels.lev3.title') }}</span>
         <span v-if="textBlocks.advancedLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.advancedLevel" class="shifted-div-details">
-          <span class="bold-text">Критическое мышление</span><br>
-          Тестируемый, которому присвоен продвинутый уровень критического мышления по результатам прохождения теста, умеет
-          как анализировать материалы, так и формулировать адекватное решение поставленной перед ним проблемы. Такой ученик
-          может сформулировать релевантный вопрос и отобрать те источники информации, в которых будет содержаться надёжная
-          информация. При работе с источниками информации такой ученик чётко выделяет необходимую для решения проблемы
-          информацию и использует её для того, чтобы сделать правильный вывод.<br><br>
-          <span class="bold-text">Креативность</span><br>
-          Тестируемый, находящийся на этом уровне, в процессе выполнения теста 4К продемонстрировал умение придумывать новые,
-          интересные, оригинальные идеи и при этом доводить их до конца, снабжать всеми необходимыми деталями, для того,
-          чтобы задуманный им образ был завершенным.<br><br>
-          <span class="bold-text">Коммуникация и кооперация</span><br>
-          Тестируемый, находящийся по результатам тестирования на продвинутом уровне развития компетенций Коммуникации и
-          Кооперации, продемонстрировал как понимание эмоций других, так и умение поддержать напарника и помочь во время
-          командной работы. Во время совместной работы такой ученик слышит мнения участников команды и корректирует работу
-          и принимаемые решения с учетом этих мнений.
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle1') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev3.part1') }}<br><br>
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle2') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev3.part2') }}<br><br>
+          <span class="bold-text">{{ $t('tools.softSkills.block4.levels.subTitle3') }}</span><br>
+          {{ $t('tools.softSkills.block4.levels.lev3.part3') }}
         </div>
       </div>
-      <p>
-        По результатам тестирования предоставляется индивидуальная обратная связь школьнику и родителям, учителю и классу,
-        а также обобщённый отчет по школе.
-      </p>
-      <p>
-        Используемый метод доказательного оценивания позволяет выявить и описать пробелы в развитии навыков коммуникации,
-        кооперации, критического мышления и креативности, над которыми следует работать в рамках учебного процесса.
-      </p>
+      <p>{{ $t('tools.softSkills.block4.part2') }}</p>
+      <p>{{ $t('tools.softSkills.block4.part3') }}</p>
     </div>
   </div>
 </template>
