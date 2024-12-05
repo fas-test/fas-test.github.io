@@ -334,6 +334,156 @@ const i18n = createI18n({
             part1: 'A detailed and personalized feedback is provided to the parents and the child, to the teacher (individually about each child and about the entire class).',
           },
         },
+        digSkills: {
+          title: 'DIGLIT',
+          subTitle: 'Digital competencies',
+          block1: {
+            part1: 'The ',
+            part2: 'DIGLIT',
+            part3: ' instrument is implemented in the form of a computer testing system with an automated process of collecting, processing and evaluating results and is aimed at measuring the digital '
+                 + 'literacy of 12–14-year-olds.',
+            part4: 'Digital literacy is a composite competency including ',
+            part5: 'the ability to safely use digital technologies for searching, analyzing, creating, managing information, communication and teamwork, to solve problems in a digital environment for '
+                 + 'meeting personal and educational needs.',
+            part6: '',
+          },
+          block2: {
+            title: 'What digital skills are measured?',
+            part1: 'The ',
+            part2: 'DIGLIT test',
+            part3: ' is developed using the Evidence-Centered Design, which is based on the development of observable evidence allowing to make a claim about the digital skills level.',
+            part4: 'The tasks are formulated as ',
+            part5: 'story scenarios',
+            part6: ' because they have higher authenticity than classical item formats as well as motivating students and ensuring high reliability of results. All scenarios participants '
+                   + 'encounter in real life – among them planning a trip to an unknown place, searching for necessary information on the Internet or creating visualization in a media software.',
+          },
+          block3: {
+            title1: 'The assessment',
+            title2: 'procedure',
+            part1: 'The ',
+            part2: 'procedure for administering',
+            part3: ' the remote testing is detailed in the test guidelines.',
+            part4: 'The test includes ',
+            part5: '4 scenarios',
+            part6: ' and takes ',
+            part7: '70 minutes',
+            part8: ' to complete, including two breaks of five minutes for eye gymnastics to relieve fatigue.',
+            part9: 'The tasks are not related to a domain-specific knowledge.',
+            part10: ' The scenarios are designed to be interesting and motivating for schoolchildren.',
+            part11: 'The test tasks involve the use of simulators of a wide range of digital technologies identical to the real-life software',
+            part12: ', including browsers, messengers, emailing, social networks, text editors, presentation software, etc.',
+            part13: '',
+            part14: 'The scenario contexts are of two types: ',
+            part15: ' educational (situations taken from school environment) and personal (situations taken from everyday life outside school).',
+            part16: 'The test automatically processes the results',
+            part17: ' and returns feedback to the respondent immediately after the testing has completed.'
+          },
+          block4: {
+            title: 'The feedback',
+            part1: 'As a result of testing, the overall level of digital literacy is determined which can be:',
+            part2: 'Developing level',
+            part3: 'A student at the developing level:',
+            part4: 'has basic skills in information search and analysis but cannot identify relevant information or assess the reliability of sources. '
+                 + 'They struggle classifying information and are unable to create an informational product based on specific criteria;',
+            part5: 'is capable of following a proposed sequence of steps (algorithm) to solve a practical problem;',
+            part6: 'possesses basic communication skills in a digital environment but does not always choose the appropriate format for presenting information '
+                 + 'to a specific target audience and does not consistently follow digital etiquette rules;',
+            part7: 'can recognize the most obvious threats but is not always prepared to protect their devices; does not always identify problematic content and '
+                 + 'is unable to safeguard personal data;',
+            part8: 'has minimal technical skills in working with digital technologies, which do not allow them to fully solve a task in a digital environment.',
+            part9: 'Basic level',
+            part10: 'A student at the basic level:',
+            part11: 'can search for and analyze information, identify relevant information, and rely on reliable and trustworthy sources. They can classify and '
+                 + 'organize information, create simple informational products based on specific criteria, or produce complex informational products with minimal errors;',
+            part12: 'is capable of both (1) following a proposed sequence of steps to solve a problem, and (2) creating their own algorithm to solve a problem;',
+            part13: 'can communicate in a digital environment with an understanding of basic norms and rules, and can choose the appropriate format for presenting information '
+                 + 'to a specific target audience;',
+            part14: 'can identify risks but is not always prepared to protect their devices and data;',
+            part15: 'has technical skills sufficient for solving tasks in digital environments.',
+            part16: 'Advanced level',
+            part17: 'A student at the advanced level:',
+            part18: 'is able to search for and analyze information and formulate correct solutions to tasks, relying on reliable and trustworthy sources. They can classify and '
+                 + 'organize information for quick retrieval and optimal use in problem-solving and create age-appropriate informational products based on specific criteria without errors;',
+            part19: 'can follow a proposed sequence of steps, create their own algorithm to solve a problem, and optimize it;',
+            part20: 'is capable of establishing effective communication to solve tasks while adhering to ethical and legal standards;',
+            part21: 'can identify threats and protect their devices, avoid risks in the digital environment, and safeguard their confidential data;',
+            part22: 'is proficient in using digital technologies for problem-solving, can handle complex tasks in digital environments, and can assist others.',
+            part23: 'Based on the test results, individual feedback is provided to the student and the parents, the teacher and the class, as well as a generalised report about the school.',
+            part24: 'The method of Evidence-Centred Design allows to identify the gaps in the digital competencies prompting further improvement.',
+          },
+        },
+        comSkills: {
+          title: 'ICL test',
+          subTitle: 'Information and communication competence',
+          block1: {
+            part1: 'The ',
+            part2: 'ICL test',
+            part3: ' instrument is designed as a computer testing system administering authentic scenario-type tasks in controlled environment with an automated data processing. '
+                 + 'The ICL test provides feedback immediately after the testing completion. ',
+            part4: 'The target audience is students aged 13-15.',
+            part5: 'Contemporary everyday life renders it impossible to live comfortably without the ability to work with information in a digital environment. An indicator of '
+                 + 'this ability is the level of information and communication competence (IC competence). IC competence refers to the ability and willingness of students to use '
+                 + 'digital technologies, services and tools to access, analyze, manage, integrate, create information and communication, following ethical and legal norms.',
+            part6: 'An advantage of ',
+            part7: 'the ICL test',
+            part8: ' is that it provides can assess the student\'s ability to use digital environments and services to gain new knowledge, carry out communication, conduct research '
+                 + 'activities, which can help the student acquire lifelong learning skills and perform future professional duties.',
+          },
+          block2: {
+            title1: '7 components of IC competence',
+            title2: 'which are measured by the ICL test:',
+            part1: 'The ',
+            part2: 'ICL test',
+            part3: ' is developed using the Evidence-Centered Design, which is based on the development of observable evidence allowing to make a claim about the level of students\''
+                 + ' IC competence. The assessment analyzes not only the result of completed tasks, but also the process of solving them (behavioural characteristics of the test takers).'
+          },
+          block3: {
+            title1: 'The assessment',
+            title2: 'procedure',
+            part1: 'The procedure for administering the remote testing is detailed in ',
+            part2: 'the ICL test guidelines',
+            part3: '.',
+            part4: 'The testing includes ',
+            part5: '8 authentic scenario-based tasks',
+            part6: '. Test tasks take  ',
+            part7: '85 minutes',
+            part8: ' to complete, including ',
+            part9: 'two 5-minutes breaks to relieve fatigue',
+            part10: '.',
+            part11: 'During the testing, the student uses a browser emulator to access the Internet, searches for files, works with plots, spreadsheets and presentations, uses a text editor and '
+                  + 'emailing, communicates on social networks and messengers, uses media, and analyses databases.',
+            part12: 'Testing requires individual desktops or laptops with a mouse and an installed latest version of Google Chrome browser.',
+            part13: 'The tasks are not related to a domain-specific knowledge.',
+            part14: ' The scenarios are designed to be interesting and motivating for schoolchildren.',
+            part15: 'The test automatically processes the results',
+            part16: ' and returns feedback to the respondent immediately after the testing has completed.',
+          },
+          block4: {
+            title: 'The feedback',
+            part1: 'After completing ',
+            part2: 'the ICL test',
+            part3: ', the student is assigned one of five levels of IC competence, depending on the degree to which they own each of the seven components:',
+            part4: 'Proficient level',
+            part5: 'Student independently and skillfully use digital technologies to solve academic and real-life problems. When creating informational products (searching for and selecting information, '
+                 + 'formatting, and designing materials), they understand the target audience for these products. They are aware that information can be subject to a commercial influence, and they understand '
+                 + 'issues related to the rights to own the intellectual property.',
+            part6: 'Level above basic',
+            part7: 'Students demonstrate a high level of knowledge, skills, and understanding in independently searching for information, editing informational products, and managing them. They select necessary '
+                 + 'information from electronic sources, adapt it to task requirements, and create their own informational products. They also recognize that the information they find may be biassed, inaccurate, or unreliable.',
+            part8: 'Basic level',
+            part9: 'Students demonstrate a basic level of information and communication competence. They can find information using simple electronic sources, select and add content to informational products, and show the ability '
+                 + 'to format text and images within these products. They are mostly capable of using spreadsheets, graphic editors, instant messaging programs, and other communication tools competently. They understand the '
+                 + 'importance of protecting access to electronic information and the possible consequences of unauthorized access.',
+            part10: 'Level below basic',
+            part11: 'Students are familiar with basic programs, can work with files on a computer, and perform simple information tasks. They know basic online communication rules and the consequences of using computers as '
+                 + 'unauthorized users.',
+            part12: 'Developing level',
+            part13: 'Students struggle with basic programs, poorly organize files on the computer, and make errors while performing simple information tasks (such as searching for information, editing text, working with spreadsheets, '
+                 + 'and images). They know basic online communication rules but do not understand the responsibilities related to the legality and ethical aspects of using and sharing information.',
+            part14: 'Based on the test results, individual feedback is provided to the student and the parents, the teacher and the class, as well as a generalised report about the school.',
+            part15: 'The method of Evidence-Centred Design allows to identify the gaps in the information management skills in the digital environment prompting further improvement.',
+          },
+        },
       },
     },
 
@@ -674,6 +824,171 @@ const i18n = createI18n({
             title1: 'Обратная',
             title2: 'связь',
             part1: 'По результатам оценки дается подробная обратная связь: для родителей и ребенка, для учителя (индивидуально для каждого ребенка и для всего класса).',
+          },
+        },
+        digSkills: {
+          title: 'DIGLIT',
+          subTitle: 'Цифровые компетенции',
+          block1: {
+            part1: 'Инструмент ',
+            part2: 'DIGLIT',
+            part3: ' реализован в форме компьютерной системы тестирования с автоматизированным процессом сбора, обработки и оценки результатов и направлен на измерение цифровой '
+                 + 'грамотности 12-14 летних школьников.',
+            part4: 'Цифровая грамотность является комплексным конструктом, в состав которого входит ряд цифровых навыков, необходимых для работы в цифровой среде, что нашло отражение в определении — ',
+            part5: 'способность безопасно для себя и других использовать цифровые технологии для поиска, анализа, создания, управления информацией, коммуникации и коллективной '
+                 + 'работы с целью решения задач в цифровой среде для удовлетворения личных и образовательных потребностей',
+            part6: ' — и обусловило подход к разработке инструмента измерения.',
+          },
+          block2: {
+            title: 'Какие цифровые навыки измеряются?',
+            part1: 'Инструмент измерения ',
+            part2: 'цифровой грамотности DIGLIT',
+            part3: ' разработан на основе метода доказательной аргументации (Evidence-Centered Design), в основе которого заложена разработка наблюдаемых доказательств, позволяющих '
+                 + 'сделать вывод о сформированности измеряемых цифровых компетенций.',
+            part4: 'В качестве ',
+            part5: 'формы задания выбран сценарный тип',
+            part6: ', так как он позволяет добиться максимальной аутентичности в отличие от классических форм, моделирует ситуации, с которыми участники тестирования могут '
+                 + 'столкнуться в реальной жизни, например, планирование поездки в неизвестное место, поиск необходимой информации в интернете или создание визуализации в '
+                 + 'мультимедийной программе, создают среду, которая при этом позволяет зафиксировать поведение, соответствующее измеряемым цифровым навыкам, и в целом помогает '
+                 + 'решить задачу внутренней мотивации выполнения теста, а, следовательно, повышает степень достоверности полученных результатов.',
+          },
+          block3: {
+            title1: 'Процедура',
+            title2: 'оценивания',
+            part1: 'Разработана очень подробная ',
+            part2: 'процедура администрирования',
+            part3: ' дистанционного процесса тестирования.',
+            part4: 'Варианты  теста включают ',
+            part5: '4 задания сценарного типа',
+            part6: '. На выполнение непосредственно тестовых заданий отводится ',
+            part7: '60 минут',
+            part8: '. Для компьютерного тестирования данной возрастной группы (школьники 12-14 лет) предусмотрены 2 перерыва по 5 минут для гимнастики глаз (20 + 20 + 20 минут с двумя перерывами).',
+            part9: 'Задания не связаны с предметными знаниями.',
+            part10: ' Сценарии разработаны таким образом, что их решение способно заинтересовать школьников, тем самым повышая внутреннюю мотивацию к решению задачи.',
+            part11: 'Тестовые задания предполагают использование симуляторов широкого спектра цифровых технологий',
+            part12: ', в том числе браузера, облачного хранилища, мессенджеров, электронной почты, соцсетей, текстовых редакторов, программ создания презентаций и др., ',
+            part13: 'полностью идентичных подобным в реальной жизни.',
+            part14: 'Контекст заданий:',
+            part15: ' учебный (из школьной среды) и личный (задача из повседневной жизни вне школы).',
+            part16: 'Автоматическая обработка результатов',
+            part17: ' с «обратной связью» респонденту сразу после окончания тестирования.',
+          },
+          block4: {
+            title: 'Обратная связь',
+            part1: 'В результате тестирования определяется общий уровень цифровой грамотности обучающихся, исходя из трех возможных:',
+            part2: 'Развивающийся уровень',
+            part3: 'Ученик, находящийся на развивающемся уровне:',
+            part4: 'владеет основами поиска и анализа информации, но не способен выделить релевантную информацию и определить '
+                 + 'надежность источников. Плохо классифицирует информацию, не способен создать информационный продукт по заданным критериям;',
+            part5: 'способен выполнить предложенную последовательность действий (алгоритм) решения практической задачи;',
+            part6: 'владеет основными навыками коммуникации в цифровой среде, но, не всегда может выбрать подходящий формат представления '
+                 + 'информации для конкретной целевой аудитории, не соблюдает правила цифрового этикета;',
+            part7: 'способен обнаружить наиболее очевидные угрозы, но не всегда готов защитить свои устройства; не всегда идентифицирует '
+                 + 'проблемный контент и не способен защитить личные данные;',
+            part8: 'владеет минимальными техническими навыками работы с цифровыми технологиями, которые не позволяют полностью решить задачу в цифровой среде.',
+            part9: 'Базовый уровень',
+            part10: 'Ученик, находящийся на базовом уровне:',
+            part11: 'способен искать и анализировать информацию, выделять релевантную информацию при этом опираясь на информацию из '
+                  + 'надежных и достоверных источников. Способен классифицировать и систематизировать информацию, создавать простые информационные '
+                  + 'продукты по заданным критериям или создавать сложные информационные продукты с небольшим количеством ошибок;',
+            part12: 'способен не только выполнить предложенную последовательность действий, но и составить свой алгоритм для решения задачи;',
+            part13: 'способен коммуницировать в цифровой среде с пониманием основных норм и правил общения, может выбрать формат представления '
+                  + 'информации для конкретной целевой аудитории;',
+            part14: 'способен идентифицировать риски, но не всегда готов защитить свои устройства и данные;',
+            part15: 'владеет техническими навыками, достаточными для решения задач в цифровых средах.',
+            part16: 'Продвинутый уровень',
+            part17: 'Ученик, находящийся на продвинутом уровне:',
+            part18: 'способен как искать и анализировать информацию, так и формулировать правильное решение поставленной задачи, опираясь '
+                  + 'на надежные и достоверные источники, классифицировать и организовывать информацию для быстрого нахождения и оптимального '
+                  + 'использования при решении задач, создавать информационные продукты, соответствующие возрасту, по заданным критериям без ошибок;',
+            part19: 'способен выполнить предложенную последовательность действий, составить свой алгоритм для решения задачи и провести его оптимизацию;',
+            part20: 'способен выстроить эффективную коммуникацию для решения задачи с соблюдением этических и правовых норм;',
+            part21: 'способен обнаружить угрозы и защитить свои устройства, избегать рисков работы в цифровой среде и полностью защитить свои конфиденциальные данные;',
+            part22: 'свободно использует цифровые технологии при решении задач, решает сложные пользовательский задачи в цифровых средах и может помочь другим.',
+            part23: 'По результатам тестирования предоставляется индивидуальная обратная связь школьнику и родителям, учителю и классу, а также обобщённый отчет по школе.',
+            part24: 'Используемый метод доказательного оценивания позволяет выявить и описать пробелы в развитии цифровых компетенций школьника, над которыми следует '
+                  + 'поработать. Пример индивидуального отчета школьника для базового уровня цифровой грамотности:',
+          },
+        },
+        comSkills: {
+          title: 'ICL test',
+          subTitle: 'Информационно-коммуникационная компетентность',
+          block1: {
+            part1: 'Инструмент ',
+            part2: 'ICL test',
+            part3: ' реализован в форме компьютерной системы тестирования на основе выполнения аутентичных заданий сценарного типа в контролируемых условиях с '
+                 + 'автоматизированным процессом обработки результатов тестирования и предоставления обратной связи сразу после его прохождения.',
+            part4: 'Целевая аудитория — учащиеся 13-15 лет.',
+            part5: 'Современный человек живет в цифровом мире, в котором невозможно комфортно жить без способности работать с информацией '
+                 + 'в цифровой среде. Показателем этой способности является уровень информационно-коммуникационной компетентности '
+                 + '(ИК-компетентности). ИК-компетентность — это не только и не столько уровень владения конкретными компьютерными '
+                 + 'программами и цифровыми технологиями, под ИК-компетентностью понимается способность и готовность учащихся использовать '
+                 + 'цифровые технологии, сервисы и инструменты с целью получения доступа, анализа, управления, интеграции, создания '
+                 + 'информации и коммуникации, соблюдая этические и правовые нормы.',
+            part6: 'Особенностью ',
+            part7: 'ICL test',
+            part8: ' является то, что он дает возможность оценить способность учащегося использовать цифровые среды и сервисы для получения новых знаний, осуществления '
+                 + 'коммуникации, проведения исследовательской деятельности, что, в конечном итоге, поможет учащемуся приобрести навыки обучения в течение всей жизни и '
+                 + 'выполнении будущих профессиональных обязанностей.',
+          },
+          block2: {
+            title1: '7 составляющих ИК-компетентности,',
+            title2: 'которые измеряет ICL test:',
+            part1: 'Инструмент измерения ',
+            part2: 'ICL test',
+            part3: ' разработан на основе метода доказательного оценивания (Evidence-Centered Design), в основе которого заложена разработка наблюдаемых доказательств, '
+                 + 'позволяющих сделать вывод об уровне ИК-компетентности учащихся. В оценку включён не только результат выполненных заданий, но и оценивается процесс '
+                 + 'их решения (поведенческие характеристики тестируемых), обработка результатов происходит на основе действий, произведённых обучающимися в заданиях '
+                 + 'при выполнении ICL test.'
+          },
+          block3: {
+            title1: 'Процедура',
+            title2: 'оценивания',
+            part1: 'Разработано ',
+            part2: 'руководство администратора тестирования',
+            part3: ', в котором детально описана процедура проведения тестирования.',
+            part4: 'Тестирование включает ',
+            part5: '8 аутентичных заданий сценарного типа',
+            part6: '. На выполнение непосредственно тестовых заданий отводится ',
+            part7: '75 минут',
+            part8: '. В процессе тестирования предусмотрены',
+            part9: '2 перерыва по 5 минут для гимнастики глаз',
+            part10: ' (25 + 25 + 25 минут с двумя перерывами).',
+            part11: 'При выполнении тестовых заданий учащийся использует эмулятор браузера для выхода в Интернет, осуществляет поиск файлов, работает с графиками, электронными '
+                  + 'таблицами и презентациями, пользуется текстовым редактором и электронной почтой, общается в социальных сетях и коммуникаторах, запускает мультимедиа и анализирует базы данных.',
+            part12: 'При проведении тестирования используются стационарные или переносные компьютеры (за отдельным компьютером работает только один обучающийся), манипуляторы типа мышь. На компьютеры '
+                  + 'обязательно должна быть установлена последняя версия Google Chrome (это единственное требование к программному обеспечению при проведении тестирования).',
+            part13: 'Задания не связаны с предметными знаниями.',
+            part14: ' Сценарии разработаны таким образом, что их решение способно заинтересовать школьников, тем самым повышая внутреннюю мотивацию к решению задачи.',
+            part15: 'Автоматическая обработка результатов',
+            part16: ' с «обратной связью» респонденту сразу после окончания тестирования.',
+          },
+          block4: {
+            title: 'Обратная связь',
+            part1: 'После прохождения ',
+            part2: 'ICL test',
+            part3: ' учащемуся присваивается один из уровней ИК-компетентности — в зависимости от того, в какой степени он владеет каждой из семи составляющих. Всего таких уровней пять:',
+            part4: 'Продвинутый уровень',
+            part5: 'Учащиеся самостоятельно и квалифицированно используют цифровые технологии для решения учебных задач и задач в реальной жизни. При создании информационных продуктов '
+              + '(поиске и выборе информации, форматировании и дизайне материалов) учащиеся понимают, для какой аудитории создаются эти продукты. Они осознают, что информация может быть коммерческим '
+              + 'и подверженным влиянию продуктом, разбираются в вопросах интеллектуальной собственности.',
+            part6: 'Уровень выше базового',
+            part7: 'Учащиеся демонстрируют хороший уровень знаний, навыков и понимания при самостоятельном поиске информации и редактировании информационных продуктов, а также управления ими. Учащиеся '
+              + 'отбирают необходимую информацию из электронных ресурсов, адаптируют ее под требования задачи и создают собственные информационные продукты. Они также осознают, что найденная информация '
+              + 'может быть пристрастной, недостоверной или ненадежной.',
+            part8: 'Базовый уровень',
+            part9: 'Учащиеся демонстрируют базовый уровень ИК-компетентности. Они могут находить информацию, пользуясь простыми электронными ресурсами, выбирают и добавляют содержание информационных продуктов, '
+              + 'демонстрируют способность форматировать текст и изображения в информационных продуктах, работают с электронными таблицами и графическими редакторами, программами для обмена мгновенными '
+              + 'сообщениями и другими коммуникаторами. Они понимают необходимость защиты доступа к электронной информации и возможные последствия нежелательного доступа к информации.',
+            part10: 'Уровень ниже базового',
+            part11: 'Учащиеся знакомы с основными программами, могут работать с файлами на компьютере и выполнять простые операции с информацией. Учащиеся знают основные правила, использующиеся для коммуникации '
+              + 'онлайн, а также последствия использования компьютеров неавторизированными пользователями.',
+            part12: 'Развивающийся уровень',
+            part13: 'Учащиеся плохо работают с основными программами, плохо систематизируют файлы на компьютере и выполняют простые операции с информацией (поиск информации, редактирование текста, работа с '
+              + 'электронными таблицами, изображениями и т.п.) с ошибками. Учащиеся знают основные правила, использующиеся для коммуникации онлайн, но при этом они не понимают ответственности за '
+              + 'использование и передачу информации с точки зрения законности и соблюдения этических норм.',
+            part14: 'По результатам тестирования предоставляется индивидуальная обратная связь учащемуся и родителям, учителю и классу, а также обобщённый отчет по школе.',
+            part15: 'Используемый метод доказательного оценивания позволяет выявить и описать пробелы в развитии навыков работы с информацией в цифровой среде, над которыми следует работать в рамках учебного процесса.',
           },
         },
       },

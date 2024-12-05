@@ -16,163 +16,125 @@ const textBlocks = reactive({
     <div id="communication-skills-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Инструмент
+          {{ $t('tools.tool') }}
         </div>
         <div class="subtitle">
-          ICL test
+          {{ $t('tools.comSkills.title') }}
         </div>
         <div class="description">
-          Информационно-коммуникационная компетентность
+          {{ $t('tools.comSkills.subTitle') }}
         </div>
       </div>
     </div>
     <div class="basic-container white-container">
       <p>
-        Инструмент <span class="bold-text">ICL test</span> реализован в форме компьютерной системы тестирования на основе
-        выполнения аутентичных заданий сценарного типа в контролируемых условиях с автоматизированным процессом обработки
-        результатов тестирования и предоставления обратной связи сразу после его прохождения.
+        {{ $t('tools.comSkills.block1.part1') }}<span class="bold-text">{{ $t('tools.comSkills.block1.part2') }}</span>{{ $t('tools.comSkills.block1.part3') }}
       </p>
       <p>
-        Целевая аудитория — учащиеся 13-15 лет.
+        {{ $t('tools.comSkills.block1.part4') }}
       </p>
       <p>
-        Современный человек живет в цифровом мире, в котором невозможно комфортно жить без способности работать с информацией
-        в цифровой среде. Показателем этой способности является уровень информационно-коммуникационной компетентности
-        (ИК-компетентности). ИК-компетентность — это не только и не столько уровень владения конкретными компьютерными
-        программами и цифровыми технологиями, под ИК-компетентностью понимается способность и готовность учащихся использовать
-        цифровые технологии, сервисы и инструменты с целью получения доступа, анализа, управления, интеграции, создания
-        информации и коммуникации, соблюдая этические и правовые нормы.
+        {{ $t('tools.comSkills.block1.part5') }}
       </p>
       <p>
-        Особенностью <span class="bold-text">ICL test</span> является то, что он дает возможность оценить способность учащегося
-        использовать цифровые среды и сервисы для получения новых знаний, осуществления коммуникации, проведения исследовательской
-        деятельности, что, в конечном итоге, поможет учащемуся приобрести навыки обучения в течение всей жизни и выполнении
-        будущих профессиональных обязанностей.
+        {{ $t('tools.comSkills.block1.part6') }}<span class="bold-text">{{ $t('tools.comSkills.block1.part7') }}</span>{{ $t('tools.comSkills.block1.part8') }}
       </p>
     </div>
     <div class="basic-container blue-container">
       <div class="title">
-        7 составляющих ИК-компетентности,<br>
-        которые измеряет ICL test:
+        {{ $t('tools.comSkills.block2.title1') }}<br>
+        {{ $t('tools.comSkills.block2.title2') }}
       </div>
       <div class="img-container">
-        <img alt="communication-skills-components" src="@/assets/tools/communication_skills_components.jpg">
+        <img alt="communication-skills-components" src="@/assets/tools/communication_skills_components.jpg" v-if="$i18n.locale == 'ru'">
+        <img alt="communication-skills-components" src="@/assets/tools/communication_skills_components_en.png" v-if="$i18n.locale == 'en'">
       </div>
       <p>
-        Инструмент измерения <span class="bold-text">ICL test</span> разработан на основе метода доказательного оценивания
-        (Evidence-Centered Design), в основе которого заложена разработка наблюдаемых доказательств, позволяющих сделать вывод
-        об уровне ИК-компетентности учащихся. В оценку включён не только результат выполненных заданий, но и оценивается процесс
-        их решения (поведенческие характеристики тестируемых), обработка результатов происходит на основе действий, произведённых
-        обучающимися в заданиях при выполнении ICL test.
+        {{ $t('tools.comSkills.block2.part1') }}<span class="bold-text">{{ $t('tools.comSkills.block2.part2') }}</span>{{ $t('tools.comSkills.block2.part3') }}
       </p>
     </div>
     <div class="split-container">
       <div class="title">
-        Процедура<br>
-        оценивания
+        {{ $t('tools.comSkills.block3.title1') }}<br>
+        {{ $t('tools.comSkills.block3.title2') }}
       </div>
       <div class="description">
         <p>
-          Разработано <span class="bold-text">руководство администратора тестирования</span>, в котором детально описана процедура
-          проведения тестирования.
+          {{ $t('tools.comSkills.block3.part1') }}<span class="bold-text">{{ $t('tools.comSkills.block3.part2') }}</span>{{ $t('tools.comSkills.block3.part3') }}
         </p>
         <p>
-          Тестирование включает <span class="bold-text">8 аутентичных заданий сценарного типа</span>. На выполнение непосредственно
-          тестовых заданий отводится <span class="bold-text">75 минут</span>. В процессе тестирования предусмотрены
-          <span class="bold-text">2 перерыва по 5 минут для гимнастики глаз</span> (25 + 25 + 25 минут с двумя перерывами).
+          {{ $t('tools.comSkills.block3.part4') }}<span class="bold-text">{{ $t('tools.comSkills.block3.part5') }}</span>{{ $t('tools.comSkills.block3.part6') }}
+          <span class="bold-text">{{ $t('tools.comSkills.block3.part7') }}</span>{{ $t('tools.comSkills.block3.part8') }}
+          <span class="bold-text">{{ $t('tools.comSkills.block3.part9') }}</span>{{ $t('tools.comSkills.block3.part10') }}
         </p>
+        <p>{{ $t('tools.comSkills.block3.part11') }}</p>
+        <p>{{ $t('tools.comSkills.block3.part12') }}</p>
         <p>
-          При выполнении тестовых заданий учащийся использует эмулятор браузера для выхода в Интернет, осуществляет поиск файлов,
-          работает с графиками, электронными таблицами и презентациями, пользуется текстовым редактором и электронной почтой,
-          общается в социальных сетях и коммуникаторах, запускает мультимедиа и анализирует базы данных.
+          <span class="bold-text">{{ $t('tools.comSkills.block3.part13') }}</span>{{ $t('tools.comSkills.block3.part14') }}
         </p>
-        <p>
-          При проведении тестирования используются стационарные или переносные компьютеры (за отдельным компьютером работает
-          только один обучающийся), манипуляторы типа мышь. На компьютеры обязательно должна быть установлена последняя версия
-          Google Chrome (это единственное требование к программному обеспечению при проведении тестирования).
-        </p>
-        <p>
-          <span class="bold-text">Задания не связаны с предметными знаниями.</span> Сценарии разработаны таким образом, что
-          их решение способно заинтересовать школьников, тем самым повышая внутреннюю мотивацию к решению задачи.
-        </p>
-        <p>
+        <p v-if="$i18n.locale == 'ru'">
           <span class="bold-text">Контекст заданий</span>: академический, деловой и личностный. Пример задания можно посмотреть
           <a class="inline-link" target="_blank" href="https://youtu.be/CgcQZ_cUMCY">здесь</a>.
         </p>
+        <p v-if="$i18n.locale == 'en'">
+          <span class="bold-text">The scenario contexts</span> are academic, business, and personal. The example of the task is
+          <a class="inline-link" target="_blank" href="https://ce.ictlit.ru/task/gift/en">here</a>.
+        </p>
         <p>
-          <span class="bold-text">Автоматическая обработка результатов</span> с «обратной связью» респонденту сразу после
-          окончания тестирования.
+          <span class="bold-text">{{ $t('tools.comSkills.block3.part15') }}</span>{{ $t('tools.comSkills.block3.part16') }}
         </p>
       </div>
     </div>
     <div class="white-gap"></div>
     <div class="basic-container blue-container">
       <div class="title">
-        Обратная связь
+        {{ $t('tools.comSkills.block4.title') }}
       </div>
       <p>
-        После прохождения <span class="bold-text">ICL test</span> учащемуся присваивается один из уровней ИК-компетентности —
-        в зависимости от того, в какой степени он владеет каждой из семи составляющих. Всего таких уровней пять:
+        {{ $t('tools.comSkills.block4.part1') }}<span class="bold-text">{{ $t('tools.comSkills.block4.part2') }}</span>{{ $t('tools.comSkills.block4.part3') }}
       </p>
       <div class="shifted-div">
-        •	<span @click="textBlocks.advancedLevel = !textBlocks.advancedLevel" class="shifted-div-title">Продвинутый уровень</span>
+        •	<span @click="textBlocks.advancedLevel = !textBlocks.advancedLevel" class="shifted-div-title">{{ $t('tools.comSkills.block4.part4') }}</span>
         <span v-if="textBlocks.advancedLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.advancedLevel" class="shifted-div-details">
-          Учащиеся самостоятельно и квалифицированно используют цифровые технологии для решения учебных задач и задач в
-          реальной жизни. При создании информационных продуктов (поиске и выборе информации, форматировании и дизайне материалов)
-          учащиеся понимают, для какой аудитории создаются эти продукты. Они осознают, что информация может быть коммерческим
-          и подверженным влиянию продуктом, разбираются в вопросах интеллектуальной собственности
+          {{ $t('tools.comSkills.block4.part5') }}
         </div>
-        •	<span @click="textBlocks.highLevel = !textBlocks.highLevel" class="shifted-div-title">Уровень выше базового</span>
+        •	<span @click="textBlocks.highLevel = !textBlocks.highLevel" class="shifted-div-title">{{ $t('tools.comSkills.block4.part6') }}</span>
         <span v-if="textBlocks.highLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.highLevel" class="shifted-div-details">
-          Учащиеся демонстрируют хороший уровень знаний, навыков и понимания при самостоятельном поиске информации и редактировании
-          информационных продуктов, а также управления ими. Учащиеся отбирают необходимую информацию из электронных ресурсов,
-          адаптируют ее под требования задачи и создают собственные информационные продукты. Они также осознают, что найденная
-          информация может быть пристрастной, недостоверной или ненадежной.
+          {{ $t('tools.comSkills.block4.part7') }}
         </div>
-        •	<span @click="textBlocks.baseLevel = !textBlocks.baseLevel" class="shifted-div-title">Базовый уровень</span>
+        •	<span @click="textBlocks.baseLevel = !textBlocks.baseLevel" class="shifted-div-title">{{ $t('tools.comSkills.block4.part8') }}</span>
         <span v-if="textBlocks.baseLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.baseLevel" class="shifted-div-details">
-          Учащиеся демонстрируют базовый уровень ИК-компетентности. Они могут находить информацию, пользуясь простыми электронными
-          ресурсами, выбирают и добавляют содержание информационных продуктов, демонстрируют способность форматировать текст и
-          изображения в информационных продуктах, работают с электронными таблицами и графическими редакторами, программами
-          для обмена мгновенными сообщениями и другими коммуникаторами. Они понимают необходимость защиты доступа к электронной
-          информации и возможные последствия нежелательного доступа к информации.
+          {{ $t('tools.comSkills.block4.part9') }}
         </div>
-        •	<span @click="textBlocks.lowLevel = !textBlocks.lowLevel" class="shifted-div-title">Уровень ниже базового</span>
+        •	<span @click="textBlocks.lowLevel = !textBlocks.lowLevel" class="shifted-div-title">{{ $t('tools.comSkills.block4.part10') }}</span>
         <span v-if="textBlocks.lowLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.lowLevel" class="shifted-div-details">
-          Учащиеся знакомы с основными программами, могут работать с файлами на компьютере и выполнять простые операции с информацией.
-          Учащиеся знают основные правила, использующиеся для коммуникации онлайн, а также последствия использования компьютеров
-          неавторизированными пользователями.
+          {{ $t('tools.comSkills.block4.part11') }}
         </div>
-        •	<span @click="textBlocks.developingLevel = !textBlocks.developingLevel" class="shifted-div-title">Развивающийся уровень</span>
+        •	<span @click="textBlocks.developingLevel = !textBlocks.developingLevel" class="shifted-div-title">{{ $t('tools.comSkills.block4.part12') }}</span>
         <span v-if="textBlocks.developingLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.developingLevel" class="shifted-div-details">
-          Учащиеся плохо работают с основными программами, плохо систематизируют файлы на компьютере и выполняют простые операции
-          с информацией (поиск информации, редактирование текста, работа с электронными таблицами, изображениями и т.п.) с ошибками.
-          Учащиеся знают основные правила, использующиеся для коммуникации онлайн, но при этом они не понимают ответственности за
-          использование и передачу информации с точки зрения законности и соблюдения этических норм.
+          {{ $t('tools.comSkills.block4.part13') }}
         </div>
       </div>
       <p>
-        По результатам тестирования предоставляется индивидуальная обратная связь учащемуся и родителям, учителю и классу, а
-        также обобщённый отчет по школе.
+        {{ $t('tools.comSkills.block4.part14') }}
       </p>
       <p>
-        Используемый метод доказательного оценивания позволяет выявить и описать пробелы в развитии навыков работы с информацией
-        в цифровой среде, над которыми следует работать в рамках учебного процесса.
+        {{ $t('tools.comSkills.block4.part15') }}
       </p>
     </div>
   </div>

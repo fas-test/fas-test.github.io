@@ -14,84 +14,71 @@ const textBlocks = reactive({
     <div id="digital-skills-img" class="page-main-img">
       <div class="text">
         <div class="title">
-          Инструмент
+          {{ $t('tools.tool') }}
         </div>
         <div class="subtitle">
-          DIGLIT
+          {{ $t('tools.digSkills.title') }}
         </div>
         <div class="description">
-          Цифровые компетенции
+          {{ $t('tools.digSkills.subTitle') }}
         </div>
       </div>
     </div>
     <div class="basic-container white-container">
       <p>
-        Инструмент <span class="bold-text">DIGLIT</span> реализован в форме компьютерной системы тестирования с автоматизированным
-        процессом сбора, обработки и оценки результатов и направлен на измерение цифровой грамотности 12-14 летних школьников.
+        {{ $t('tools.digSkills.block1.part1') }}<span class="bold-text">{{ $t('tools.digSkills.block1.part2') }}</span>{{ $t('tools.digSkills.block1.part3') }}
       </p>
       <p>
-        Цифровая грамотность является комплексным конструктом, в состав которого входит ряд цифровых навыков, необходимых для
-        работы в цифровой среде, что нашло отражение в определении — <span class="bold-text">способность безопасно для себя и
-        других использовать цифровые технологии для поиска, анализа, создания, управления информацией, коммуникации и коллективной
-        работы с целью решения задач в цифровой среде для удовлетворения личных и образовательных потребностей</span> — и обусловило
-        подход к разработке инструмента измерения.
+        {{ $t('tools.digSkills.block1.part4') }}<span class="bold-text">{{ $t('tools.digSkills.block1.part5') }}</span>{{ $t('tools.digSkills.block1.part6') }}
       </p>
     </div>
     <div class="basic-container blue-container">
       <div class="title">
-        Какие цифровые навыки измеряются?
+        {{ $t('tools.digSkills.block2.title') }}
       </div>
       <div class="img-container">
-        <img alt="digital-skills-components" src="@/assets/tools/digital_skills_components.jpg">
+        <img alt="digital-skills-components" src="@/assets/tools/digital_skills_components.jpg" v-if="$i18n.locale == 'ru'">
+        <img alt="digital-skills-components" src="@/assets/tools/digital_skills_components_en.jpg" v-if="$i18n.locale == 'en'">
       </div>
       <p>
-        Инструмент измерения <span class="bold-text">цифровой грамотности DIGLIT</span> разработан на основе метода доказательной
-        аргументации (Evidence-Centered Design), в основе которого заложена разработка наблюдаемых доказательств, позволяющих
-        сделать вывод о сформированности измеряемых цифровых компетенций.
+        {{ $t('tools.digSkills.block2.part1') }}<span class="bold-text">{{ $t('tools.digSkills.block2.part2') }}</span>{{ $t('tools.digSkills.block2.part3') }}
       </p>
       <p>
-        В качестве <span class="bold-text">формы задания выбран сценарный тип</span>, так как он позволяет добиться максимальной
-        аутентичности в отличие от классических форм, моделирует ситуации, с которыми участники тестирования могут столкнуться
-        в реальной жизни, например, планирование поездки в неизвестное место, поиск необходимой информации в интернете или
-        создание визуализации в мультимедийной программе, создают среду, которая при этом позволяет зафиксировать поведение,
-        соответствующее измеряемым цифровым навыкам, и в целом помогает решить задачу внутренней мотивации выполнения теста,
-        а, следовательно, повышает степень достоверности полученных результатов.
+        {{ $t('tools.digSkills.block2.part4') }}<span class="bold-text">{{ $t('tools.digSkills.block2.part5') }}</span>{{ $t('tools.digSkills.block2.part6') }}
       </p>
     </div>
     <div class="split-container">
       <div class="title">
-        Процедура<br>
-        оценивания
+        {{ $t('tools.digSkills.block3.title1') }}<br>
+        {{ $t('tools.digSkills.block3.title2') }}
       </div>
       <div class="description">
         <p>
-          Разработана очень подробная <span class="bold-text">процедура администрирования</span> дистанционного процесса тестирования.
+          {{ $t('tools.digSkills.block3.part1') }}<span class="bold-text">{{ $t('tools.digSkills.block3.part2') }}</span>{{ $t('tools.digSkills.block3.part3') }}
         </p>
         <p>
-          Варианты  теста включают <span class="bold-text">4 задания сценарного типа</span>. На выполнение непосредственно тестовых
-          заданий отводится <span class="bold-text">60 минут</span>. Для компьютерного тестирования данной возрастной группы (школьники
-          12-14 лет) предусмотрены 2 перерыва по 5 минут для гимнастики глаз (20 + 20 + 20 минут с двумя перерывами).
+          {{ $t('tools.digSkills.block3.part4') }}<span class="bold-text">{{ $t('tools.digSkills.block3.part5') }}</span>{{ $t('tools.digSkills.block3.part6') }}
+          <span class="bold-text">{{ $t('tools.digSkills.block3.part7') }}</span>{{ $t('tools.digSkills.block3.part8') }}
         </p>
         <p>
-          <span class="bold-text">Задания не связаны с предметными знаниями.</span> Сценарии разработаны таким образом, что их решение
-          способно заинтересовать школьников, тем самым повышая внутреннюю мотивацию к решению задачи.
+          <span class="bold-text">{{ $t('tools.digSkills.block3.part9') }}</span>{{ $t('tools.digSkills.block3.part10') }}
         </p>
         <p>
-          <span class="bold-text">Тестовые задания предполагают использование симуляторов широкого спектра цифровых технологий</span>,
-          в том числе браузера, облачного хранилища, мессенджеров, электронной почты, соцсетей, текстовых редакторов, программ создания
-          презентаций и др., <span class="bold-text">полностью идентичных подобным в реальной жизни</span>.
+          <span class="bold-text">{{ $t('tools.digSkills.block3.part11') }}</span>{{ $t('tools.digSkills.block3.part12') }}<span class="bold-text">{{ $t('tools.digSkills.block3.part13') }}</span>
         </p>
         <p>
-          <span class="bold-text">Контекст заданий:</span> учебный (из школьной среды) и личный (задача из повседневной жизни вне школы).
+          <span class="bold-text">{{ $t('tools.digSkills.block3.part14') }}</span>{{ $t('tools.digSkills.block3.part15') }}
         </p>
-        <p>
+        <p v-if="$i18n.locale == 'ru'">
           Пример задания можно посмотреть <a class="inline-link" target="_blank" href="https://youtu.be/Hb2kNUn7X6k">здесь</a>.
         </p>
-        <p>
-          <span class="bold-text">Автоматическая обработка результатов</span> с «обратной связью» респонденту сразу после окончания
-          тестирования.
+        <p v-if="$i18n.locale == 'en'">
+          The example of the task is <a class="inline-link" target="_blank" href="https://dldev.hse.ru/demo/d93007a9d0c6ff70cdf85575852be70a">here</a>.
         </p>
         <p>
+          <span class="bold-text">{{ $t('tools.digSkills.block3.part16') }}</span>{{ $t('tools.digSkills.block3.part17') }}
+        </p>
+        <p v-if="$i18n.locale == 'ru'">
           <span class="bold-text">Контекстная анкета</span> разработана для выявления факторов, связанных с развитием цифровых навыков
           в быстро меняющейся цифровой среде.
         </p>
@@ -100,73 +87,58 @@ const textBlocks = reactive({
     <div class="white-gap"></div>
     <div class="basic-container blue-container">
       <div class="title">
-        Обратная связь
+        {{ $t('tools.digSkills.block4.title') }}
       </div>
       <p>
-        В результате тестирования определяется общий уровень цифровой грамотности обучающихся, исходя из трех возможных:
+        {{ $t('tools.digSkills.block4.part1') }}
       </p>
       <div class="shifted-div">
-        •	<span @click="textBlocks.developingLevel = !textBlocks.developingLevel" class="shifted-div-title">Развивающийся уровень</span>
+        •	<span @click="textBlocks.developingLevel = !textBlocks.developingLevel" class="shifted-div-title">{{ $t('tools.digSkills.block4.part2') }}</span>
           <span v-if="textBlocks.developingLevel"> ↖</span>
           <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.developingLevel" class="shifted-div-details">
-          <span class="bold-text">Ученик, находящийся на развивающемся уровне:</span><br>
-          •	владеет основами поиска и анализа информации, но не способен выделить релевантную информацию и определить
-          надежность источников. Плохо классифицирует информацию, не способен создать информационный продукт по заданным критериям;<br>
-          •	способен выполнить предложенную последовательность действий (алгоритм) решения практической задачи;<br>
-          •	владеет основными навыками коммуникации в цифровой среде, но, не всегда может выбрать подходящий формат представления
-          информации для конкретной целевой аудитории, не соблюдает правила цифрового этикета;<br>
-          •	способен обнаружить наиболее очевидные угрозы, но не всегда готов защитить свои устройства; не всегда идентифицирует
-          проблемный контент и не способен защитить личные данные;<br>
-          •	владеет минимальными техническими навыками работы с цифровыми технологиями, которые не позволяют полностью решить
-          задачу в цифровой среде.
+          <span class="bold-text">{{ $t('tools.digSkills.block4.part3') }}</span><br>
+          •	{{ $t('tools.digSkills.block4.part4') }}<br>
+          •	{{ $t('tools.digSkills.block4.part5') }}<br>
+          • {{ $t('tools.digSkills.block4.part6') }}<br>
+          •	{{ $t('tools.digSkills.block4.part7') }}<br>
+          •	{{ $t('tools.digSkills.block4.part8') }}
         </div>
-        •	<span @click="textBlocks.baseLevel = !textBlocks.baseLevel" class="shifted-div-title">Базовый уровень</span>
+        •	<span @click="textBlocks.baseLevel = !textBlocks.baseLevel" class="shifted-div-title">{{ $t('tools.digSkills.block4.part9') }}</span>
         <span v-if="textBlocks.baseLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.baseLevel" class="shifted-div-details">
-          <span class="bold-text">Ученик, находящийся на базовом уровне:</span><br>
-          •	способен искать и анализировать информацию, выделять релевантную информацию при этом опираясь на информацию из
-          надежных и достоверных источников. Способен классифицировать и систематизировать информацию, создавать простые информационные
-          продукты по заданным критериям или создавать сложные информационные продукты с небольшим количеством ошибок;<br>
-          •	способен не только выполнить предложенную последовательность действий, но и составить свой алгоритм для решения задачи;<br>
-          •	способен коммуницировать в цифровой среде с пониманием основных норм и правил общения, может выбрать формат представления
-          информации для конкретной целевой аудитории;<br>
-          •	способен идентифицировать риски, но не всегда готов защитить свои устройства и данные;<br>
-          •	владеет техническими навыками, достаточными для решения задач в цифровых средах.
+          <span class="bold-text">{{ $t('tools.digSkills.block4.part10') }}</span><br>
+          •	{{ $t('tools.digSkills.block4.part11') }}<br>
+          •	{{ $t('tools.digSkills.block4.part12') }}<br>
+          •	{{ $t('tools.digSkills.block4.part13') }}<br>
+          •	{{ $t('tools.digSkills.block4.part14') }}<br>
+          •	{{ $t('tools.digSkills.block4.part15') }}
         </div>
-        •	<span @click="textBlocks.advancedLevel = !textBlocks.advancedLevel" class="shifted-div-title">Продвинутый уровень</span>
+        •	<span @click="textBlocks.advancedLevel = !textBlocks.advancedLevel" class="shifted-div-title">{{ $t('tools.digSkills.block4.part16') }}</span>
         <span v-if="textBlocks.advancedLevel"> ↖</span>
         <span v-else> ↘</span>
         <br>
         <div v-if="textBlocks.advancedLevel" class="shifted-div-details">
-          <span class="bold-text">Ученик, находящийся на продвинутом уровне:</span><br>
-          •	способен как искать и анализировать информацию, так и формулировать правильное решение поставленной задачи, опираясь
-          на надежные и достоверные источники, классифицировать и организовывать информацию для быстрого нахождения и оптимального
-          использования при решении задач, создавать информационные продукты, соответствующие возрасту, по заданным критериям без
-          ошибок;<br>
-          •	способен выполнить предложенную последовательность действий, составить свой алгоритм для решения задачи и провести
-          его оптимизацию;<br>
-          •	способен выстроить эффективную коммуникацию для решения задачи с соблюдением этических и правовых норм;<br>
-          •	способен обнаружить угрозы и защитить свои устройства, избегать рисков работы в цифровой среде и полностью защитить
-          свои конфиденциальные данные;<br>
-          •	свободно использует цифровые технологии при решении задач, решает сложные пользовательский задачи в цифровых средах
-          и может помочь другим.
+          <span class="bold-text">{{ $t('tools.digSkills.block4.part17') }}</span><br>
+          •	{{ $t('tools.digSkills.block4.part18') }}<br>
+          •	{{ $t('tools.digSkills.block4.part19') }}<br>
+          •	{{ $t('tools.digSkills.block4.part20') }}<br>
+          •	{{ $t('tools.digSkills.block4.part21') }}<br>
+          •	{{ $t('tools.digSkills.block4.part22') }}
         </div>
       </div>
       <p>
-        По результатам тестирования предоставляется индивидуальная обратная связь школьнику и родителям, учителю и классу,
-        а также обобщённый отчет по школе.
+        {{ $t('tools.digSkills.block4.part23') }}
       </p>
       <p>
-        Используемый метод доказательного оценивания позволяет выявить и описать пробелы в развитии цифровых компетенций
-        школьника, над которыми следует поработать. Пример индивидуального отчета школьника для базового уровня цифровой
-        грамотности:
+        {{ $t('tools.digSkills.block4.part24') }}
       </p>
       <div class="img-container">
-        <img alt="digital-skills-report-example" src="@/assets/tools/digital_skills_report_example.jpg">
+        <img alt="digital-skills-report-example" src="@/assets/tools/digital_skills_report_example.jpg" v-if="$i18n.locale == 'ru'">
+        <img alt="digital-skills-report-example" src="@/assets/tools/digital_skills_report_example_en.png" v-if="$i18n.locale == 'en'">
       </div>
     </div>
   </div>
